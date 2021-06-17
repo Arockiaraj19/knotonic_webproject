@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_201" data-name="Rectangle 201" width="50" height="50" transform="translate(-20652 -5760)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_62" data-name="Mask Group 62" transform="translate(20652 5760)" clip-path="url(#clip-path)">
+    <path id="iconfinder_107178_circle_linkedin_icon" d="M42.364,40.114v-9.76c0-5.229-2.792-7.663-6.513-7.663a5.615,5.615,0,0,0-5.1,2.812V23.092H25.093c.075,1.6,0,17.023,0,17.023h5.658V30.608a3.859,3.859,0,0,1,.187-1.379,3.1,3.1,0,0,1,2.9-2.069c2.048,0,2.867,1.561,2.867,3.848v9.107h5.658ZM19.132,20.768a2.95,2.95,0,1,0,.037-5.882,2.949,2.949,0,1,0-.073,5.882Zm9.2,32.565a25,25,0,1,1,25-25A25,25,0,0,1,28.333,53.333ZM21.962,40.114V23.092H16.3V40.114Z" transform="translate(-20655.334 -5763.333)" fill="#007ab9" fill-rule="evenodd"/>
+  </g>
+</svg>
