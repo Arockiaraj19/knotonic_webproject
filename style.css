@@ -1,6 +1,6 @@
 @import url("https://use.typekit.net/jkb3ray.css");
 :root{
-    --homecolor:#ffd2d2;
+    --homecolor:rgba(251, 234, 237, 0.93);
     --white:white;
     --bodyfont-weight:normal;
     --bodyfont-color:#3b3b3b;
@@ -17,6 +17,9 @@
   --contact-page-color:#f9ecec;
 
 }
+html {
+  scroll-behavior: smooth;
+}
 *{
     padding: 0;
     margin: 0;
@@ -24,7 +27,7 @@
     scroll-behavior: smooth;
 }
 body{
-    font-size: 15px;
+    font-size: 16px;
     font-family: Poppins;
 width: 100vw;
 height: auto;
@@ -59,45 +62,52 @@ transition:top 0.5s ease-out;
     top: 0rem;
     right: 0;
 }
-header ul{
+.header ul{
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 85%;
     height: 100%;
 }
-header ul li{
+.header ul li{
     list-style: none;
+    display: block;
+     
 }
-header ul li a{
+
+.header ul li a{
+ 
     text-decoration: none;
     letter-spacing: 0.1em;
     color: var(--bodyfont-color);
-    font-size:0.8rem;
+    font-size:0.9rem;
     font-weight: var(--heading-weight);
+    cursor: pointer;   
 }
-header ul li a:hover{
-    color: var(--green-color);
+.header ul li a:hover{
+  color: white;
+   
 }
 .homeimage{
-    width: 40rem;
-    height: 25rem;
+    width: 50rem;
+    height: 30rem;
 }
 
 .logoafter{
   position: absolute;
   top: 1rem;
-  left: 2rem;
+  left: 8%;
  
-  width: 10rem;
-  height: 3rem;
+
+  width: 15rem;
+  height: 4rem;
   transition:top 0.5s ease-out;
 
 }
 .arrowafter{
   
   position: absolute;
-  top: 1rem;
+  top: 1.7rem;
   left:  48%;
   width: 3rem;
   height: 3rem;
@@ -110,15 +120,16 @@ header ul li a:hover{
 .logo{
   position: absolute;
   top: 5rem;
-  left: 2rem;
-  width: 10rem;
-  height: 3rem;
+  left: 8%;
+ 
+  width: 15rem;
+  height: 4rem;
   transition:top 0.5s ease-out;
 }
 .arrow{
 
   position: absolute;
-  top: 5rem;
+  top: 5.7rem;
   left:  48%;
   width: 3rem;
   height: 3rem;
@@ -157,8 +168,8 @@ header ul li a:hover{
 .main{
 
     position: absolute;
-    bottom: 6rem;
-    width: 90%;
+    bottom: 3rem;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -171,7 +182,7 @@ header ul li a:hover{
 }
 section
 {
-    margin-left: 3rem;
+    margin-left: 8%;
 }
 h2{
     width: 80%;
@@ -221,7 +232,7 @@ margin-bottom: 2rem;
 }
 .darkblue_round{
     position: absolute;
-    top: 6rem;
+    top: 2rem;
     right: 19rem;
     width: 10rem;
     height: 10rem;
@@ -232,7 +243,7 @@ transition:top 0.5s ease-out;
 
 .yellow_round{
     position: absolute;
-    top: 30vh;
+    top: -4rem;
     right: -4rem;
     width: 27rem;
     height: 27rem;
@@ -242,9 +253,9 @@ transition:top 0.5s ease-out;
 }
 .darkblue_roundactive{
     position: absolute;
- 
-    top: 2rem;
+    top: 6rem;
     right: 19rem;
+  
     width: 10rem;
     height: 10rem;
     border-radius: 50%;
@@ -254,8 +265,7 @@ transition:top 0.5s ease-out;
 
 .yellow_roundactive{
     position: absolute;
-  
-    top: -4rem;
+    top: 30vh;
     right: -4rem;
     width: 27rem;
     height: 27rem;
@@ -435,7 +445,7 @@ left: 10rem;
     from {opacity: .4}
     to {opacity: 1}
   }
-  @-webkit-keyframes slider_image {
+  /* @-webkit-keyframes slider_image {
     from { transform: rotate(180deg)}
     to { transform: rotate(0deg)}
   }
@@ -443,7 +453,7 @@ left: 10rem;
   @keyframes slider_image {
     from { transform: rotate(180deg)}
     to { transform: rotate(0deg)}
-  }
+  } */
 
 
 
@@ -562,9 +572,13 @@ margin-left:3rem;
         margin-bottom: 1rem;
       }
       .futuresec{
+        margin-left: 0;
         width: 100%;
         margin-top: 2rem;
       }
+      /* .futuresecheading{
+
+      } */
       .futureplan{
         margin-top: 2rem;
         width: 100%;
@@ -691,6 +705,11 @@ left: 7.5%;
       line-height: 1.5rem;
       color: var(--white);
       font-size:0.8rem;
-      margin: 0.3rem;
+      padding: 0.3rem;
       font-weight: var(--heading-weight);
+  }
+
+  footer section ul li a img{
+    height: 1.5rem;
+    width: 1.5rem;
   }
