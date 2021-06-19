@@ -28,12 +28,16 @@ html {
 }
 body{
     font-size: 16px;
-    font-family: Poppins;
+    font-family: Poppins,sans-serif;
 width: 100vw;
 height: auto;
 overflow-x: hidden;
 }
-
+.mainwrapper{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
 .home{
     position: relative;
     background-color:var(--homecolor);
@@ -56,11 +60,13 @@ transition:top 0.5s ease-out;
     position: absolute;
     top: -4rem;
     right: 0;
+    z-index: 1000;
 }
 .headervisible{
     position: absolute;
     top: 0rem;
     right: 0;
+    z-index: 1000;
 }
 .header ul{
     display: flex;
@@ -85,7 +91,7 @@ transition:top 0.5s ease-out;
     cursor: pointer;   
 }
 .header ul li a:hover{
-  color: white;
+  color:var(--green-color);
    
 }
 .homeimage{
@@ -585,7 +591,12 @@ margin-left:3rem;
         display: flex;
         justify-content: space-between;
       }
-
+.btnwrapper{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
 
      button {
         box-sizing: border-box;
@@ -598,20 +609,20 @@ margin-left:3rem;
         display: flex;
         align-self: center;
         font-size: 1rem;
-        font-weight: 400;
+        font-weight: normal;
         line-height: 1;
     
         padding: 1rem 2.4rem;
         text-decoration: none;
         text-align: center;
         text-transform: uppercase;
-        font-weight: 700;
+      
       
       }
      
       .btnstyle {
        
-        border: 2px solid var(--green-color);
+        border: 1.5px solid var(--green-color);
         border-radius: 2rem;
        
         position: relative;
