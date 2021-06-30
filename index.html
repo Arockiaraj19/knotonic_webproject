@@ -1,550 +1,436 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <script defer src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"></script>	
 </head>
+
 <body>
+    <a href="javascript:" class="return-to-top"><i class="icon-chevron-up"></i></a>
     <main class="mainwrapper">
         <div class="home" id="home">
-            <div class="darkblue_round">
+
+            <div class="header_part">
+                <img class="logo" src="./assets/logo.png" alt="loco" />
+                <header class="header" id="header">
+                    <ul>
+                        <li>
+                            <a href="#home">HOME</a>
+                        </li>
+                        <li>
+                            <a href="#service">SERVICES</a>
+                        </li>
+                        <li>
+                            <a href="#development">DEVELOPMENT & CREATIVES</a>
+                        </li>
+                        <li>
+                            <a href="#technology">TECHNOLOGY</a>
+                        </li>
+                        <li>
+                            <a href="#aboutus">ABOUT US</a>
+                        </li>
+                        <li>
+                            <a href="#contact">CONTACT US</a>
+                        </li>
+                    </ul>
+                </header>
             </div>
-            <div class="yellow_round">
+
+            <div >
+                <main class="main">
+                    <section>
+                      
+                              <div class="typewrapper">
+                                <span id="typewriter" data-array=""></span>
+                                <span class="cursor"></span>
+                        
+                              </div>
+                       
+                        <p>
+                            Create an attractive website design &
+                            develope them with us.
+                        </p>
+                    </section>
+                    <div>
+                        <div class="myhomeslide fade">
+                            <img class="homeimage" src="./assets/homepage2.png" alt="home design" />
+                        </div>
+                        <div class="myhomeslide fade">
+                            <img class="homeimage" src="./assets/homepage1.png" alt="home design" />
+                        </div>
+                        <div class="myhomeslide fade">
+                            <img class="homeimage" src="./assets/homepage2.png" alt="home design" />
+                        </div>
+                        
+                    </div>
+                 
+                </main>
             </div>
-            <img class="arrowafter" src="./assets/arrow.svg" alt="arrow icon" id="arrow" />
-    <img class="logoafter" src="./assets/logo.svg" alt="loco" />
-            <header class="header" id="header">
-                <ul>
-                    <li>
-                        <a href="#home">HOME</a>
-                    </li>
-                    <li>
-                        <a href="#service">SERVICES</a>
-                    </li>
-                    <li>
-                        <a href="#development">DEVELOPMENT & CREATIVES</a>
-                    </li>
-                    <li>
-                        <a href="#technology">TECHNOLOGY</a>
-                    </li>
-                    <li>
-                        <a href="#aboutus">ABOUT US</a>
-                    </li>
-                    <li>
-                        <a href="#contact">CONTACT US</a>
-                    </li>
-                </ul>
-            </header>
-            <div class="myhomeslide fade">
-            <main class="main">
-                <section>
-                   <h2>
-                    Make Your Ideas
-                    Into A Website
-                   </h2> 
-                   <p>
-                    Create an attractive website design &
-                    develope them with us.
-                   </p>
-                </section>
-                <img class="homeimage" src="./assets/homedesign.svg" alt="home design" />
-            </main>
+         
+
         </div>
-        <div class="myhomeslide fade">
-            <main class="main">
-                <section>
-                   <h2>
-                    Make Your Ideas
-                    Into A Website
-                   </h2> 
-                   <p>
-                    Create an attractive website design &
-                    develope them with us.
-                   </p>
-                </section>
-                <img class="homeimage" src="./assets/homeimage2.svg" alt="home design" />
-            </main>
-        </div>
-        <div class="myhomeslide fade">
-            <main class="main fade">
-                <section>
-                   <h2>
-                    Make Your Ideas
-                    Into A Website
-                   </h2> 
-                   <p>
-                    Create an attractive website design &
-                    develope them with us.
-                   </p>
-                </section>
-                <img class="homeimage" src="./assets/homeimage3.svg" alt="home design" />
-            </main>
-        </div>
-          
-        </div>
-    <!-- second part -->
-    <div class="service" id="service">
-    <h2>Our Services</h2>
-    
-    <h4>Activity We Offers To Enhance Your Business</h4>
-    
-    <main class="service_main">
-        <div>
-            <img class="serviceimage" src="./assets/mobile_app.svg" alt="serviceimage0" />
-        </div>
-       
-    
-        <div>
-            <h3>Mobile App  Design & Development</h3>
-            <p class="para">
-                Building an responsive interactive design 
-                for mobile applications and expose your 
-                business .
-               </p>
-        </div>
-       
-    </main>
-    
-    
-    
-    <main class="service_main">
-        
-        <div>
-        <h3>Desktop Application</h3>
-        <p class="para">
-            Are you looking for the desktop applications 
-            our team has wide experience in desktop app
-            development for windows. 
-           </p>
-    </div>
-        <img class="serviceimage" src="./assets/destop_app.svg" alt="serviceimage1" />
-       
-    </main>
-    
-    
-    
-    <main class="service_main">
-        <img class="serviceimage" src="./assets/web_app.svg" alt="serviceimage2" />
-    
-        <div>
-            <h3>Web Application Design & Development</h3>
-            <p class="para">
-                If you looking for the creative and responsive design
-                for your web application then join your hand with us. 
-               </p>
-        </div>
-       
-    </main>
-    
-    
-    <main class="service_main">
-        
-        <div>
-        <h3>DIGITAL MARKETING</h3>
-        <p class="para">
-            Explore your business ideas and became a brand
-            in your platform through digital marketing and 
-            social media
-           </p>
-    </div>
-        <img class="serviceimage" src="./assets/digital_marketing.svg" alt="serviceimage4" />
-       
-    </main>
-    
-    
-    <img class="serviceroundimage1" src="./assets/service_roundimage.svg" alt="home design" />
-    <img class="serviceroundimage2" src="./assets/service_roundimage.svg" alt="home design" />
-    <img class="serviceroundimage3" src="./assets/service_roundimage.svg" alt="home design" />
-    
-    </div>
-    
-     <!-- third part    -->
-    
-     <div class="service" id="development">
-        <h2>DEVELOPMENT & CREATIVES</h2>
-    
-        <h4>Our Process For Developing 
-            Web &Mobile Applications</h4>
-    
-            <!-- Slideshow container -->
-    <div class="slideshow-container">
-    
-        <!-- Full-width images with number and caption text -->
-        <div class="mySlides fade">
+        <!-- second part -->
+        <div class="service" id="service">
+            <div class="linespan">
+                <div></div>
+                <h2>Our Services</h2>
+            </div>
+
+
+            <h4>Activity We Offers To Enhance Your Business</h4>
+
             <main class="service_main">
-                <img class="serviceimage slider_image" src="./assets/web_app.svg" alt="serviceimage2" />
-            
                 <div>
-                    <h5>Research</h5>
+                    <img class="serviceimage" src="./assets/mobile_app.svg" alt="serviceimage0" />
+                </div>
+
+
+                <div>
+                    <h3>Mobile App Design & Development</h3>
+                    <p class="para">
+                        Building an responsive interactive design
+                        for mobile applications and expose your
+                        business .
+                    </p>
+                </div>
+
+            </main>
+
+
+
+            <main class="service_main">
+
+                <div>
+                    <h3>Desktop Application</h3>
+                    <p class="para">
+                        Are you looking for the desktop applications
+                        our team has wide experience in desktop app
+                        development for windows.
+                    </p>
+                </div>
+                <img class="serviceimage" src="./assets/destop_app.svg" alt="serviceimage1" />
+
+            </main>
+
+
+
+            <main class="service_main">
+                <img class="serviceimage" src="./assets/web_app.svg" alt="serviceimage2" />
+
+                <div>
+                    <h3>Web Application Design & Development</h3>
+                    <p class="para">
+                        If you looking for the creative and responsive design
+                        for your web application then join your hand with us.
+                    </p>
+                </div>
+
+            </main>
+
+
+            <main class="service_main">
+
+                <div>
+                    <h3>DIGITAL MARKETING</h3>
                     <p class="para">
                         Explore your business ideas and became a brand
-                        in your platform through digital marketing and 
+                        in your platform through digital marketing and
                         social media
-                       </p>
+                    </p>
                 </div>
-               
+                <img class="serviceimage" src="./assets/digital_marketing.svg" alt="serviceimage4" />
+
             </main>
         </div>
-      
-        <div class="mySlides fade">
-            <main class="service_main">
-                <img class="serviceimage slider_image" src="./assets/web_app.svg" alt="serviceimage2" />
-            
-                <div>
-                    <h5>Design</h5>
-                    <p class="para">
-                       If you looking for the creative and responsive design for your web application then join your hand with us.
-                       </p>
-                </div>
-               
-            </main>
-        </div>
-      
-        <div class="mySlides fade">
-            <main class="service_main">
-                <img class="serviceimage slider_image" src="./assets/web_app.svg" alt="serviceimage2" />
-            
-                <div>
-                    <h5>Development</h5>
-                    <p class="para">
-                       If you looking for the creative and responsive design for your web application then join your hand with us.
-                       </p>
-                </div>
-               
-            </main>
-        </div>
-    
-    
-    
-        <div class="mySlides fade">
-            <main class="service_main">
-                <img class="serviceimage slider_image" src="./assets/web_app.svg" alt="serviceimage2" />
-            
-                <div>
-                    <h5>Testing</h5>
-                    <p class="para">
-                       If you looking for the creative and responsive design for your web application then join your hand with us.
-                       </p>
-                </div>
-               
-            </main>
-        </div>
-    
-        <div class="mySlides fade">
-            <main class="service_main">
-                <img class="serviceimage slider_image" src="./assets/web_app.svg" alt="serviceimage2" />
-            
-                <div>
-                    <h5>Live Launch</h5>
-                    <p class="para">
-                       If you looking for the creative and responsive design for your web application then join your hand with us.
-                       </p>
-                </div>
-               
-            </main>
-        </div>
-      
+
+        <!-- third part    -->
+
+        <div id="development">
+            <div class="linespan">
+                <div></div>
+                <h2>DEVELOPMENT & CREATIVES</h2>
+            </div>
+            <h4>Our Process For Developing
+                Web &Mobile Applications</h4>
+
      
-      </div>
-      <br>
-      
-      <!-- The dots/circles -->
-      <div style="text-align:center">
-        <span class="dot" ></span>
-        <span class="dot" ></span>
-        <span class="dot" ></span>
-        <span class="dot" ></span>
-        <span class="dot" ></span>
-      </div>
-      
-    <section class="futuresec">
-        <!-- <div class="futuresecheading">
            
-        </div> -->
-        <h4>Our Creative Ideas In Future</h4>
-    <div class="futureplan">
-        <div class="techdiv">
-            <img  src="./assets/web_app.svg" alt="serviceimage2" />
-            <p style="text-align: center;" class="para">
-                Artificial
-                Intelligence
-                </p> 
-        </div>
-    
-        <div class="techdiv">
-            <img  src="./assets/web_app.svg" alt="serviceimage2" />
-            <p style="text-align: center;" class="para">
-                Robotic
-                Process
-                Automation
-                </p> 
-        </div>
-    
-        <div class="techdiv">
-            <img  src="./assets/web_app.svg" alt="serviceimage2" />
-            <p style="text-align: center;" class="para">
-                Internet
-                Of Things
-                </p> 
-        </div>
-    </div>
-    </section>
+
        
-     </div>
-    
-     <div class="service" id="technology">
-    
-    
-        <h2>Technology</h2>
-        <h4>Technology We Interact With That</h4>
-    <main class="technology">
-    <div class="techdiv">
-        <img  src="./assets/web_app.svg" alt="serviceimage2" />
-        <p style="text-align: center;" class="para">
-            Mobile Application Design &</br>
-            Development
-            </p> 
-    </div>
-     <!-- second technoloy -->
-    
-    <div class="techdiv">
-        <img  src="./assets/web_app.svg" alt="serviceimage2" />
-        <p style="text-align: center;" class="para">
-            Web Application Design &</br>
-            Development
-            </p> 
-    </div>
-    
-    <!-- third technology -->
-    <div class="techdiv">
-        <img  src="./assets/web_app.svg" alt="serviceimage2" />
-        <p style="text-align: center;" class="para">
-            Cloud Computing
-            </p> 
-    </div>
-    
-    <!-- fourth technology -->
-    
-    <div class="techdiv">
-        <img  src="./assets/web_app.svg" alt="serviceimage2" />
-        <p style="text-align: center;" class="para">
-           Digital Marketing
-            </p> 
-    </div>
-    </main>
-    
-        <h4>Tools We Handle</h4>
-    <main class="tools">
-    
-        <!-- first -->
-        <section class="tech_section">
-           <main>
-            <h4>Native IOS</h4>
-           </main>
+           
+       
+
+        </div>
+
+        <div class="service" id="technology">
+
+
+            <h2>Technology</h2>
+            <h4>Technology We Interact With That</h4>
+            <main class="technology">
+                <div class="techdiv">
+                    <img src="./assets/web_app.svg" alt="serviceimage2" />
+                    <p style="text-align: center;" class="para">
+                        Mobile Application Design &</br>
+                        Development
+                    </p>
+                </div>
+                <!-- second technoloy -->
+
+                <div class="techdiv">
+                    <img src="./assets/web_app.svg" alt="serviceimage2" />
+                    <p style="text-align: center;" class="para">
+                        Web Application Design &</br>
+                        Development
+                    </p>
+                </div>
+
+                <!-- third technology -->
+                <div class="techdiv">
+                    <img src="./assets/web_app.svg" alt="serviceimage2" />
+                    <p style="text-align: center;" class="para">
+                        Cloud Computing
+                    </p>
+                </div>
+
+                <!-- fourth technology -->
+
+                <div class="techdiv">
+                    <img src="./assets/web_app.svg" alt="serviceimage2" />
+                    <p style="text-align: center;" class="para">
+                        Digital Marketing
+                    </p>
+                </div>
+            </main>
+
+            <h4>Tools We Handle</h4>
+            <main class="tools">
+
+                <!-- first -->
+                <section class="tech_section">
+                    <main>
+                        <h4>Native IOS</h4>
+                    </main>
+                    <div>
+                        <img class="tools_img" src="./assets/flutter.svg" alt="flutter" />
+                        <img class="tools_img" src="./assets/react.svg" alt="react" />
+                    </div>
+                </section>
+
+
+                <section class="tech_section">
+                    <main>
+                        <h4>Native Android</h4>
+                    </main>
+                    <div>
+                        <img class="tools_img" src="./assets/flutter.svg" alt="flutter" />
+                        <img class="tools_img" src="./assets/react.svg" alt="react" />
+                    </div>
+                </section>
+
+
+                <section class="tech_section">
+                    <main>
+                        <h4>Web</h4>
+                    </main>
+                    <div>
+
+                        <img class="tools_img" src="./assets/react.svg" alt="react" />
+                        <img class="tools_img" src="./assets/html.svg" alt="flutter" />
+                        <img class="tools_img" src="./assets/css.svg" alt="flutter" />
+                    </div>
+                </section>
+
+
+                <section class="tech_section">
+                    <main>
+                        <h4>Cloud</h4>
+                    </main>
+                    <div>
+
+                        <img class="tools_img" src="./assets/gcp.svg" alt="react" />
+                        <img class="tools_img" src="./assets/firebase.svg" alt="flutter" />
+                        <img class="tools_img" src="./assets/aws.svg" alt="flutter" />
+                    </div>
+                </section>
+
+                <section class="tech_section">
+                    <main>
+                        <h4>Server Technologies</h4>
+                    </main>
+                    <div>
+
+                        <img class="tools_img" src="./assets/nodejs.svg" alt="react" />
+
+                    </div>
+                </section>
+
+
+                <section class="tech_section">
+                    <main>
+                        <h4>Design</h4>
+                    </main>
+                    <div>
+
+                        <img class="tools_img" src="./assets/photoshop.svg" alt="react" />
+                        <img class="tools_img" src="./assets/illustrator.svg" alt="react" />
+                        <img class="tools_img" src="./assets/xd.svg" alt="react" />
+                        <img class="tools_img" src="./assets/aftereffect.svg" alt="react" />
+
+                    </div>
+                </section>
+
+                <section class="tech_section">
+                    <main>
+                        <h4>Database</h4>
+                    </main>
+                    <div>
+
+                        <img class="tools_img" src="./assets/mongodb.svg" alt="react" />
+                        <img class="tools_img" src="./assets/mysql.svg" alt="react" />
+                        <img class="tools_img" src="./assets/postsql.svg" alt="react" />
+
+
+                    </div>
+                </section>
+
+            </main>
+
+        </div>
+
+
+        <div class="service" id="aboutus">
+            <div class="linespan">
+                <div></div>
+            <h2>About us</h2>
+            </div>
+            <main class="about">
+                <img class="about_img" src="./assets/about.svg" alt="react" />
+                <p class="para">Knotonic is an web solution
+                    company and we shall provide desktop applications as well as mobile applications.</br></br>our
+                    design team will create an ingenious and eye catching design to enhance your business
+                    ideas.</br></br>we posses an professional web
+                    and app developer who can pin
+                    down the complex problem and
+                    enlightened them quite simple</p>
+            </main>
+
+            <img class="serviceroundimage1" src="./assets/about_round.svg" alt="home design" />
+
+            <img class="serviceroundimage3" src="./assets/about_round.svg" alt="home design" />
+        </div>
+
+        <!-- contact part -->
+
+
+        <div  id="contact">
+
+            <div class="contact-part">
+                <div class="linespan">
+                    <div></div>
+                <h2 >Contact</h2>
+                </div>
+                <h4>we will pass your question to one of our agent who will
+                    personally reply to you as soon as possible
+                </h4>
+                <main>
+                   
+                    <input type="text" name="email" placeholder="Email-id">
+                    <input type="text" name="subject" placeholder="Subject">
+                    <textarea placeholder="Description" rows="4" cols="50"></textarea>
+                    <div class="btnwrapper">
+                        <button class="btn btnstyle" type="submit">Submit</button>
+                    </div>
+
+                </main>
+            </div>
+        </div>
+
+
+        <!-- footer part -->
+
+
+        <footer>
             <div>
-                <img class="tools_img" src="./assets/flutter.svg" alt="flutter" />
-                <img class="tools_img" src="./assets/react.svg" alt="react" />
+                <img class="logo" src="./assets/logo.png" alt="loco" />
+                <ul>
+                    <ul>
+                        <li>
+                            <a href="#home">HOME</a>
+                        </li>
+                        <li>
+                            <a href="#service">SERVICES</a>
+                        </li>
+                        <li>
+                            <a href="#development">DEVELOPMENT & CREATIVES</a>
+                        </li>
+                        <li>
+                            <a href="#technology">TECHNOLOGY</a>
+                        </li>
+                        <li>
+                            <a href="#aboutus">ABOUT US</a>
+                        </li>
+                        <li>
+                            <a href="#contact">CONTACT US</a>
+                        </li>
+                    </ul>
+                </ul>
+                <ul>
+                    <ul>
+                        <li>
+                            <a href="">mobile app design & development</a>
+                        </li>
+                        <li>
+                            <a href="">web application design & development </a>
+                        </li>
+                        <li>
+                            <a href="">desktop application</a>
+                        </li>
+
+                        <li>
+                            <a href="">digital marketing</a>
+                        </li>
+
+                    </ul>
+                </ul>
             </div>
-        </section>
-    
-    
-        <section class="tech_section">
-            <main>
-             <h4>Native Android</h4>
-            </main>
-             <div>
-                 <img class="tools_img" src="./assets/flutter.svg" alt="flutter" />
-                 <img class="tools_img" src="./assets/react.svg" alt="react" />
-             </div>
-         </section>
-    
-    
-         <section class="tech_section">
-            <main>
-             <h4>Web</h4>
-            </main>
-             <div>
-                
-                 <img class="tools_img" src="./assets/react.svg" alt="react" />
-                 <img class="tools_img" src="./assets/html.svg" alt="flutter" />
-                 <img class="tools_img" src="./assets/css.svg" alt="flutter" />
-             </div>
-         </section>
-    
-    
-         <section class="tech_section">
-            <main>
-             <h4>Cloud</h4>
-            </main>
-             <div>
-                
-                 <img class="tools_img" src="./assets/gcp.svg" alt="react" />
-                 <img class="tools_img" src="./assets/firebase.svg" alt="flutter" />
-                 <img class="tools_img" src="./assets/aws.svg" alt="flutter" />
-             </div>
-         </section>
-    
-         <section class="tech_section">
-            <main>
-             <h4>Server Technologies</h4>
-            </main>
-             <div>
-                
-                 <img class="tools_img" src="./assets/nodejs.svg" alt="react" />
-                
-             </div>
-         </section>
-    
-    
-         <section class="tech_section">
-            <main>
-             <h4>Design</h4>
-            </main>
-             <div>
-                
-                 <img class="tools_img" src="./assets/photoshop.svg" alt="react" />
-                 <img class="tools_img" src="./assets/illustrator.svg" alt="react" />
-                 <img class="tools_img" src="./assets/xd.svg" alt="react" />
-                 <img class="tools_img" src="./assets/aftereffect.svg" alt="react" />
-                
-             </div>
-         </section>
-    
-         <section class="tech_section">
-            <main>
-             <h4>Database</h4>
-            </main>
-             <div>
-                
-                 <img class="tools_img" src="./assets/mongodb.svg" alt="react" />
-                 <img class="tools_img" src="./assets/mysql.svg" alt="react" />
-                 <img class="tools_img" src="./assets/postsql.svg" alt="react" />
-               
-                
-             </div>
-         </section>
-        
-    </main>
-    
-     </div>
-    
-    
-     <div class="service" id="aboutus">
-        <h2>About us</h2>
-        <main class="about">
-            <img class="about_img" src="./assets/about.svg" alt="react" />
-            <p class="para"><span>Knotonic</span> is an web solution  
-                company and we shall provide desktop applications as well as mobile applications.</br></br>our design team will create an ingenious and eye catching design to enhance your business ideas.</br></br>we posses an professional web
-                and app developer who can pin
-                down the complex problem and 
-                enlightened them quite simple</p>
-        </main>
-        
-    <img class="serviceroundimage1" src="./assets/about_round.svg" alt="home design" />
-    
-    <img class="serviceroundimage3" src="./assets/about_round.svg" alt="home design" />
-     </div>
-    
-     <!-- contact part -->
-    
-    
-     <div class="contact" id="contact">
-       <div class="contact-part">
-        <h2 style="color:  #3b3b3b; ">Contact</h2>
-        <main>
-            <p class="para"  style="width: 100%;">we will pass your question to one of our agent who will personally reply to you as soon as possible
-                </p>
-            <input type="text"  name="email" placeholder="Email-id">
-            <input type="text"  name="subject" placeholder="Subject">
-            <textarea  placeholder="Description" rows="4" cols="50"></textarea>
-            <div class="btnwrapper">
-                <button class="btn btnstyle"type="submit">Submit</button>
-            </div>
-          
-        </main>
-       </div>
-     </div>
-    
-    
-     <!-- footer part -->
-    
-    
-     <footer>
-         <div>
-            <img class="footerlogo" src="./assets/logo.svg" alt="loco" />
-            <ul>
+            <section>
                 <ul>
-                    <li>
-                        <a href="#home">HOME</a>
-                    </li>
-                    <li>
-                        <a href="#service">SERVICES</a>
-                    </li>
-                    <li>
-                        <a href="#development">DEVELOPMENT & CREATIVES</a>
-                    </li>
-                    <li>
-                        <a href="#technology">TECHNOLOGY</a>
-                    </li>
-                    <li>
-                        <a href="#aboutus">ABOUT US</a>
-                    </li>
-                    <li>
-                        <a href="#contact">CONTACT US</a>
-                    </li>
+                    <ul>
+                        <li>
+                            <a href=""><img src="./assets/linkedin.png" alt="linkedin"></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="./assets/instagram.png" alt="instagram"></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="./assets/facebook.png" alt="facebook"></a>
+                        </li>
+
+                        <li>
+                            <a href=""><img src="./assets/twitter.png" alt="twitter"></a>
+                        </li>
+
+                    </ul>
                 </ul>
-            </ul>
-            <ul>
-                <ul>
-                    <li>
-                        <a href="">mobile app design & development</a>
-                    </li>
-                    <li>
-                        <a href="">web application design & development </a>
-                    </li>
-                    <li>
-                        <a href="">desktop application</a>
-                    </li>
-                  
-                    <li>
-                        <a href="">digital marketing</a>
-                    </li>
-                  
-                </ul>
-            </ul>
-         </div>
-        <section>
-            <ul>
-                <ul>
-                    <li>
-                        <a href=""><img src="./assets/linkedin.svg" alt="linkedin" ></a>
-                    </li>
-                    <li>
-                        <a href=""><img src="./assets/instagram.svg" alt="instagram" ></a>
-                    </li>
-                    <li>
-                        <a href=""><img src="./assets/facebook.svg" alt="facebook" ></a>
-                    </li>
-                  
-                    <li>
-                        <a href=""><img src="./assets/twitter.svg" alt="twitter" ></a>
-                    </li>
-                  
-                </ul>
-            </ul>
-        </section>
-      
-     </footer>
+            </section>
+
+        </footer>
     </main>
 
-   
- 
-      
+
+
+
 </body>
+
 </html>
 
 
