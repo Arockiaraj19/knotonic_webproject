@@ -292,3 +292,12 @@ setTimeout( function () {
 	StartWriter(0);
 },1000);
 	
+
+
+
+
+
+
+
+
+
