@@ -102,8 +102,14 @@ transition:top 0.5s ease-out;
   color:var(--green-color);
    
 }
-
-
+.homeimage{
+    width: 50vw;
+    height: 88vh;
+}
+/* .thanihomeimage{
+  width: 80rem;
+  height: 40rem;
+} */
 
 .logo{
   width: 10rem;
@@ -1053,14 +1059,14 @@ width: 100%;
 .service_div{
   position: absolute;
   top: 0;
- left:-100vw;
+ left:0;
   z-index: 100;
   padding: 0;
   margin: 0;
   width: 100vw;
   height: auto;
 overflow-y: hidden;
-transform: scale(0);
+ transform: scale(0);
 transition: transform 1s cubic-bezier(0, 0, 0, 0);
 
 }
