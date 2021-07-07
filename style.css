@@ -770,15 +770,7 @@ input::placeholder {
 }
 
 
-.service_div{
-  position: absolute;
-  height: 50rem;
-  width: 50rem;
-  color: white;
-  top: 0;
-  right: 0;
-  z-index: 1000;
-}
+
 
 .service_container{
   width: 100%;
@@ -796,7 +788,7 @@ padding: 4rem 0;
   position: absolute;
 height: 20rem;
 width: 30%;
-z-index: 1000;
+z-index: 10;
 }
 .service_card_content_wrapper{
 position: relative;
@@ -1058,4 +1050,89 @@ width: 100%;
 }
 .spinner--right [data-type="peru"] .content__left {
   background-image: none;
+}
+
+
+
+/* //service pop up area */
+
+.service_div{
+  position: absolute;
+  top: 0;
+ left:-100vw;
+  z-index: 100;
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: auto;
+overflow-y: hidden;
+transform: scale(0);
+transition: transform 1s cubic-bezier(0, 0, 0, 0);
+
+}
+.service_div main{
+width: 100%;
+display: flex;
+}
+.service_div_section1{
+  width: 35%;
+  height:auto;
+  background-color: var(--primary-color);
+  padding: 2rem 3rem;
+}
+.service_div_section2{
+  width: 65%;
+  height:auto;
+  background: var(--secondary-color);
+  padding: 2rem 3rem;
+
+}
+.back_arrow{
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  
+}
+.back_arrow i{
+ 
+  margin-right: 1rem;
+}
+.back_arrow p{
+padding-top: 2rem;
+}
+.service_div_main{
+  margin-top: 3rem;
+}
+.service_div_main div{
+display: flex;
+align-items: center;
+width: 100%;
+height: auto;
+margin: 4rem 0;
+
+}
+
+.service_div_main div img{
+  height: 5rem;
+  width: 5rem;
+  margin-right:2rem ;
+}
+.service_div_main div p{
+  padding-top: 2rem;
+}
+.service_div_section2 div{
+  margin-top: 2.5rem;
+ 
+}
+.service_div_section2 div div{
+  width: 100%;
+  margin: 3rem 0;
+}
+.service_div_section2 div div p{
+  width: 100%;
+}
+.service_div_section2_top{
+  padding-top: 2.5rem;
+  width: 100%;
+
 }

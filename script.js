@@ -296,7 +296,14 @@ setTimeout( function () {
 
 
 
+var servicediv=document.querySelector(".service_div");
+var serviceicon=document.querySelector(".service_card_icon_wrapper");
 
+serviceicon.addEventListener("click",(e)=>{
+e.preventDefault();
+console.log("button working");
+servicediv.style.transform="scale(1)";
+})
 
 
 
