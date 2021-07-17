@@ -31,6 +31,23 @@ function showhomeSlides() {
   setTimeout(showhomeSlides, 4000); // Change image every 3 seconds
 }
 
+var slidehomeIndex1 = 0;
+showhomeSlides1();
+
+function showhomeSlides1() {
+  var i;
+  var slideshome1 = document.getElementsByClassName("myhomeslide1");
+ 
+  for (i = 0; i < slideshome1.length; i++) {
+    slideshome1[i].style.display = "none";  
+  }
+  slidehomeIndex1++;
+  if (slidehomeIndex1 > slideshome1.length) {slidehomeIndex1 = 1}    
+ 
+  slideshome1[slidehomeIndex1-1].style.display = "block";  
+  
+  setTimeout(showhomeSlides1, 4000); // Change image every 3 seconds
+}
 
 
 //return to top funtion part
@@ -89,7 +106,7 @@ function homeScrollTrigger() {
     let homeScrollTrigger = gsap.timeline({
         scrollTrigger: {
             trigger: ".home",
-            toggleActions: "restart restart restart restart",
+            // toggleActions: "restart restart restart restart",
             start: "0% 100%",
             end: "50% 0%",
             // markers: "true",
@@ -111,10 +128,13 @@ function homeScrollTrigger() {
       
         .from('.myhomeslide main', {
             opacity: 0, duration: 1.5, stagger: 0.4, ease: "sine",
-        }, 0.8)
+        }, 0)
         .from('.myhomeslide img', {
-            opacity: 0, x: "+30%", duration: 2.2, ease: "sine",
-        }, 1.6)
+            opacity: 0, x: "+30%", duration: 1.5, ease: "sine",
+        }, 0)
+        .from('.myhomeslide1', {
+            opacity: 0, x: "-30%", duration: 1.5, ease: "sine",
+        }, 0)
 
 
 }
@@ -125,104 +145,151 @@ function SliderScrollTrigger() {
 
     let Slide1 = gsap.timeline({ // Slide1---------------------
         scrollTrigger: {
-            trigger: ".slide1",
-            start: "100% 100%",
-            end: "300% 0%",
-            // markers: "true",
-            scrub: 2,
-            pin: ".slide1",
+            trigger: ".service",
+            start: "20% 100%",
+            end: "100% 0%",
+    
+
         }
     })
     Slide1
-        .from('.slide1 #slide h1', {
+        .from('.service .linespan', {
             opacity: 0, x: "-22%",
         })
-        .from('.slide1 #slide p', {
-            opacity: 0, y: "22%",
+        .from('.service div h4', {
+            opacity: 0, x: "-22%",
         })
-        .from('.slide1 #ImageContainer', {
-            opacity: 0, y: "22%",
-        }) // Slide1---------------------
-
+        .from('.service_card', {
+            stagger: 0.5 ,
+              opacity: 0, x: "-22%",
+        })
+        
     let Slide2 = gsap.timeline({ // Slide2---------------------
         scrollTrigger: {
-            trigger: ".slide2",
-            start: "100% 100%",
-            end: "300% 0%",
-            // markers: "true",
-            scrub: 2,
-            pin: ".slide2",
+            trigger: "#technology",
+            start: "20% 100%",
+            end: "100% 0%",
         }
     })
     Slide2
-        .from('.slide2 #slide h1', {
-            opacity: 0, x: "-22%",
-        })
-        .from('.slide2 #slide p', {
-            opacity: 0, y: "22%",
-        })
-        .from('.slide2 #ImageContainer', {
-            opacity: 0, y: "22%",
-        }) // Slide2---------------------
+    .from('#technology .linespan', {
+        opacity: 0, x: "-22%",
+    })
+    .from('#technology h4', {
+        opacity: 0, x: "-22%",
+    })
+    .from('.technology_tools div', {
+        stagger: 0.5 ,
+          opacity: 0, x: "122%",
+    })
 
     let Slide3 = gsap.timeline({ // Slide3---------------------
         scrollTrigger: {
-            trigger: ".slide3",
-            start: "100% 100%",
-            end: "300% 0%",
-            // markers: "true",
-            scrub: 2,
-            pin: ".slide3",
+            trigger: ".tools_candle",
+            start: "20% 100%",
+            end: "100% 0%",
         }
     })
     Slide3
-        .from('.slide3 #slide h1', {
-            opacity: 0, x: "-22%",
-        })
-        .from('.slide3 #slide p', {
-            opacity: 0, y: "22%",
-        })
-        .from('.slide3 #ImageContainer', {
-            opacity: 0, y: "22%",
-        }) // Slide3---------------------
+    .from('.tools_candle div .tool_images .tools_card_image', {
+        stagger: 0.5 ,
+        opacity: 0, x: "-22%",
+  });
 
-    let iCodeAyush = gsap.timeline({
-        scrollTrigger: {
-            trigger: "#codeby",
-            toggleActions: "restart restart restart restart",
-            start: "48.618% 100%",
-            end: "100% 0%",
-            // markers: "true",
-        }
-    })
-    iCodeAyush
-        .from('#codeby a', {
-            opacity: 0, y: "130%", duration: 2, ease: "sine",
-        }) // iCodeAyush---------------------
+  let Slide4 = gsap.timeline({ // Slide3---------------------
+    scrollTrigger: {
+        trigger: "#development",
+        start: "0 100%",
+        end: "100% 0%",
+    }
+});
+Slide4
+.from('#development_card .linespan', {
+    opacity: 0, x: "-22%",
+})
+.from('#development_card h4', {
+    opacity: 0, x: "-22%",
+})
+
+let Slide5 = gsap.timeline({ // Slide3---------------------
+    scrollTrigger: {
+        trigger: "#aboutus",
+        start: "20% 100%",
+        end: "100% 0%",
+    }
+});
+Slide5
+.from('#aboutus .linespan', {
+    opacity: 0, x: "-22%",
+})
+.from('.about_img', {
+    opacity: 0, x: "122%",
+})
+.from('.para', {
+    opacity: 0, x: "122%",
+})
+
+
+let Slide6 = gsap.timeline({ // Slide3---------------------
+    scrollTrigger: {
+        trigger: "#contact",
+        start: "20% 100%",
+        end: "100% 0%",
+      
+    }
+});
+Slide6
+.from('.contact-part .linespan', {
+    opacity: 0, x: "-22%",
+})
+.from('.contact-part h4', {
+    opacity: 0, x: "122%",
+})
+.from('.contact-part main', {
+    opacity: 0, x: "122%",
+})
+.from('input', {
+    stagger:0.5,
+    opacity: 0, x: "122%",
+})
+.from('textarea', {
+    opacity: 0, x: "-22%",
+})
+
+.from('.btnwrapper', {
+    
+    opacity: 0, x: "-22%",
+},0.5)
+
+
+
+
 }
 //---------------------/Slider ScrollTrigger---------------------
 
 /*-------------Navbar (max-width: 400px)------------- */
 function Navbar() {
-    gsap.from('#wrapper #Navbar', {
-        opacity: 0, x: "40%", duration: 2, ease: "sine.in",
-    })
-    var NavAni = gsap.timeline();
-    NavAni.from('#wrapper nav', {
-        opacity: 0, y: "13%", duration: 0.5, ease: "sine",
-    })
-        .reverse();
-    $("#wrapper #Navbar").click(function () {
-        $("#wrapper nav").toggleClass("DisplayNone");
-        NavAni.reversed(!NavAni.reversed());
-    });
+
+    console.log("mobile devices");
+    // gsap.from('#wrapper #Navbar', {
+    //     opacity: 0, x: "40%", duration: 2, ease: "sine.in",
+    // })
+    // var NavAni = gsap.timeline();
+    // NavAni.from('#wrapper nav', {
+    //     opacity: 0, y: "13%", duration: 0.5, ease: "sine",
+    // })
+    //     .reverse();
+    // $("#wrapper #Navbar").click(function () {
+    //     $("#wrapper nav").toggleClass("DisplayNone");
+    //     NavAni.reversed(!NavAni.reversed());
+    // });
 }
 /*-------------/Navbar (max-width: 400px)------------- */
 
 window.onload = () => {
     homeScrollTrigger()
     SliderScrollTrigger()
-    if (window.matchMedia("(max-width: 400px)").matches) {
+    if (window.matchMedia("(max-width: 700px)").matches) {
         Navbar()
     } else {
     }
@@ -302,9 +369,30 @@ var serviceicon=document.querySelector(".service_card_icon_wrapper");
 serviceicon.addEventListener("click",(e)=>{
 e.preventDefault();
 console.log("button working");
-servicediv.style.transform="scale(1)";
+servicediv.style.opacity="1";
+servicediv.style.zIndex="100";
 })
 
 
 
 
+
+const open = document.querySelector('.container');
+		const close = document.querySelector('.close');
+		var tl = gsap.timeline({ defaults: { duration: 1, ease: 'expo.inOut' } });
+		open.addEventListener('click', () => {
+			if (tl.reversed()) {
+				tl.play();
+			} else {
+				tl.to('nav', { right: 0 })
+					.to('nav', { height: '100vh' }, '-=.1')
+                    .to('nav .nav_img', { height: '90vh'  }, "-=.1")
+					.to('nav ul li a', { opacity: 1, pointerEvents: 'all', stagger: .2 }, '-=.8')
+					.to('.close', { opacity: 1, pointerEvents: 'all' }, "-=.8")
+					.to('nav h2', { opacity: 1 }, '-=1');
+			}
+		});
+
+		close.addEventListener('click', () => {
+			tl.reverse();
+		});
