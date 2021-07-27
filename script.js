@@ -384,7 +384,7 @@ open.addEventListener('click', () => {
     if (tl.reversed()) {
         tl.play();
     } else {
-        tl.to('nav', { right: 0 })
+        tl.to('nav', { transform:"scale(1)" })
             .to('nav', { height: '100vh' }, '-=.1')
             .to('nav .nav_img', { height: '90vh' }, "-=.1")
             .to('nav ul li a', { opacity: 1, pointerEvents: 'all', stagger: .2 }, '-=.8')
