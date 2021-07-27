@@ -1194,6 +1194,7 @@ margin: 4rem 0;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .linespan h4{
@@ -1634,7 +1635,7 @@ margin-bottom: 0.5rem;
     overflow-x: hidden;
   }
   .home{
-    padding: 0 1.5rem;
+    padding: 0 0.5rem;
   }
   .main{
    
@@ -1649,7 +1650,7 @@ margin-bottom: 0.5rem;
  margin-top: 2rem;
 }
 .service{
-    padding: 0 1.5rem;
+    padding: 0 0.5rem;
 }
 .linespan div{
  display: none;
@@ -1724,7 +1725,7 @@ transform: translateX(-1.65rem);
 
 
     #technology, #development_card,#aboutus,#contact{
-      padding: 0 1.5rem;
+      padding: 0 0.5rem;
     }
 
     .technology_tools div{
