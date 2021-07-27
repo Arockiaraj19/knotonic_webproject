@@ -715,12 +715,26 @@ input::placeholder {
 .linespan{
   display: flex;
   align-items: center;
+  
 }
 .linespan div{
   background-color: var(--bodyfont-color);
   width: 10rem;
   height: 2px;
   margin: 0 1rem 0 0;
+}
+
+.linespan1{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  
+  
+}
+.linespan1 div{
+  background-color: var(--bodyfont-color);
+  width: 12vw;
+  height: 2px;
 }
 #development{
   background: var(--another-secondary-color);
@@ -783,56 +797,7 @@ input::placeholder {
   width: 100%;
   height: auto;
 }
-.service_card{
-  position: relative;
-  width: 100%;
-height: auto;
-display: flex;
-align-items: center;
-padding: 4rem 0;
-}
-.service_card_image{
-  position: absolute;
-height: 20rem;
-width: 30%;
-z-index: 10;
-}
-.service_card_content_wrapper{
-position: relative;
-height: 13rem;
-width: 70%;
-left: 23%;
 
-}
-.service_card_content{
-  position: absolute;
-  top: 25%;
-  width: 100%;
-  height: 70%;
-  background-color: var(--primary-color);
-  border-bottom-right-radius:1rem ;
-  border-top-right-radius:1rem ;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.service_card_icon_wrapper{
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  height: 4rem;
-  width: 6rem;
-  background-color: var(--service-icon-wrapper-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-bottom-right-radius:1rem ;
-}
-
-.service_card_icon_wrapper i{
-  color: white;
-  font-size: 2rem;
-}
 
 
 
@@ -1027,7 +992,7 @@ width: 100%;
   width: 100%;
   font-size: 1.3vw;
   padding: 0 8vw;
-  line-height: 1.65;
+  line-height: 1rem;
   font-weight: 300;
   margin: 0;
   opacity: 1;
@@ -1041,7 +1006,7 @@ width: 100%;
 
 .content__right .content__main p::before {
   content: "\201C";
-  font-size: 270px;
+  font-size: 10rem;
   height: 82px;
   line-height: 0.78;
   line-height: 1;
@@ -1064,6 +1029,7 @@ width: 100%;
 } */
 [data-type="iceland"] .content__left {
   background-image: url("./assets/process1.png");
+  object-fit: contain;
  
 }
 .spinner--right [data-type="iceland"] .content__left {
@@ -1233,11 +1199,15 @@ margin: 4rem 0;
 .linespan h4{
   padding: 0 1rem;
 }
-
+.linespan1 h4{
+  padding: 0 1rem;
+  text-align: center;
+}
 .tools_card_image{
   width: 5rem;
   height: 5rem;
   object-fit: contain;
+  margin: 1rem;
 }
 
 
@@ -1379,6 +1349,7 @@ margin: 4rem 0;
 	width: 30px;
 	height: 4px;
 	background:var(--white-c);
+  border-radius: 1rem;
 }
 
 .bars::before,
@@ -1388,6 +1359,7 @@ margin: 4rem 0;
 	width: 30px;
 	height: 4px;
 	background:var(--white-c);
+  border-radius: 1rem;
 }
 
 .bars::before{
@@ -1490,4 +1462,323 @@ nav .close:hover div::after{
   h1{
     font-size: 25px;
   }
+}
+
+
+
+
+/* //service card design */
+
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height:20rem;
+  perspective: 1000px;
+  margin: 4rem 0 0 0;
+  transition: all 0.6s ease;
+}
+.flip-card_first {
+  background-color: transparent;
+  width: 100%;
+  height:20rem;
+  perspective: 1000px;
+  margin: 4rem 0 0 0;
+  transform: translate(-10rem,0);
+  transition: all 0.6s ease;
+}
+.flip-card-inner {
+  position: relative;
+ 
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+}
+
+/* .flip-card:hover .flip-card-inner {
+  transform: rotateX(180deg);
+} */
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  z-index: 100;
+
+}
+
+.flip-card-front {
+
+  color: black;
+overflow: hidden;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateX(180deg);
+
+}
+.flip-card-front section,.flip-card-back section{
+
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+ align-items: center;
+}
+
+.flip_front_part1{
+  background-color: #2980b9;
+  width: 35%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  transition: all 0.6s ease;
+}
+.flip_front_part1_first{
+  background-color: transparent;
+  width: 35%;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 2rem;
+  transition: all 0.6s ease;
+}
+.flip_front_part2{
+  background-color: green;
+  width: 65%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items:flex-start;
+  padding:0rem 2rem;
+  transition: all 0.6s ease;
+}
+.flip_front_part2_first{
+  background-color: green;
+  width: 65%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  padding:0rem 2rem;
+  transition: all 0.6s ease;
+}
+.flip_image{
+height: 100%;
+width:20rem;
+object-fit: cover;
+}
+.flip_image_first{
+  height: 100%;
+  width:20rem;
+  object-fit: cover;
+  transform: translate(10rem);
+  }
+.paragraph{  
+  width: 100%;
+font-weight: normal;
+font-size:1rem;
+letter-spacing: 0.1em;
+line-height: 1.7rem;
+text-align: left;
+color:var(--bodyfont-color);
+margin-bottom: 0.5rem;
+}
+.paragraph_first{
+  display: none;
+}
+.service_card_icon{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  align-items: center;
+}
+.service_card_icon_wrapper{
+
+  height: 4rem;
+  width: 6rem;
+  background-color:green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.service_card_icon_wrapper i{
+  color: white;
+  font-size: 2rem;
+ 
+}
+
+
+
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body{
+    overflow-x: hidden;
+  }
+  .home{
+    padding: 0 1.5rem;
+  }
+  .main{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.homeimage{
+  width: 100vw;
+  height: 90vh;
+ margin-top: 2rem;
+}
+.service{
+    padding: 0 1.5rem;
+}
+.linespan div{
+ display: none;
+}
+
+h2{
+line-height: 2.5rem;
+}
+h4{
+  padding: 1rem 0;
+}
+p{  
+  width: 100%;
+margin-bottom: 1rem;
+}
+.flip-card {
+ 
+  width: 100%;
+  height:20rem;
+  perspective: 1000px;
+  margin: 0 0 0 0;
+  transition: all 0.6s ease;
+}
+.flip-card_first {
+  background-color: transparent;
+  width: 100%;
+  height:20rem;
+  perspective: 1000px;
+  margin: 0 0 0 0;
+  transform: translate(0,0);
+  transition: all 0.6s ease;
+}
+.flip-card-front section,.flip-card-back section{
+ 
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content:space-between;
+ align-items: center;
+}
+
+.flip_front_part1_first{
+
+ justify-content: space-around;
+ }
+ .flip_front_part2_first{
+  
+  background-color: green;
+  width: 80vw;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  padding:0rem 0.5rem;
+  transition: all 0.6s ease;
+transform: translateX(-1.65rem);
+ }
+.flip_image{
+  height: 100%;
+  width:20rem;
+  object-fit: cover;
+  }
+  .flip_image_first{
+    height: 100%;
+    width:20rem;
+    object-fit: cover;
+    transform: translate(0rem);
+    }
+
+
+
+
+    #technology, #development_card,#aboutus,#contact{
+      padding: 0 1.5rem;
+    }
+
+    .technology_tools div{
+      margin: 0rem 0;
+      width: 100%;
+    }
+    .technology_tools div img{
+      width: 50vw;
+      object-fit: contain;
+    }
+    .about{
+    flex-direction: column;
+    padding-bottom: 2rem;
+  }
+  .about_img{
+    height: 100vh;
+    width: 100vw; 
+ 
+}
+.contact-part main{
+  width: 100%;
+}
+footer{
+  height: 28rem;
+}
+footer div{
+  flex-direction: column;
+ 
+}
+.carousel{
+  height: 50vh;
+}
+.d_para{
+  line-height: 1.1rem;
+}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }

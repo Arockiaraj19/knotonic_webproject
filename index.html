@@ -13,6 +13,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script defer src="3d_slider_script.js"></script>
+    <script defer src="turn.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
@@ -108,26 +109,173 @@
                 <h4>Activity We Offers To Enhance Your Business</h4>
 
                 <div class="service_container">
+<!-- part1 -->
+<div class="flip-card_first">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+     <section>
+        <div class="flip_front_part1_first">
+            <img src="./assets/service_image1.png" alt="servicecard image" class="flip_image_first">
 
-                    <!-- first card -->
-                    <div class="service_card">
-                        <img src="./assets/service_image1.png" alt="servicecard image" class="service_card_image">
-                        <div class="service_card_content_wrapper">
-                            <div class="service_card_content">
-                                <h4>
-                                    Mobile App Design &
-                                    Development
-                                </h4>
-                            </div>
-                            <div class="service_card_icon_wrapper">
-                                <i class="icon-chevron-up"></i>
-                            </div>
-                        </div>
+           </div>
+           <div class="flip_front_part2_first" >
+               <h4>Destop Application</h4>
+               <p class="paragraph_first" id="0">  perferendis provident voluptates adipisci quia reiciendis culpa ex velit nam veritatis minus incidunt et illum? Beatae, voluptatem! Quasi assumenda dolorem, voluptates quis accusamus quo animi. Eveniet iure asperiores, expedita accusamus, numquam recusandae soluta distinctio, praesentium dolorem pariatur delectus optio et?</p>
+            <div class="service_card_icon">
+                <div onclick="changeside(event,0)" class="service_card_icon_wrapper">
+                    <i class="icon-chevron-right"></i>
+                </div>
+            </div>
+           </div>
+     </section>
+      </div>
+      <div class="flip-card-back">
+        <section>
+           
+               <div class="flip_front_part2" >
+                   <h4>Destop Application</h4>
+                   <p class="paragraph"> hello everyone</p>
+                   <div class="service_card_icon">
+                    <div onclick="changebackside(event)" class="service_card_icon_wrapper">
+                        <i class="icon-chevron-right"></i>
                     </div>
+                </div>
+               </div>
+               <div class="flip_front_part1">
+                <img src="./assets/service_image1.png" alt="servicecard image" class="flip_image">
+
+               </div>
+         </section>
+      </div>
+    </div>
+  </div>
+
+                 <!-- part2 -->
+                 <div class="flip-card_first">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                     <section>
+                        <div class="flip_front_part1_first">
+                            <img src="./assets/service_image1.png" alt="servicecard image" class="flip_image_first">
+                
+                           </div>
+                           <div class="flip_front_part2_first" >
+                               <h4>Destop Application</h4>
+                               <p class="paragraph_first" id="1">  perferendis provident voluptates adipisci quia reiciendis culpa ex velit nam veritatis minus incidunt et illum? Beatae, voluptatem! Quasi assumenda dolorem, voluptates quis accusamus quo animi. Eveniet iure asperiores, expedita accusamus, numquam recusandae soluta distinctio, praesentium dolorem pariatur delectus optio et?</p>
+                            <div class="service_card_icon">
+                                <div onclick="changeside(event,1)" class="service_card_icon_wrapper">
+                                    <i class="icon-chevron-right"></i>
+                                </div>
+                            </div>
+                           </div>
+                     </section>
+                      </div>
+                      <div class="flip-card-back">
+                        <section>
+                           
+                               <div class="flip_front_part2" >
+                                   <h4>Destop Application</h4>
+                                   <p class="paragraph"> hello everyone</p>
+                                   <div class="service_card_icon">
+                                    <div onclick="changebackside(event)" class="service_card_icon_wrapper">
+                                        <i class="icon-chevron-right"></i>
+                                    </div>
+                                </div>
+                               </div>
+                               <div class="flip_front_part1">
+                                <img src="./assets/service_image1.png" alt="servicecard image" class="flip_image">
+                
+                               </div>
+                         </section>
+                      </div>
+                    </div>
+                  </div>
 
 
+ <!-- part3 -->
+ <div class="flip-card_first">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+     <section>
+        <div class="flip_front_part1_first">
+            <img src="./assets/service_image1.png" alt="servicecard image" class="flip_image_first">
 
-                    <!-- second card -->
+           </div>
+           <div class="flip_front_part2_first" >
+               <h4>Destop Application</h4>
+               <p class="paragraph_first" id="2">  perferendis provident voluptates adipisci quia reiciendis culpa ex velit nam veritatis minus incidunt et illum? Beatae, voluptatem! Quasi assumenda dolorem, voluptates quis accusamus quo animi. Eveniet iure asperiores, expedita accusamus, numquam recusandae soluta distinctio, praesentium dolorem pariatur delectus optio et?</p>
+            <div class="service_card_icon">
+                <div onclick="changeside(event,2)" class="service_card_icon_wrapper">
+                    <i class="icon-chevron-right"></i>
+                </div>
+            </div>
+           </div>
+     </section>
+      </div>
+      <div class="flip-card-back">
+        <section>
+           
+               <div class="flip_front_part2" >
+                   <h4>Destop Application</h4>
+                   <p class="paragraph">hello everyone</p>
+                   <div class="service_card_icon">
+                    <div onclick="changebackside(event)" class="service_card_icon_wrapper">
+                        <i class="icon-chevron-right"></i>
+                    </div>
+                </div>
+               </div>
+               <div class="flip_front_part1">
+                <img src="./assets/service_image1.png" alt="servicecard image" class="flip_image">
+
+               </div>
+         </section>
+      </div>
+    </div>
+  </div>
+
+
+   <!-- part4 -->
+   <div class="flip-card_first">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+     <section>
+        <div class="flip_front_part1_first">
+            <img src="./assets/service_image1.png" alt="servicecard image" class="flip_image_first">
+
+           </div>
+           <div class="flip_front_part2_first" >
+               <h4>Destop Application</h4>
+               <p class="paragraph_first" id="3">  perferendis provident voluptates adipisci quia reiciendis culpa ex velit nam veritatis minus incidunt et illum? Beatae, voluptatem! Quasi assumenda dolorem, voluptates quis accusamus quo animi. Eveniet iure asperiores, expedita accusamus, numquam recusandae soluta distinctio, praesentium dolorem pariatur delectus optio et?</p>
+            <div class="service_card_icon">
+                <div onclick="changeside(event,3)" class="service_card_icon_wrapper">
+                    <i class="icon-chevron-right"></i>
+                </div>
+            </div>
+           </div>
+     </section>
+      </div>
+      <div class="flip-card-back">
+        <section>
+           
+               <div class="flip_front_part2" >
+                   <h4>Destop Application</h4>
+                   <p class="paragraph">hello everyone</p>
+                   <div class="service_card_icon">
+                    <div onclick="changebackside(event)" class="service_card_icon_wrapper">
+                        <i class="icon-chevron-right"></i>
+                    </div>
+                </div>
+               </div>
+               <div class="flip_front_part1">
+                <img src="./assets/service_image1.png" alt="servicecard image" class="flip_image">
+
+               </div>
+         </section>
+      </div>
+    </div>
+  </div>
+
+    <!-- second card
                     <div class="service_card">
                         <img src="./assets/service_image2.png" alt="servicecard image" class="service_card_image">
                         <div class="service_card_content_wrapper">
@@ -141,13 +289,13 @@
                                 <i class="icon-chevron-up"></i>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
 
 
 
                     <!-- first card -->
-                    <div class="service_card">
+                    <!-- <div class="service_card">
                         <img src="./assets/service_image3.png" alt="servicecard image" class="service_card_image">
                         <div class="service_card_content_wrapper">
                             <div class="service_card_content">
@@ -160,12 +308,12 @@
                                 <i class="icon-chevron-up"></i>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
 
 
                     <!-- first card -->
-                    <div class="service_card">
+                    <!-- <div class="service_card">
                         <img src="./assets/service_image4.png" alt="servicecard image" class="service_card_image">
                         <div class="service_card_content_wrapper">
                             <div class="service_card_content">
@@ -177,7 +325,7 @@
                                 <i class="icon-chevron-up"></i>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
 
                 </div>
@@ -249,7 +397,7 @@
 
                 <!-- first -->
                 <div>
-                    <div class="linespan">
+                    <div class="linespan1">
                         <div></div>
                         <h4>Native IOS</h4>
                         <div></div>
@@ -262,7 +410,7 @@
 
 
                 <div>
-                    <div class="linespan">
+                    <div class="linespan1">
                         <div></div>
                         <h4>Native Android</h4>
                         <div></div>
@@ -274,7 +422,7 @@
                 </div>
                 <!-- second -->
                 <div>
-                    <div class="linespan">
+                    <div class="linespan1">
                         <div></div>
                         <h4>Web</h4>
                         <div></div>
@@ -290,7 +438,7 @@
                 <!-- fourth -->
 
                 <div>
-                    <div class="linespan">
+                    <div class="linespan1">
                         <div></div>
                         <h4>Cloud</h4>
                         <div></div>
@@ -306,7 +454,7 @@
                 <!-- fifth -->
 
                 <div>
-                    <div class="linespan">
+                    <div class="linespan1">
                         <div></div>
                         <h4>Server Technologies</h4>
                         <div></div>
@@ -320,7 +468,7 @@
 
                 <!-- sixth -->
                 <div>
-                    <div class="linespan">
+                    <div class="linespan1">
                         <div></div>
                         <h4>Design</h4>
                         <div></div>
@@ -337,7 +485,7 @@
                 <!-- seven -->
 
                 <div>
-                    <div class="linespan">
+                    <div class="linespan1">
                         <div></div>
                         <h4>Database</h4>
                         <div></div>
@@ -379,7 +527,7 @@
                                 </div>
                                 <div class="content__right">
                                     <div class="content__main">
-                                        <p>We analyze your vision and find out everything about your goals, product,
+                                        <p class="d_para">We analyze your vision and find out everything about your goals, product,
                                             industry, audience, and competitors. Then we translate our learnings into
                                             product specification, wireframes, and other project documents. </p>
 
@@ -395,7 +543,7 @@
                                 </div>
                                 <div class="content__right">
                                     <div class="content__main">
-                                        <p>We thoroughly test the performance of every project we take on to ensure its
+                                        <p class="d_para">We thoroughly test the performance of every project we take on to ensure its
                                             responsiveness, user-friendliness, and bulletproof security.</p>
 
                                     </div>
@@ -410,7 +558,7 @@
                                 </div>
                                 <div class="content__right">
                                     <div class="content__main">
-                                        <p>You can count on our post-release support because we aim for long-term
+                                        <p class="d_para">You can count on our post-release support because we aim for long-term
                                             success. We are constantly tracking the market changes and continue
                                             improving our apps accordingly.</p>
 
@@ -426,7 +574,7 @@
                                 </div>
                                 <div class="content__right">
                                     <div class="content__main">
-                                        <p>We follow agile development methodologies and master the latest technologies
+                                        <p class="d_para">We follow agile development methodologies and master the latest technologies
                                             for iOS and Android to provide an efficient and effective collaboration.</p>
                                     </div>
 
@@ -443,7 +591,7 @@
                                 </div>
                                 <div class="content__right">
                                     <div class="content__main">
-                                        <p>Based on the app strategy we created during the research phase, we prepare
+                                        <p class="d_para">Based on the app strategy we created during the research phase, we prepare
                                             the interactive prototype that responds to user interactions. We then design
                                             the user interface of your product.</p>
                                     </div>
