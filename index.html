@@ -14,6 +14,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script defer src="3d_slider_script.js"></script>
     <script defer src="turn.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
       
@@ -682,10 +683,11 @@
                     personally reply to you as soon as possible
                 </p>
                 <main>
-                    <form>
+                    <form >
                         <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                             placeholder="Email-id" required>
-                        <input type="text" name="subject" placeholder="Subject" required>
+                        <input type="text" name="subject" placeholder="Name" required>
+                        <input type="text" name="subject" placeholder="Mobile Number(Optional)" pattern='^[0-9]+$' title="Please enter valid phone number" >
                         <textarea placeholder="Description" rows="4" cols="50" required></textarea>
                         <div class="btnwrapper">
                             <button id="submit" class="btn btnstyle" type="submit">Submit</button>

@@ -465,9 +465,52 @@ document.addEventListener('DOMContentLoaded', () =>
 document.getElementById("submit").addEventListener("click",(e)=>{
     e.preventDefault();
     const index=0;
+    let oForm = document.forms[index];
+    if(!oForm.checkValidity()){
+        oForm.reportValidity();
+        console.log("not validate");
+    return false;
+    }
+  
+  
+document.getElementById("submit").style.display="none";
+const formData = new FormData();
+formData.append(
+    'name',
+    oForm.elements[1].value
+)
+formData.append(
+    'email',
+    oForm.elements[0].value
+)
+formData.append(
+    'Mobile Number',
+    oForm.elements[2].value
+)
+formData.append(
+    'description',
+    oForm.elements[3].value
+)
 
-   let oForm = document.forms[index];
-   console.log(oForm);
-console.log(oForm.elements[0].value);
-window.open(`mailto:${oForm.elements[0].value}?subject=${oForm.elements[1].value}&body=${oForm.elements[2].value}`);
+fetch("https://getform.io/f/7460dac3-4afa-4179-be32-782f22d8c8e1", {
+        method: "POST",
+        body: formData,
+})
+.then(response => {
+    if(response.status==200){
+        oForm.elements[0].value="";
+        oForm.elements[1].value="";
+        oForm.elements[2].value="";
+        oForm.elements[3].value="";
+        document.getElementById("submit").style.display="block";
+        swal({
+            title: "Thanks for cosulting ours",
+            text: "Nantri",
+            icon: "success",
+            button: "Ok",
+          });
+    }
+})
+.catch(error => console.log(error))
+return true;
 })
