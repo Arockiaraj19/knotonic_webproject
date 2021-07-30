@@ -403,12 +403,11 @@ var contentinit=["don mobile","don lucifer","don web","don cloud computing"];
 const changeside = (e,i) => {
 
     console.log(e);
-    console.log( e.target.parentElement.parentElement.parentElement.previousElementSibling.firstElementChild.className);
 
     if(e.target.parentElement.parentElement.previousElementSibling.className=="paragraph_first"){
         changeposition[i]=0;
         document.getElementById(i.toString()).innerHTML=contentinit[i];
-        e.target.parentElement.parentElement.parentElement.previousElementSibling.firstElementChild.className="flip_image";
+      
         e.target.parentElement.parentElement.parentElement.previousElementSibling.className="flip_front_part1";
        e.target.parentElement.parentElement.parentElement.className="flip_front_part2";
        e.target.parentElement.parentElement.previousElementSibling.className="paragraph";
@@ -426,7 +425,6 @@ const changeside = (e,i) => {
         document.getElementById(i.toString()).innerHTML=content[i];
        },2000);
        }else{
-        e.target.parentElement.parentElement.parentElement.previousElementSibling.firstElementChild.className="flip_image_first";
         e.target.parentElement.parentElement.parentElement.previousElementSibling.className="flip_front_part1_first";
        e.target.parentElement.parentElement.parentElement.className="flip_front_part2_first";
        e.target.parentElement.parentElement.previousElementSibling.className="paragraph_first";

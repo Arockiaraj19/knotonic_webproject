@@ -1030,19 +1030,22 @@ width: 100%;
 } */
 [data-type="iceland"] .content__left {
 
+  background-repeat: no-repeat;
   background-image: url("./assets/process1.png");
-  object-fit: contain;
-  background-position: left;
  
+
+
  
 }
 .spinner--right [data-type="iceland"] .content__left {
   background-image: none;
 }
 [data-type="china"] .content__left {
+  
   background-image: url("./assets/process2.png");
-  object-fit: contain;
-  background-position: left;
+ 
+  background-repeat: no-repeat;
+ 
 
 }
 .spinner--right [data-type="china"] .content__left {
@@ -1050,25 +1053,27 @@ width: 100%;
 }
 [data-type="usa"] .content__left {
   background-image: url("./assets/process3.png");
-  object-fit:contain;
-  background-position: left;
-  
+
+  background-repeat: no-repeat;
+ 
 }
 .spinner--right [data-type="usa"] .content__left {
   background-image: none;
 }
 [data-type="peru"] .content__left {
   background-image: url("./assets/process4.png");
-  object-fit: contain;
-  background-position: left;
+
+  background-repeat: no-repeat;
+  
 }
 .spinner--right [data-type="peru"] .content__left {
   background-image: none;
 }
 [data-type="launch"] .content__left {
   background-image: url("./assets/process5.png");
-  object-fit: contain;
-  background-position: left;
+
+  background-repeat: no-repeat;
+ 
 }
 .spinner--right [data-type="launch"] .content__left {
   background-image: none;
@@ -1490,12 +1495,12 @@ nav .close:hover div::after{
 .flip-card_first {
   background-color: transparent;
   width: 100%;
-  height:20rem;
+  height:15rem;
   perspective: 1000px;
   margin: 4rem 0 0 0;
-  transform: translate(-10rem,0);
   transition: all 0.6s ease;
 }
+
 .flip-card-inner {
   position: relative;
  
@@ -1529,7 +1534,7 @@ overflow: hidden;
 }
 
 .flip-card-back {
-  background-color: #2980b9;
+  background-color: transparent;
   color: white;
   transform: rotateX(180deg);
 
@@ -1540,11 +1545,14 @@ overflow: hidden;
   height: 100%;
   display: flex;
   justify-content: center;
- align-items: center;
+ align-items: flex-end;
 }
 
 .flip_front_part1{
-  background-color: #2980b9;
+  border: 1px solid var(--primary-color);
+  background-image: url("./assets/process4.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 35%;
   height: 100%;
   display: flex;
@@ -1554,17 +1562,20 @@ overflow: hidden;
   transition: all 0.6s ease;
 }
 .flip_front_part1_first{
-  background-color: transparent;
-  width: 35%;
+  background-color:transparent;
+  border: 1px solid var(--primary-color);
+  width: 25%;
   height: 100%;
   display: flex;
   justify-content: start;
   align-items: center;
-  padding: 2rem;
   transition: all 0.6s ease;
+  background-image: url("./assets/process4.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .flip_front_part2{
-  background-color: green;
+  background-color: var(--primary-color);
   width: 65%;
   height: 100%;
   display: flex;
@@ -1575,27 +1586,18 @@ overflow: hidden;
   transition: all 0.6s ease;
 }
 .flip_front_part2_first{
-  background-color: green;
-  width: 65%;
-  height: 60%;
+  
+  background-color: var(--primary-color);
+  width: 75%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items:center;
+  justify-content: start;
+  align-items:flex-start;
   padding:0rem 2rem;
   transition: all 0.6s ease;
 }
-.flip_image{
-height: 100%;
-width:20rem;
-object-fit: cover;
-}
-.flip_image_first{
-  height: 100%;
-  width:20rem;
-  object-fit: cover;
-  transform: translate(10rem);
-  }
+
 .paragraph{  
   width: 100%;
 font-weight: normal;
@@ -1616,10 +1618,11 @@ margin-bottom: 0.5rem;
   align-items: center;
 }
 .service_card_icon_wrapper{
-
+display: block;
+cursor: pointer;
   height: 4rem;
   width: 6rem;
-  background-color:green;
+  background-color:var(--primary-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1675,60 +1678,7 @@ p{
   width: 100%;
 margin-bottom: 1rem;
 }
-.flip-card {
- 
-  width: 100%;
-  height:20rem;
-  perspective: 1000px;
-  margin: 0 0 0 0;
-  transition: all 0.6s ease;
-}
-.flip-card_first {
-  background-color: transparent;
-  width: 100%;
-  height:20rem;
-  perspective: 1000px;
-  margin: 0 0 0 0;
-  transform: translate(0,0);
-  transition: all 0.6s ease;
-}
-.flip-card-front section,.flip-card-back section{
- 
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content:space-between;
- align-items: center;
-}
 
-.flip_front_part1_first{
-
- justify-content: space-around;
- }
- .flip_front_part2_first{
-  
-  background-color: green;
-  width: 80vw;
-  height: 60%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items:center;
-  padding:0rem 0.5rem;
-  transition: all 0.6s ease;
-transform: translateX(-1.65rem);
- }
-.flip_image{
-  height: 100%;
-  width:20rem;
-  object-fit: cover;
-  }
-  .flip_image_first{
-    height: 100%;
-    width:20rem;
-    object-fit: cover;
-    transform: translate(0rem);
-    }
 
 
 
@@ -1774,6 +1724,83 @@ footer div{
   font-size: 1.5em;
   line-height: 1rem;
 }
+.flip-card {
+
+  height:12rem;
+  
+}
+.flip-card_first {
+ 
+  height:7rem;
+}
+.service_card_icon_wrapper{
+    height: 3rem;
+    width: 3rem;
+  
+  }
+  .flip_front_part2_first h4{
+    font-size: 0.8rem;
+  }
+  .flip_front_part2 h4{
+    font-size: 0.8rem;
+  }
+  .flip_front_part2_first p{
+    font-size: 0.5rem;
+  }
+  .flip_front_part2 p{
+    font-size: 0.5rem;
+  }
+  [data-type="iceland"] .content__left {
+
+    background-repeat: no-repeat;
+    background-image: none;
+   
+  
+  
+   
+  }
+  .spinner--right [data-type="iceland"] .content__left {
+    background-image: none;
+  }
+  [data-type="china"] .content__left {
+    
+    background-image: none;
+   
+    background-repeat: no-repeat;
+   
+  
+  }
+  .spinner--right [data-type="china"] .content__left {
+    background-image: none;
+  }
+  [data-type="usa"] .content__left {
+    background-image: none;
+  
+    background-repeat: no-repeat;
+   
+  }
+  .spinner--right [data-type="usa"] .content__left {
+    background-image: none;
+  }
+  [data-type="peru"] .content__left {
+    background-image: none;
+  
+    background-repeat: no-repeat;
+    
+  }
+  .spinner--right [data-type="peru"] .content__left {
+    background-image: none;
+  }
+  [data-type="launch"] .content__left {
+    background-image: none;
+  
+    background-repeat: no-repeat;
+   
+  }
+  .spinner--right [data-type="launch"] .content__left {
+    background-image: none;
+  }
+  
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
