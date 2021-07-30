@@ -818,6 +818,7 @@ width: 100%;
   margin: 0 auto;
 }
 .carousel__control {
+  display: none;
   position: absolute;
   height: 160px;
   width: 40px;
@@ -973,13 +974,13 @@ width: 100%;
   letter-spacing: 0.15em;
   line-height: 0.6;
 }
-.content__left span {
+/* .content__left span {
   font-size: 1vw;
   font-weight: 300;
   letter-spacing: 0.2em;
   opacity: 0.9;
 
-}
+} */
 .content__right {
   display: flex;
   align-items: center;
@@ -998,10 +999,10 @@ width: 100%;
   opacity: 1;
 }
 .content__right .content__main p:last-child {
-  width: 90%;
+  width: 100%;
   text-transform: uppercase;
   letter-spacing: 0.15em;
-  font-size: 0.85em;
+  font-size: 1em;
 }
 
 .content__right .content__main p::before {
@@ -1011,7 +1012,7 @@ width: 100%;
   line-height: 0.78;
   line-height: 1;
   position: absolute;
-  top: -48px;
+  top: -55px;
   left: 0;
   z-index: 1;
   font-family: sans-serif, serif;
@@ -1028,8 +1029,11 @@ width: 100%;
   right: 30px;
 } */
 [data-type="iceland"] .content__left {
+
   background-image: url("./assets/process1.png");
-  object-fit: cover;
+  object-fit: contain;
+  background-position: left;
+ 
  
 }
 .spinner--right [data-type="iceland"] .content__left {
@@ -1037,14 +1041,17 @@ width: 100%;
 }
 [data-type="china"] .content__left {
   background-image: url("./assets/process2.png");
-  object-fit: cover;
+  object-fit: contain;
+  background-position: left;
+
 }
 .spinner--right [data-type="china"] .content__left {
   background-image: none;
 }
 [data-type="usa"] .content__left {
   background-image: url("./assets/process3.png");
-  object-fit: cover;
+  object-fit:contain;
+  background-position: left;
   
 }
 .spinner--right [data-type="usa"] .content__left {
@@ -1052,14 +1059,16 @@ width: 100%;
 }
 [data-type="peru"] .content__left {
   background-image: url("./assets/process4.png");
-  object-fit: cover;
+  object-fit: contain;
+  background-position: left;
 }
 .spinner--right [data-type="peru"] .content__left {
   background-image: none;
 }
 [data-type="launch"] .content__left {
   background-image: url("./assets/process5.png");
-  object-fit: cover;
+  object-fit: contain;
+  background-position: left;
 }
 .spinner--right [data-type="launch"] .content__left {
   background-image: none;
@@ -1646,8 +1655,8 @@ margin-bottom: 0.5rem;
 }
 .homeimage{
   width: 100vw;
-  height: 90vh;
- margin-top: 2rem;
+  height: 55vh;
+
 }
 .service{
     padding: 0 0.5rem;
@@ -1755,11 +1764,15 @@ footer div{
   flex-direction: column;
  
 }
-/* .carousel{
-  height: 50vh;
-} */
-.d_para{
-  line-height: 1.1rem;
+.carousel{
+  height: 40vh;
+}
+.content__right .content__main p:last-child {
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 1.5em;
+  line-height: 1rem;
 }
 }
 
