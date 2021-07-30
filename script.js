@@ -462,3 +462,12 @@ document.addEventListener('DOMContentLoaded', () =>
 
 
 
+document.getElementById("submit").addEventListener("click",(e)=>{
+    e.preventDefault();
+    const index=0;
+
+   let oForm = document.forms[index];
+   console.log(oForm);
+console.log(oForm.elements[0].value);
+window.open(`mailto:${oForm.elements[0].value}?subject=${oForm.elements[1].value}&body=${oForm.elements[2].value}`);
+})
