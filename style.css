@@ -1749,16 +1749,23 @@ footer div{
   }
   .flip_front_part2_first h4{
     font-size: 1rem;
+    line-height: 0.7rem;
   }
   .flip_front_part2 h4{
     font-size: 1rem;
+    line-height: 0.7rem;
   }
   .flip_front_part2_first p{
     font-size: 0.7rem;
+    line-height: 1rem;
   }
   .flip_front_part2 p{
     font-size: 0.7rem;
+    line-height: 1rem;
   }
+  .flip_front_part2,.flip_front_part2_first{
+    padding: 0 0.5rem;
+      }
   [data-type="iceland"] .content__left {
 
     background-repeat: no-repeat;
@@ -1809,6 +1816,7 @@ footer div{
   .spinner--right [data-type="launch"] .content__left {
     background-image: none;
   }
+
   
 }
 

@@ -145,7 +145,7 @@ function SliderScrollTrigger() {
 
     let Slide1 = gsap.timeline({ // Slide1---------------------
         scrollTrigger: {
-            trigger: ".service",
+            trigger: "#service",
             start: "20% 100%",
             end: "100% 0%",
 
@@ -159,9 +159,9 @@ function SliderScrollTrigger() {
         .from('.service div h4', {
             opacity: 0, x: "-22%",
         })
-        .from('.service_card', {
-            stagger: 0.5,
-            opacity: 0, x: "-22%",
+        .from('.flip-card_first', {
+            stagger: 1,
+            opacity: 0, y: "-60%",
         })
 
     let Slide2 = gsap.timeline({ // Slide2---------------------
