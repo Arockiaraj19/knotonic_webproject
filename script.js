@@ -436,7 +436,6 @@ const changeside = (e, i) => {
 }
 const changebackside = (e) => {
     console.log(e.target.parentElement.parentElement.previousElementSibling.className);
-
     e.target.offsetParent.offsetParent.style.transform = "rotateX(0deg)";
 
 }
