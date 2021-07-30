@@ -384,7 +384,7 @@ open.addEventListener('click', () => {
     if (tl.reversed()) {
         tl.play();
     } else {
-        tl.to('nav', { transform:"scale(1)" })
+        tl.to('nav', { transform: "scale(1)" })
             .to('nav', { height: '100vh' }, '-=.1')
             .to('nav .nav_img', { height: '90vh' }, "-=.1")
             .to('nav ul li a', { opacity: 1, pointerEvents: 'all', stagger: .2 }, '-=.8')
@@ -397,53 +397,67 @@ close.addEventListener('click', () => {
     tl.reverse();
 });
 
-var changeposition=[undefined,undefined,undefined,undefined];
-var content=["hello mobile","hell lucifer","hello web","hello cloud computing"];
-var contentinit=["don mobile","don lucifer","don web","don cloud computing"];
-const changeside = (e,i) => {
+var changeposition = [undefined, undefined, undefined, undefined];
+var content = ["hello mobile", "hell lucifer", "hello web", "hello cloud computing"];
+var contentinit = ["don mobile", "don lucifer", "don web", "don cloud computing"];
+const changeside = (e, i) => {
 
     console.log(e);
 
-    if(e.target.parentElement.parentElement.previousElementSibling.className=="paragraph_first"){
-        changeposition[i]=0;
-        document.getElementById(i.toString()).innerHTML=contentinit[i];
-      
-        e.target.parentElement.parentElement.parentElement.previousElementSibling.className="flip_front_part1";
-       e.target.parentElement.parentElement.parentElement.className="flip_front_part2";
-       e.target.parentElement.parentElement.previousElementSibling.className="paragraph";
-       e.target.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.className="flip-card";
-    }else{
-       console.log(changeposition[i]);
-       if(changeposition[i]==0){
-        console.log(e.target.parentElement.parentElement.previousElementSibling.className);
-       
-        e.target.offsetParent.offsetParent.style.transform = "rotateX(180deg)";
-        console.log(e.target.parentElement.parentElement.previousElementSibling.className);
-   
-        changeposition[i]=1;
-       setTimeout(()=>{
-        document.getElementById(i.toString()).innerHTML=content[i];
-       },2000);
-       }else{
-        e.target.parentElement.parentElement.parentElement.previousElementSibling.className="flip_front_part1_first";
-       e.target.parentElement.parentElement.parentElement.className="flip_front_part2_first";
-       e.target.parentElement.parentElement.previousElementSibling.className="paragraph_first";
-       e.target.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.className="flip-card_first";  
-       changeposition[i]=undefined;
-       }
+    if (e.target.parentElement.parentElement.previousElementSibling.className == "paragraph_first") {
+        changeposition[i] = 0;
+        document.getElementById(i.toString()).innerHTML = contentinit[i];
+
+        e.target.parentElement.parentElement.parentElement.previousElementSibling.className = "flip_front_part1";
+        e.target.parentElement.parentElement.parentElement.className = "flip_front_part2";
+        e.target.parentElement.parentElement.previousElementSibling.className = "paragraph";
+        e.target.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.className = "flip-card";
+    } else {
+        console.log(changeposition[i]);
+        if (changeposition[i] == 0) {
+            console.log(e.target.parentElement.parentElement.previousElementSibling.className);
+
+            e.target.offsetParent.offsetParent.style.transform = "rotateX(180deg)";
+            console.log(e.target.parentElement.parentElement.previousElementSibling.className);
+
+            changeposition[i] = 1;
+            setTimeout(() => {
+                document.getElementById(i.toString()).innerHTML = content[i];
+            }, 2000);
+        } else {
+            e.target.parentElement.parentElement.parentElement.previousElementSibling.className = "flip_front_part1_first";
+            e.target.parentElement.parentElement.parentElement.className = "flip_front_part2_first";
+            e.target.parentElement.parentElement.previousElementSibling.className = "paragraph_first";
+            e.target.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.className = "flip-card_first";
+            changeposition[i] = undefined;
+        }
     }
- 
+
 }
 const changebackside = (e) => {
     console.log(e.target.parentElement.parentElement.previousElementSibling.className);
-   
+
     e.target.offsetParent.offsetParent.style.transform = "rotateX(0deg)";
-   
+
 }
 
+const wait = (delay = 0) =>
+  new Promise(resolve => setTimeout(resolve, delay));
 
+const setVisible = (elementOrSelector, visible) => 
+  (typeof elementOrSelector === 'string'
+    ? document.querySelector(elementOrSelector)
+    : elementOrSelector
+  ).style.display = visible ? 'block' : 'none';
 
+setVisible('.mainwrapper', false);
+setVisible('.wrapper', true);
 
+document.addEventListener('DOMContentLoaded', () =>
+  wait(1000).then(() => {
+    setVisible('.mainwrapper', true);
+    setVisible('.wrapper', false);
+  }));
 
 
 
