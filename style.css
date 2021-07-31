@@ -1813,6 +1813,12 @@ footer{
 footer div,footer section,footer ul{
   margin: 1rem 0;
 }
+footer section h1{
+  color: white;
+  line-height: 1rem;
+  padding: 0 0 0.5rem 0;
+      }
+  
 .carousel{
   height: 40vh;
 }
