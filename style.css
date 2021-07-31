@@ -1816,7 +1816,10 @@ footer div{
   .spinner--right [data-type="launch"] .content__left {
     background-image: none;
   }
-
+  #threecontainer {
+    height: 50vh;
+   
+  }
   
 }
 
