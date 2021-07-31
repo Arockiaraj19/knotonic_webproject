@@ -116,15 +116,7 @@ function homeScrollTrigger() {
         .from('.logo', {
             opacity: 0, x: "-31%", duration: 2, ease: "sine.in",
         }, 0)
-        .from('.header', {
-            opacity: 0, x: "40%", duration: 2, ease: "sine.in",
-        }, 0)
-        .from('.header ul', {
-            opacity: 0, x: "70%", duration: 2, ease: "sine.inOut",
-        }, 0.2)
-        .from('.header ul li', {
-            opacity: 0, x: "-22%", duration: 2, stagger: 0.4, ease: "sine.inOut",
-        }, 0.4)
+      
 
         .from('.myhomeslide main', {
             opacity: 0, duration: 1.5, stagger: 0.4, ease: "sine",
@@ -159,10 +151,21 @@ function SliderScrollTrigger() {
         .from('.service div h4', {
             opacity: 0, x: "-22%",
         })
-        .from('.flip-card_first', {
-            stagger: 1,
-            opacity: 0, y: "-60%",
+       
+
+
+        let Slide10 = gsap.timeline({ // Slide1---------------------
+            scrollTrigger: {
+                trigger: "#service_container",
+                start: "20% 100%",
+                end: "100% 0%",
+            }
         })
+        Slide10
+            .from('.flip-card_first', {
+                stagger: 1,
+                opacity: 0, y: "-100%",
+            })
 
     let Slide2 = gsap.timeline({ // Slide2---------------------
         scrollTrigger: {
@@ -396,6 +399,21 @@ open.addEventListener('click', () => {
 close.addEventListener('click', () => {
     tl.reverse();
 });
+// scroll funtion part
+
+const scrolltocontainer=(data)=>{
+    const element = document.getElementById(data);
+    console.log(element);
+    console.log(element.offsetTop);
+   
+if (element) {
+    window.scroll({
+        top: element.offsetTop,
+        behavior: 'smooth',
+    }) 
+}
+tl.reverse();
+}
 
 var changeposition = [undefined, undefined, undefined, undefined];
 var content = ["hello mobile", "hell lucifer", "hello web", "hello cloud computing"];
@@ -503,9 +521,9 @@ let istrue=false;
       speed: 'medium',
       scrub: 1,
       onUpdate: (self) => {
-          istrue=!istrue;
-          console.log("enna self ithu");
-       console.log(self);
+    //       istrue=!istrue;
+    //       console.log("enna self ithu");
+    //    console.log(self);
       }
     })
     

@@ -8,7 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-   
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.11/lottie.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"></script>
@@ -18,8 +18,8 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-       
-        <script defer src="script.js"></script>
+
+    <script defer src="script.js"></script>
 </head>
 
 <body>
@@ -41,12 +41,12 @@
             <div></div>
         </div>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Development & Creatives</a></li>
-            <li><a href="#">Technology</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="javascript:" onclick="scrolltocontainer('home')">Home</a></li>
+            <li><a href="javascript:" onclick="scrolltocontainer('service_container')">Services</a></li>
+            <li><a href="javascript:" onclick="scrolltocontainer('development_card')">Development & Creatives</a></li>
+            <li><a href="javascript:" onclick="scrolltocontainer('technology')">Technology</a></li>
+            <li><a href="javascript:" onclick="scrolltocontainer('aboutus')">About Us</a></li>
+            <li><a href="javascript:" onclick="scrolltocontainer('contact')">Contact Us</a></li>
         </ul>
     </nav>
     <a href="javascript:" class="return-to-top"><i class="icon-chevron-up"></i></a>
@@ -116,7 +116,7 @@
 
 
         <!-- 3d animation part -->
-        <div id="threecontainer"></div>
+
         <!-- second part -->
 
 
@@ -132,7 +132,9 @@
 
                 <h4>Activity We Offers To Enhance Your Business</h4>
 
-                <div class="service_container">
+                <div id="threecontainer"></div>
+
+                <div class="service_container" id="service_container">
 
 
                     <!-- part1 -->
@@ -387,6 +389,132 @@
 
         </div>
 
+
+
+
+
+
+        <!-- third part    -->
+
+        <div id="development">
+            <div id="development_card">
+                <div class="linespan">
+                    <div></div>
+                    <h2>DEVELOPMENT & CREATIVES</h2>
+                </div>
+                <h4>Our Process For Developing
+                    Web &Mobile Applications</h4>
+            </div>
+
+            <!-- 3d carosal -->
+            <div class="carousel">
+                <div class="carousel__control">
+                </div>
+                <div class="carousel__stage">
+                    <div class="spinner spinner--left">
+                        <div class="spinner__face js-active" data-bg="#27323c">
+                            <div class="content" data-type="iceland">
+                                <div class="content__left">
+                                    <h1>Research & Planning</h1>
+                                </div>
+                                <div class="content__right">
+                                    <div class="content__main">
+                                        <p class="d_para">We analyze your vision and find out everything about your
+                                            goals, product,
+                                            industry, audience, and competitors. Then we translate our learnings into
+                                            product specification, wireframes, and other project documents. </p>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="spinner__face" data-bg="#19304a">
+                            <div class="content" data-type="china">
+                                <div class="content__left">
+                                    <h1>Design</h1>
+                                </div>
+                                <div class="content__right">
+                                    <div class="content__main">
+                                        <p class="d_para">We thoroughly test the performance of every project we take on
+                                            to ensure its
+                                            responsiveness, user-friendliness, and bulletproof security.</p>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="spinner__face" data-bg="#2b2533">
+                            <div class="content" data-type="usa">
+                                <div class="content__left">
+                                    <h1>Development</h1>
+                                </div>
+                                <div class="content__right">
+                                    <div class="content__main">
+                                        <p class="d_para">You can count on our post-release support because we aim for
+                                            long-term
+                                            success. We are constantly tracking the market changes and continue
+                                            improving our apps accordingly.</p>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="spinner__face" data-bg="#312f2d">
+                            <div class="content" data-type="peru">
+                                <div class="content__left">
+                                    <h1>Testing</h1>
+                                </div>
+                                <div class="content__right">
+                                    <div class="content__main">
+                                        <p class="d_para">We follow agile development methodologies and master the
+                                            latest technologies
+                                            for iOS and Android to provide an efficient and effective collaboration.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="spinner__face" data-bg="#312f2d">
+                            <div class="content" data-type="launch">
+                                <div class="content__left">
+                                    <h1>Livelaunch</h1>
+                                </div>
+                                <div class="content__right">
+                                    <div class="content__main">
+                                        <p class="d_para">Based on the app strategy we created during the research
+                                            phase, we prepare
+                                            the interactive prototype that responds to user interactions. We then design
+                                            the user interface of your product.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--  Poor man's preloader -->
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
         <!-- technology -->
 
         <div id="technology">
@@ -547,117 +675,6 @@
             </div>
         </div>
 
-        <!-- third part    -->
-
-        <div id="development">
-            <div id="development_card">
-                <div class="linespan">
-                    <div></div>
-                    <h2>DEVELOPMENT & CREATIVES</h2>
-                </div>
-                <h4>Our Process For Developing
-                    Web &Mobile Applications</h4>
-            </div>
-
-            <!-- 3d carosal -->
-            <div class="carousel">
-                <div class="carousel__control">
-                </div>
-                <div class="carousel__stage">
-                    <div class="spinner spinner--left">
-                        <div class="spinner__face js-active" data-bg="#27323c">
-                            <div class="content" data-type="iceland">
-                                <div class="content__left">
-                                    <h1>Research & Planning</h1>
-                                </div>
-                                <div class="content__right">
-                                    <div class="content__main">
-                                        <p class="d_para">We analyze your vision and find out everything about your
-                                            goals, product,
-                                            industry, audience, and competitors. Then we translate our learnings into
-                                            product specification, wireframes, and other project documents. </p>
-
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="spinner__face" data-bg="#19304a">
-                            <div class="content" data-type="china">
-                                <div class="content__left">
-                                    <h1>Design</h1>
-                                </div>
-                                <div class="content__right">
-                                    <div class="content__main">
-                                        <p class="d_para">We thoroughly test the performance of every project we take on
-                                            to ensure its
-                                            responsiveness, user-friendliness, and bulletproof security.</p>
-
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="spinner__face" data-bg="#2b2533">
-                            <div class="content" data-type="usa">
-                                <div class="content__left">
-                                    <h1>Development</h1>
-                                </div>
-                                <div class="content__right">
-                                    <div class="content__main">
-                                        <p class="d_para">You can count on our post-release support because we aim for
-                                            long-term
-                                            success. We are constantly tracking the market changes and continue
-                                            improving our apps accordingly.</p>
-
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="spinner__face" data-bg="#312f2d">
-                            <div class="content" data-type="peru">
-                                <div class="content__left">
-                                    <h1>Testing</h1>
-                                </div>
-                                <div class="content__right">
-                                    <div class="content__main">
-                                        <p class="d_para">We follow agile development methodologies and master the
-                                            latest technologies
-                                            for iOS and Android to provide an efficient and effective collaboration.</p>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                        <div class="spinner__face" data-bg="#312f2d">
-                            <div class="content" data-type="launch">
-                                <div class="content__left">
-                                    <h1>Livelaunch</h1>
-                                </div>
-                                <div class="content__right">
-                                    <div class="content__main">
-                                        <p class="d_para">Based on the app strategy we created during the research
-                                            phase, we prepare
-                                            the interactive prototype that responds to user interactions. We then design
-                                            the user interface of your product.</p>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!--  Poor man's preloader -->
-
-
-        </div>
-
 
 
         <div id="aboutus">
@@ -692,11 +709,12 @@
                     personally reply to you as soon as possible
                 </p>
                 <main>
-                    <form >
+                    <form>
                         <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                             placeholder="Email-id" required>
                         <input type="text" name="subject" placeholder="Name" required>
-                        <input type="text" name="subject" placeholder="Mobile Number(Optional)" pattern='^[0-9]+$' title="Please enter valid phone number" >
+                        <input type="text" name="subject" placeholder="Mobile Number(Optional)" pattern='^[0-9]+$'
+                            title="Please enter valid phone number">
                         <textarea placeholder="Description" rows="4" cols="50" required></textarea>
                         <div class="btnwrapper">
                             <button id="submit" class="btn btnstyle" type="submit">Submit</button>
@@ -711,67 +729,69 @@
 
 
         <footer>
+            <img class="logo" src="./assets/logo.png" alt="loco" />
             <div>
-                <img class="logo" src="./assets/logo.png" alt="loco" />
                 <ul>
-                    <ul>
-                        <li>
-                            <a href="#home">HOME</a>
-                        </li>
-                        <li>
-                            <a href="#service">SERVICES</a>
-                        </li>
-                        <li>
-                            <a href="#development">DEVELOPMENT & CREATIVES</a>
-                        </li>
-                        <li>
-                            <a href="#technology">TECHNOLOGY</a>
-                        </li>
-                        <li>
-                            <a href="#aboutus">ABOUT US</a>
-                        </li>
-                        <li>
-                            <a href="#contact">CONTACT US</a>
-                        </li>
-                    </ul>
-                </ul>
-                <ul>
-                    <ul>
-                        <li>
-                            <a href="">mobile app design & development</a>
-                        </li>
-                        <li>
-                            <a href="">web application design & development </a>
-                        </li>
-                        <li>
-                            <a href="">desktop application</a>
-                        </li>
 
-                        <li>
-                            <a href="">digital marketing</a>
-                        </li>
+                    <li>
+                        <a href="#home">HOME</a>
+                    </li>
+                    <li>
+                        <a href="#service_container">SERVICES</a>
+                    </li>
+                    <li>
+                        <a href="#development_card">DEVELOPMENT & CREATIVES</a>
+                    </li>
+                    <li>
+                        <a href="#technology">TECHNOLOGY</a>
+                    </li>
+                    <li>
+                        <a href="#aboutus">ABOUT US</a>
+                    </li>
+                    <li>
+                        <a href="#contact">CONTACT US</a>
+                    </li>
 
-                    </ul>
                 </ul>
             </div>
+            <ul>
+<h4>What we do?</h4>
+                <li>
+                    <a href="">mobile app design & development</a>
+                </li>
+                <li>
+                    <a href="">web application design & development </a>
+                </li>
+                <li>
+                    <a href="">desktop application</a>
+                </li>
+
+                <li>
+                    <a href="">digital marketing</a>
+                </li>
+
+
+            </ul>
+
             <section>
+                <h1>FOLLOW US</h1>
                 <ul>
-                    <ul>
-                        <li>
-                            <a href=""><img src="./assets/linkedin.png" alt="linkedin"></a>
-                        </li>
-                        <li>
-                            <a href=""><img src="./assets/instagram.png" alt="instagram"></a>
-                        </li>
-                        <li>
-                            <a href=""><img src="./assets/facebook.png" alt="facebook"></a>
-                        </li>
 
-                        <li>
-                            <a href=""><img src="./assets/twitter.png" alt="twitter"></a>
-                        </li>
+                    <li>
+                        <a href=""><img src="./assets/linkedin.png" alt="linkedin"></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="./assets/instagram.png" alt="instagram"></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="./assets/facebook.png" alt="facebook"></a>
+                    </li>
 
-                    </ul>
+                    <li>
+                        <a href=""><img src="./assets/twitter.png" alt="twitter"></a>
+                    </li>
+
+
                 </ul>
             </section>
 
@@ -780,10 +800,10 @@
 
 
 
-  
-   
-  
- 
+
+
+
+
 </body>
 
 </html>
