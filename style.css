@@ -101,6 +101,7 @@ transition:top 0.5s ease-out;
 .homeimage{
     width: 50vw;
     height: 88vh;
+   
 }
 /* .thanihomeimage{
   width: 80rem;
@@ -108,8 +109,10 @@ transition:top 0.5s ease-out;
 } */
 
 .logo{
-  width: 15rem;
-  height: 5rem;
+  height:4rem;
+  width:12rem;
+  margin-top: 2rem;
+   
 
 }
 
@@ -765,7 +768,7 @@ footer ul h4{
 
 /* type writter part */
 .typewrapper{
-  margin: 3rem 0;
+  margin: 2rem 0;
 }
 
 .cursor {
@@ -1177,7 +1180,7 @@ margin: 4rem 0;
   align-items: center;
   flex-wrap: wrap;
 }
-
+card
 .technology_tools div{
   display: flex;
   justify-content: flex-start;
@@ -1372,7 +1375,7 @@ border-radius: 50%;
 @keyframes pulse {
 	0% {
 		transform: scale(0.95);
-		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+		box-shadow: 0 0 0 0 #ffffffe8;
 	}
 
 	70% {
@@ -1574,7 +1577,7 @@ overflow: hidden;
 }
 
 .flip_front_part1{
-  border: 1px solid var(--primary-color);
+  /* border: 1px solid var(--primary-color); */
   background-size: contain;
   background-repeat: no-repeat;
   width: 35%;
@@ -1587,7 +1590,7 @@ overflow: hidden;
 }
 .flip_front_part1_first{
   background-color:transparent;
-  border: 1px solid var(--primary-color);
+  /* border: 1px solid var(--primary-color); */
   width: 25%;
   height: 100%;
   display: flex;
@@ -1795,6 +1798,7 @@ text-align: center;
   height: 55vh;
 
 }
+
 .service{
     padding: 0 0.5rem;
 }
@@ -1804,6 +1808,8 @@ text-align: center;
 
 h2{
 line-height: 2.5rem;
+
+;
 }
 h4{
   padding: 1rem 0;
@@ -1811,6 +1817,8 @@ h4{
 p{  
   width: 100%;
 margin-bottom: 1rem;
+font-size: 1rem;
+line-height:1.5rem;
 }
 
 
@@ -1946,7 +1954,10 @@ footer section h1{
   /* typewritter part */
   span{
   font-weight: 500;
-  font-size: 2.5rem;  
+  font-size: 1.5rem; 
+line-height: 2rem; 
+
+
   }
   .about .about_img{
     height: 50vh;
