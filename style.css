@@ -1866,9 +1866,7 @@ footer section h1{
 
     background-repeat: no-repeat;
     background-image: none;
-   
-  
-  
+
    
   }
   .spinner--right [data-type="iceland"] .content__left {
@@ -1912,29 +1910,34 @@ footer section h1{
   .spinner--right [data-type="launch"] .content__left {
     background-image: none;
   }
+  /* typewritter part */
+  span{
+  font-weight: 500;
+  font-size: 2.5rem;  
+  }
 
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+/* @media only screen and (min-width: 600px) {
 
-}
+} */
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
 
 
-}
+} */
 
-/* Large devices (laptops/desktops, 992px and up) */
+/* Large devices (laptops/desktops, 992px and up)
 @media only screen and (min-width: 992px) {
 
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+/* @media only screen and (min-width: 1200px) {
 
-}
+} */ 
 
 
 
