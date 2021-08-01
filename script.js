@@ -320,7 +320,7 @@ function delWriter(text, i, cb) {
     if (i >= 0) {
         typeWriterElement.innerHTML = text.substring(0, i--);
         // generate a random Number to emulate backspace hitting.
-        var rndBack = 10 + Math.random() * 100;
+        var rndBack = 100;
         setTimeout(function () {
             delWriter(text, i, cb);
         }, rndBack);
@@ -334,7 +334,7 @@ function typeWriter(text, i, cb) {
     if (i < text.length + 1) {
         typeWriterElement.innerHTML = text.substring(0, i++);
         // generate a random Number to emulate Typing on the Keyboard.
-        var rndTyping = 250 - Math.random() * 100;
+        var rndTyping = 100;
         setTimeout(function () {
             typeWriter(text, i++, cb)
         }, rndTyping);
