@@ -1732,11 +1732,11 @@ height: 100vh;
 #threecontainer {
   height: 100vh;
   width: 100vw;
-  background:var(--white:white);
+  background:var(--black-color);
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
 }
 
 
