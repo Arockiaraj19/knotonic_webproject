@@ -692,9 +692,9 @@ footer ul h4{
     transition: all 0.3s ease;
 }
 
-.return-to-top:hover {
+/* .return-to-top:hover {
     background: var(--primary-color);
-}
+} */
 .return-to-top:hover i {
     top: 5px;
 }
@@ -1566,8 +1566,7 @@ overflow: hidden;
 
 .flip_front_part1{
   border: 1px solid var(--primary-color);
-  background-image: url("./assets/process4.png");
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   width: 35%;
   height: 100%;
@@ -1586,8 +1585,7 @@ overflow: hidden;
   justify-content: start;
   align-items: center;
   transition: all 0.6s ease;
-  background-image: url("./assets/process4.png");
-  background-size: cover;
+  background-size:contain;
   background-repeat: no-repeat;
 }
 .flip_front_part2{

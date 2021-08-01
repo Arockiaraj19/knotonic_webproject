@@ -418,6 +418,7 @@ tl.reverse();
 var changeposition = [undefined, undefined, undefined, undefined];
 var content = ["hello mobile", "hell lucifer", "hello web", "hello cloud computing"];
 var contentinit = ["don mobile", "don lucifer", "don web", "don cloud computing"];
+var images=["url(./assets/process1.png)","url(./assets/process1.png)","url(./assets/process1.png)","url(./assets/process1.png)"];
 const changeside = (e, i) => {
 
     console.log(e);
@@ -425,11 +426,12 @@ const changeside = (e, i) => {
     if (e.target.parentElement.parentElement.previousElementSibling.className == "paragraph_first") {
         changeposition[i] = 0;
         document.getElementById(i.toString()).innerHTML = contentinit[i];
-
         e.target.parentElement.parentElement.parentElement.previousElementSibling.className = "flip_front_part1";
+      
         e.target.parentElement.parentElement.parentElement.className = "flip_front_part2";
         e.target.parentElement.parentElement.previousElementSibling.className = "paragraph";
         e.target.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.className = "flip-card";
+       
     } else {
         console.log(changeposition[i]);
         if (changeposition[i] == 0) {
@@ -439,10 +441,12 @@ const changeside = (e, i) => {
             console.log(e.target.parentElement.parentElement.previousElementSibling.className);
 
             changeposition[i] = 1;
-            setTimeout(() => {
+           
+ document.getElementById("image"+i.toString()).style.backgroundImage = images[i];
                 document.getElementById(i.toString()).innerHTML = content[i];
-            }, 2000);
+           
         } else {
+           
             e.target.parentElement.parentElement.parentElement.previousElementSibling.className = "flip_front_part1_first";
             e.target.parentElement.parentElement.parentElement.className = "flip_front_part2_first";
             e.target.parentElement.parentElement.previousElementSibling.className = "paragraph_first";
@@ -453,7 +457,7 @@ const changeside = (e, i) => {
 
 }
 const changebackside = (e) => {
-    console.log(e.target.parentElement.parentElement.previousElementSibling.className);
+    
     e.target.offsetParent.offsetParent.style.transform = "rotateX(0deg)";
 
 }
