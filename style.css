@@ -148,7 +148,7 @@ h4{
 }
 h3{
     font-weight:500;
-    font-size: 2.5rem;
+    font-size: 2rem;
     letter-spacing: 0.1em;
     color:var(--bodyfont-color);
     line-height:3rem;
@@ -1576,7 +1576,7 @@ overflow: hidden;
 }
 
 .flip_front_part1{
-  /* border: 1px solid var(--primary-color); */
+  border: 1px solid var(--primary-color);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -1590,7 +1590,7 @@ overflow: hidden;
 }
 .flip_front_part1_first{
   background-color:transparent;
-  /* border: 1px solid var(--primary-color); */
+  border: 1px solid var(--primary-color);
   width: 25%;
   height: 100%;
   display: flex;
@@ -1607,7 +1607,7 @@ overflow: hidden;
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content:center;
   align-items:center;
   padding:0rem 2rem;
   transition: all 0.6s ease;
@@ -1622,7 +1622,7 @@ overflow: hidden;
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content:space-around;
+  justify-content:center;
   align-items:center;
   padding:0rem 2rem;
   transition: all 0.6s ease;
