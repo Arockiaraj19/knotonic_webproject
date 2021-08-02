@@ -1577,8 +1577,9 @@ overflow: hidden;
 
 .flip_front_part1{
  
-  border: 1px solid var(--primary-color);
+  
   background-position: center;
+  background-color: #f6d55c;
   background-size: contain;
   background-repeat: no-repeat;
   width: 35%;
@@ -1591,8 +1592,9 @@ overflow: hidden;
 }
 .flip_front_part1_first{
 
-  border: 1px solid var(--primary-color);
+  
   width: 25%;
+  background-color: #f6d55c;
   height: 100%;
   display: flex;
   justify-content: start;
