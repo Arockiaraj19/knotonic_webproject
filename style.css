@@ -148,10 +148,15 @@ h4{
 }
 h3{
     font-weight:500;
-    font-size: 1.5rem;
+    font-size: 3rem;
     letter-spacing: 0.1em;
     color:var(--bodyfont-color);
-    padding-bottom: 1rem;
+    padding: 1rem;
+    
+    line-height:1.5rem;
+   padding-left:10rem;
+   padding-top: 7rem;
+
 }
 
 
@@ -1549,6 +1554,7 @@ nav .close:hover div::after{
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   z-index: 100;
+  border: #f8534b;
 
 }
 
@@ -1616,13 +1622,13 @@ overflow: hidden;
 .flip_front_part2_first{
   
   background-color: var(--primary-color);
-  width: 75%;
+  width:75%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items:flex-start;
-  padding:0rem 2rem;
+  padding:0rem 5rem;
   transition: all 0.6s ease;
   background-size:contain;
   background-repeat: no-repeat;
@@ -1824,6 +1830,19 @@ font-size: 1.5rem;
 line-height: 2rem; 
 padding: 1.5rem 0 1rem 1rem;
 }
+h3{
+  font-weight:500;
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+  color:var(--bodyfont-color);
+  padding: 1rem;
+  
+  line-height:1.3rem;
+
+  text-align: center;
+ 
+
+}
 h4{
   font-size: 1rem; 
 line-height: 2rem; 
@@ -1837,8 +1856,8 @@ line-height:1.5rem;
 }
 
 .logo{
-  height:3rem;
-  width:8rem;
+  height:2rem;
+  width:6rem;
 }
 
     #technology, #development_card,#aboutus,#contact{
@@ -1903,7 +1922,7 @@ footer section h1{
 
 .service_card_icon_wrapper i{
 font-size: 1rem;
- padding:0.5rem 0.7rem ;
+ padding:0.2rem 0.7rem ;
 }
 
   .flip_front_part2_first h4{

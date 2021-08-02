@@ -418,7 +418,7 @@ tl.reverse();
 var changeposition = [undefined, undefined, undefined, undefined];
 var content = ["hello mobile", "hell lucifer", "hello web", "hello cloud computing"];
 var contentinit = ["don mobile", "don lucifer", "don web", "don cloud computing"];
-var images=["url(./assets/service_image1.png)","url(./assets/process1.png)","url(./assets/process1.png)","url(./assets/process1.png)"];
+var images=["url(./assets/sliderp1.png)","url(./assets/desktopslider.png)","url(./assets/webappslider.png)","url(./assets/process1.png)"];
 var contentinit = ["don mobile", "A Web Application Is A Client-Server Program. It Means That It Has A Client-Side And A Server-Side. It Is Part Of The Client-Server Environment, Where Many Computers Share Information. ", "don web", "don cloud computing"];
 const changeside = (e, i) => {
 
