@@ -420,6 +420,8 @@ var content = ["hello mobile", "hell lucifer", "hello web", "hello cloud computi
 var contentinit = ["don mobile", "don lucifer", "don web", "don cloud computing"];
 var images=["url(./assets/sliderp1.png)","url(./assets/desktopslider.png)","url(./assets/webappslider.png)","url(./assets/process1.png)"];
 var contentinit = ["don mobile", "A Web Application Is A Client-Server Program. It Means That It Has A Client-Side And A Server-Side. It Is Part Of The Client-Server Environment, Where Many Computers Share Information. ", "don web", "don cloud computing"];
+
+var bgcolors=["red","white","yellow","black"];
 const changeside = (e, i) => {
 
     console.log(e);
@@ -432,6 +434,7 @@ const changeside = (e, i) => {
         e.target.parentElement.parentElement.parentElement.className = "flip_front_part2";
         e.target.parentElement.parentElement.previousElementSibling.className = "paragraph";
         e.target.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.className = "flip-card";
+        document.getElementById("bg_color"+i.toString()).style.backgroundColor = bgcolors[i];
        
     } else {
         console.log(changeposition[i]);
@@ -445,6 +448,7 @@ const changeside = (e, i) => {
            
  document.getElementById("image"+i.toString()).style.backgroundImage = images[i];
                 document.getElementById(i.toString()).innerHTML = content[i];
+                document.getElementById("bg_color"+i.toString()).style.backgroundColor = bgcolors[i];
            
         } else {
            
@@ -453,6 +457,7 @@ const changeside = (e, i) => {
             e.target.parentElement.parentElement.previousElementSibling.className = "paragraph_first";
             e.target.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.className = "flip-card_first";
             changeposition[i] = undefined;
+            document.getElementById("bg_color"+i.toString()).style.backgroundColor = bgcolors[i];
         }
     }
 
