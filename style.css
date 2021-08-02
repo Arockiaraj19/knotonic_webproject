@@ -966,7 +966,7 @@ width: 100%;
 }
 .content__left h1 {
   position: absolute;
-  top: 50%;
+  top: 90%;
   margin-top: -3vw;
   text-align: center;
   font-size: 3vw;
@@ -1037,6 +1037,7 @@ width: 100%;
   background-image: url("./assets/process1.png");
 
 background-position: center;
+background-size: contain;
 
  
 }
@@ -1046,7 +1047,7 @@ background-position: center;
 [data-type="china"] .content__left {
   
   background-image: url("./assets/process2.png");
- 
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 
@@ -1058,7 +1059,7 @@ background-position: center;
   background-image: url("./assets/process3.png");
   background-position: center;
   background-repeat: no-repeat;
- 
+  background-size: contain;
 }
 .spinner--right [data-type="usa"] .content__left {
   background-image: none;
@@ -1067,7 +1068,7 @@ background-position: center;
   background-image: url("./assets/process4.png");
   background-position: center;
   background-repeat: no-repeat;
-  
+  background-size: contain;
 }
 .spinner--right [data-type="peru"] .content__left {
   background-image: none;
@@ -1076,7 +1077,7 @@ background-position: center;
   background-image: url("./assets/process5.png");
   background-position: center;
   background-repeat: no-repeat;
- 
+  background-size: contain;
 }
 .spinner--right [data-type="launch"] .content__left {
   background-image: none;
@@ -1992,6 +1993,11 @@ font-size: 1rem;
       }
       .spinner--right [data-type="launch"] .content__left {
         background-image: none;
+      }
+      .content__left h1 {
+      
+        top: 68%;
+       
       }
       
   /* typewritter part */
