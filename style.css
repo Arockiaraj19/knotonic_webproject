@@ -1856,6 +1856,15 @@ margin-bottom: 1rem;
 font-size: 1rem;
 line-height:1.5rem;
 }
+.para{ 
+  width: 100%;
+  font-weight: normal;
+  font-size:0.8rem;
+  letter-spacing: 0.1em;
+  line-height: 2rem;
+  color:var(--bodyfont-color);
+  
+  }
 
 .logo{
   height:4rem;
