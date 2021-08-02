@@ -1803,6 +1803,10 @@ align-items: center;
   .home{
     padding: 0 0.5rem;
   }
+  .nav_img{
+    display: none;
+    
+    }
   .main{
    
     display: flex;
@@ -1995,9 +1999,7 @@ font-size: 1rem;
         background-image: none;
       }
       .content__left h1 {
-      
         top: 68%;
-       
       }
       
   /* typewritter part */
