@@ -1809,12 +1809,16 @@ text-align: center;
 }
 
 h2{
-line-height: 2.5rem;
+
+font-size: 1.5rem; 
+line-height: 2rem; 
 
 ;
 }
 h4{
-  padding: 1rem 0;
+  
+  font-size: 1rem; 
+line-height: 2rem; 
 }
 p{  
   width: 100%;
