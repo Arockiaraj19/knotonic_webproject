@@ -1576,6 +1576,7 @@ overflow: hidden;
 }
 
 .flip_front_part1{
+ 
   border: 1px solid var(--primary-color);
   background-position: center;
   background-size: contain;
@@ -1589,7 +1590,7 @@ overflow: hidden;
   transition: all 0.6s ease;
 }
 .flip_front_part1_first{
-  background-color:transparent;
+
   border: 1px solid var(--primary-color);
   width: 25%;
   height: 100%;
