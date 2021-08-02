@@ -393,9 +393,10 @@ margin-left:3rem;
 .about .about_img{
   height: 80vh;
   width: 50%;
-  background-image: url("./assets/process4.png");
+  background-image: url("./assets/about.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
 }
   .about div{
     height: auto;
@@ -1034,8 +1035,8 @@ width: 100%;
 
   background-repeat: no-repeat;
   background-image: url("./assets/process1.png");
- 
 
+background-position: center;
 
  
 }
@@ -1047,7 +1048,7 @@ width: 100%;
   background-image: url("./assets/process2.png");
  
   background-repeat: no-repeat;
- 
+  background-position: center;
 
 }
 .spinner--right [data-type="china"] .content__left {
@@ -1055,7 +1056,7 @@ width: 100%;
 }
 [data-type="usa"] .content__left {
   background-image: url("./assets/process3.png");
-
+  background-position: center;
   background-repeat: no-repeat;
  
 }
@@ -1064,7 +1065,7 @@ width: 100%;
 }
 [data-type="peru"] .content__left {
   background-image: url("./assets/process4.png");
-
+  background-position: center;
   background-repeat: no-repeat;
   
 }
@@ -1073,7 +1074,7 @@ width: 100%;
 }
 [data-type="launch"] .content__left {
   background-image: url("./assets/process5.png");
-
+  background-position: center;
   background-repeat: no-repeat;
  
 }
@@ -1938,54 +1939,61 @@ font-size: 1rem;
   .flip_front_part2,.flip_front_part2_first{
     padding: 0 0.5rem;
       }
-  [data-type="iceland"] .content__left {
+      [data-type="iceland"] .content__left {
 
-    background-repeat: no-repeat;
-    background-image: none;
-
-   
-  }
-  .spinner--right [data-type="iceland"] .content__left {
-    background-image: none;
-  }
-  [data-type="china"] .content__left {
-    
-    background-image: none;
-   
-    background-repeat: no-repeat;
-   
-  
-  }
-  .spinner--right [data-type="china"] .content__left {
-    background-image: none;
-  }
-  [data-type="usa"] .content__left {
-    background-image: none;
-  
-    background-repeat: no-repeat;
-   
-  }
-  .spinner--right [data-type="usa"] .content__left {
-    background-image: none;
-  }
-  [data-type="peru"] .content__left {
-    background-image: none;
-  
-    background-repeat: no-repeat;
-    
-  }
-  .spinner--right [data-type="peru"] .content__left {
-    background-image: none;
-  }
-  [data-type="launch"] .content__left {
-    background-image: none;
-  
-    background-repeat: no-repeat;
-   
-  }
-  .spinner--right [data-type="launch"] .content__left {
-    background-image: none;
-  }
+        background-repeat: no-repeat;
+        background-image: url("./assets/process1.png");
+        background-size: contain;
+      background-position: center;
+      
+       
+      }
+      .spinner--right [data-type="iceland"] .content__left {
+        background-image: none;
+      }
+      [data-type="china"] .content__left {
+        
+        background-image: url("./assets/process2.png");
+       
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      
+      }
+      .spinner--right [data-type="china"] .content__left {
+        background-image: none;
+      }
+      [data-type="usa"] .content__left {
+        background-image: url("./assets/process3.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+       
+      }
+      .spinner--right [data-type="usa"] .content__left {
+        background-image: none;
+      }
+      [data-type="peru"] .content__left {
+        background-image: url("./assets/process4.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        
+      }
+      .spinner--right [data-type="peru"] .content__left {
+        background-image: none;
+      }
+      [data-type="launch"] .content__left {
+        background-image: url("./assets/process5.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+       
+      }
+      .spinner--right [data-type="launch"] .content__left {
+        background-image: none;
+      }
+      
   /* typewritter part */
   span{
   font-weight: 500;
@@ -1997,10 +2005,9 @@ line-height: 2rem;
   .about .about_img{
     height: 50vh;
     width: 100%;
-    background-image: url("./assets/process4.png");
-    background-repeat: no-repeat;
-    background-size: contain;
+
     margin-bottom: 6rem;
+   
   }
   #roundarea{
   top: 40vh;
