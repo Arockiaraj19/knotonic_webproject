@@ -434,7 +434,7 @@ const changeside = (e, i) => {
         e.target.parentElement.parentElement.parentElement.className = "flip_front_part2";
         e.target.parentElement.parentElement.previousElementSibling.className = "paragraph";
         e.target.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.className = "flip-card";
-        document.getElementById("bg_color"+i.toString()).style.backgroundColor = bgcolors[i];
+        document.getElementById("bg_color"+i.toString()).style.backgroundColor = bgcolors[1];
        
     } else {
         console.log(changeposition[i]);
@@ -448,7 +448,7 @@ const changeside = (e, i) => {
            
  document.getElementById("image"+i.toString()).style.backgroundImage = images[i];
                 document.getElementById(i.toString()).innerHTML = content[i];
-                document.getElementById("bg_color"+i.toString()).style.backgroundColor = bgcolors[i];
+                document.getElementById("image"+i.toString()).style.backgroundColor = bgcolors[2];
            
         } else {
            
@@ -457,13 +457,13 @@ const changeside = (e, i) => {
             e.target.parentElement.parentElement.previousElementSibling.className = "paragraph_first";
             e.target.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.className = "flip-card_first";
             changeposition[i] = undefined;
-            document.getElementById("bg_color"+i.toString()).style.backgroundColor = bgcolors[i];
+            document.getElementById("bg_color"+i.toString()).style.backgroundColor = bgcolors[0];
         }
     }
 
 }
-const changebackside = (e) => {
-    
+const changebackside = (e,i) => {
+    document.getElementById("bg_color"+i.toString()).style.backgroundColor = bgcolors[3];
     e.target.offsetParent.offsetParent.style.transform = "rotateX(0deg)";
 
 }
