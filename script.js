@@ -422,6 +422,8 @@ var images=["url(./assets/sliderp1.png)","url(./assets/desktopslider.png)","url(
 var contentinit = ["don mobile", "A Web Application Is A Client-Server Program. It Means That It Has A Client-Side And A Server-Side. It Is Part Of The Client-Server Environment, Where Many Computers Share Information. ", "don web", "don cloud computing"];
 
 var bgcolors=["red","white","yellow","black"];
+var backcolors=["red","white","yellow","black"];
+var headingcontent=[["one0","two0","three0","four0"],["one1","two1","three1","four1"],["one2","two2","three2","four2"],["one3","two3","three3","four3"],]
 const changeside = (e, i) => {
 
     console.log(e);
@@ -435,6 +437,8 @@ const changeside = (e, i) => {
         e.target.parentElement.parentElement.previousElementSibling.className = "paragraph";
         e.target.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.className = "flip-card";
         document.getElementById("bg_color"+i.toString()).style.backgroundColor = bgcolors[1];
+        document.getElementById("back_color"+i.toString()).style.backgroundColor = backcolors[1];
+        document.getElementById("heading"+i.toString()).innerText = headingcontent[i][1]; 
        
     } else {
         console.log(changeposition[i]);
@@ -449,7 +453,8 @@ const changeside = (e, i) => {
  document.getElementById("image"+i.toString()).style.backgroundImage = images[i];
                 document.getElementById(i.toString()).innerHTML = content[i];
                 document.getElementById("image"+i.toString()).style.backgroundColor = bgcolors[2];
-           
+                document.getElementById("backback_color"+i.toString()).style.backgroundColor = backcolors[2];
+                document.getElementById("backheading"+i.toString()).innerText= headingcontent[i][2]; 
         } else {
            
             e.target.parentElement.parentElement.parentElement.previousElementSibling.className = "flip_front_part1_first";
@@ -458,12 +463,16 @@ const changeside = (e, i) => {
             e.target.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.className = "flip-card_first";
             changeposition[i] = undefined;
             document.getElementById("bg_color"+i.toString()).style.backgroundColor = bgcolors[0];
+            document.getElementById("back_color"+i.toString()).style.backgroundColor = backcolors[0];
+            document.getElementById("heading"+i.toString()).innerText = headingcontent[i][0]; 
         }
     }
 
 }
 const changebackside = (e,i) => {
     document.getElementById("bg_color"+i.toString()).style.backgroundColor = bgcolors[3];
+    document.getElementById("back_color"+i.toString()).style.backgroundColor = backcolors[3];
+    document.getElementById("heading"+i.toString()).innerText = headingcontent[i][3]; 
     e.target.offsetParent.offsetParent.style.transform = "rotateX(0deg)";
 
 }
