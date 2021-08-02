@@ -1575,6 +1575,7 @@ overflow: hidden;
 
 .flip_front_part1{
   /* border: 1px solid var(--primary-color); */
+  background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   width: 35%;
@@ -1596,6 +1597,7 @@ overflow: hidden;
   transition: all 0.6s ease;
   background-size:contain;
   background-repeat: no-repeat;
+  background-position: center;
 }
 .flip_front_part2{
   background-color: var(--primary-color);
@@ -1607,6 +1609,9 @@ overflow: hidden;
   align-items:flex-start;
   padding:0rem 2rem;
   transition: all 0.6s ease;
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .flip_front_part2_first{
   
@@ -1619,6 +1624,9 @@ overflow: hidden;
   align-items:flex-start;
   padding:0rem 2rem;
   transition: all 0.6s ease;
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .paragraph{  
@@ -1650,6 +1658,7 @@ pointer-events: all;
   align-items: center;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   border-radius: 1rem;
+
 }
 
 .service_card_icon_wrapper i{
@@ -1889,9 +1898,12 @@ footer section h1{
  
   height:7rem;
 }
+
+
+
 .service_card_icon_wrapper i{
- 
- padding:0.5rem 1rem ;
+font-size: 1rem;
+ padding:0.5rem 0.7rem ;
 }
 
   .flip_front_part2_first h4{
