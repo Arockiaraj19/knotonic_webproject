@@ -111,9 +111,6 @@ transition:top 0.5s ease-out;
 .logo{
   height:4.1rem;
   width:12rem;
-  margin-top: 2rem;
-   
-
 }
 
 
@@ -1016,7 +1013,7 @@ width: 100%;
   line-height: 0.78;
   line-height: 1;
   position: absolute;
-  top: -65px;
+  top: -55px;
   left: 0;
   z-index: 1;
   font-family: sans-serif, serif;
@@ -1180,7 +1177,7 @@ margin: 4rem 0;
   align-items: center;
   flex-wrap: wrap;
 }
-card
+
 .technology_tools div{
   display: flex;
   justify-content: flex-start;
@@ -1474,7 +1471,7 @@ nav .close {
 }
 
 .nav_img{
-width: 40vw;
+width: 50vw;
 height: 0vh;
 
 }
@@ -1772,7 +1769,9 @@ background-color: var(--primary-color);
 border-radius: 50%;
 top: 20vh;
 right: 50%;
-text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 #roundarea h2{
   text-align: center;
@@ -1800,7 +1799,9 @@ text-align: center;
   height: 55vh;
 
 }
-
+.typewrapper{
+  margin: 6rem 0 0 0;
+}
 .service{
     padding: 0 0.5rem;
 }
@@ -1812,13 +1813,12 @@ h2{
 
 font-size: 1.5rem; 
 line-height: 2rem; 
-
-;
+padding: 1.5rem 0 1rem 1rem;
 }
 h4{
-  
   font-size: 1rem; 
 line-height: 2rem; 
+padding: 1rem 0 1rem 1rem;
 }
 p{  
   width: 100%;
@@ -1827,6 +1827,10 @@ font-size: 1rem;
 line-height:1.5rem;
 }
 
+.logo{
+  height:3rem;
+  width:8rem;
+}
 
     #technology, #development_card,#aboutus,#contact{
       padding: 0 0.5rem;
@@ -1978,6 +1982,15 @@ line-height: 2rem;
   right: 35%;
   text-align: center;
   }
+  nav ul li a{
+	color: #fafafa;
+	font-size: 1.3em;
+	text-decoration: none;
+	font-weight: 500;
+	position: relative;
+	opacity: 0;
+	pointer-events: none;
+}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
