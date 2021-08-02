@@ -1784,6 +1784,9 @@ align-items: center;
   body{
     overflow-x: hidden;
   }
+  #threecontainer{
+    height: 50vh;
+  }
   .home{
     padding: 0 0.5rem;
   }
