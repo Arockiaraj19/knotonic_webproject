@@ -421,8 +421,8 @@ var contentinit = ["don mobile", "don lucifer", "don web", "don cloud computing"
 var images=["url(./assets/sliderp1.png)","url(./assets/desktopslider.png)","url(./assets/webappslider.png)","url(./assets/process1.png)"];
 var contentinit = ["don mobile", "A Web Application Is A Client-Server Program. It Means That It Has A Client-Side And A Server-Side. It Is Part Of The Client-Server Environment, Where Many Computers Share Information. ", "don web", "don cloud computing"];
 
-var bgcolors=["red","orange","yellow","black"];
-var backcolors=["red","orange","yellow","black"];
+var bgcolors=["#3caea3","#F6D55C","F56E67","#F56E67"];
+var backcolors=["#F56E67","#3caea3","#20639B","#F6D55C"];
 var headingcontent=[["one0","two0","three0","four0"],["one1","two1","three1","four1"],["one2","two2","three2","four2"],["one3","two3","three3","four3"],]
 const changeside = (e, i) => {
 
