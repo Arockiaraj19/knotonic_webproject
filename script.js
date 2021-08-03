@@ -116,7 +116,7 @@ function homeScrollTrigger() {
         .from('.logo', {
             opacity: 0, x: "-31%", duration: 2, ease: "sine.in",
         }, 0)
-      
+
 
         .from('.myhomeslide main', {
             opacity: 0, duration: 1.5, stagger: 0.4, ease: "sine",
@@ -151,21 +151,21 @@ function SliderScrollTrigger() {
         .from('.service div h4', {
             opacity: 0, x: "-22%",
         })
-       
 
 
-        let Slide10 = gsap.timeline({ // Slide1---------------------
-            scrollTrigger: {
-                trigger: "#service_container",
-                start: "20% 100%",
-                end: "100% 0%",
-            }
+
+    let Slide10 = gsap.timeline({ // Slide1---------------------
+        scrollTrigger: {
+            trigger: "#service_container",
+            start: "20% 100%",
+            end: "100% 0%",
+        }
+    })
+    Slide10
+        .from('.flip-card_first', {
+            stagger: 1,
+            opacity: 0, y: "-100%",
         })
-        Slide10
-            .from('.flip-card_first', {
-                stagger: 1,
-                opacity: 0, y: "-100%",
-            })
 
     let Slide2 = gsap.timeline({ // Slide2---------------------
         scrollTrigger: {
@@ -401,33 +401,33 @@ close.addEventListener('click', () => {
 });
 // scroll funtion part
 
-const scrolltocontainer=(data)=>{
+const scrolltocontainer = (data) => {
     const element = document.getElementById(data);
     console.log(element);
     console.log(element.offsetTop);
-   
-if (element) {
-    window.scroll({
-        top: element.offsetTop,
-        behavior: 'smooth',
-    }) 
-}
-tl.reverse();
+
+    if (element) {
+        window.scroll({
+            top: element.offsetTop,
+            behavior: 'smooth',
+        })
+    }
+    tl.reverse();
 }
 
 var changeposition = [undefined, undefined, undefined, undefined];
-var content = ["hello mobile", "hell lucifer", "hello web", "hello cloud computing"];
+var content = ["<div id='advantage3' style='display: flex;justify-content: flex-start;width: 85%;'>  <ul>    <li class='lispan'>    <p class='paragraph'>one two three hello</p></li>  <li class='lispan'>           <p class='paragraph'>Two three four five</p>       </li> <li class='lispan'>  <p class='paragraph'>three</p>   </li> </ul>  </div>", "<div id='advantage3' style='display: flex;justify-content: flex-start;width: 85%;'>  <ul>    <li class='lispan'>    <p class='paragraph'>one two three hello</p></li>  <li class='lispan'>           <p class='paragraph'>Two</p>       </li> <li class='lispan'>  <p class='paragraph'>three</p>   </li> </ul>  </div>", "<div id='advantage3' style='display: flex;justify-content: flex-start;width: 85%;'>  <ul>    <li class='lispan'>    <p class='paragraph'>one two three hello</p></li>  <li class='lispan'>           <p class='paragraph'>Two</p>       </li> <li class='lispan'>  <p class='paragraph'>three</p>   </li> </ul>  </div>", "<div id='advantage3' style='display: flex;justify-content: flex-start;width: 85%;'>  <ul>    <li class='lispan'>    <p class='paragraph'>one two three hello</p></li>  <li class='lispan'>           <p class='paragraph'>Two</p>       </li> <li class='lispan'>  <p class='paragraph'>three</p>   </li> </ul>  </div>"];
 var contentinit = ["don mobile", "don lucifer", "don web", "don cloud computing"];
-var images=["url(./assets/sliderp1.png)","url(./assets/desktopslider.png)","url(./assets/webappslider.png)","url(./assets/process1.png)"];
+var images = ["url(./assets/sliderp1.png)", "url(./assets/desktopslider.png)", "url(./assets/webappslider.png)", "url(./assets/process1.png)"];
 var contentinit = ["don mobile", "A Web Application Is A Client-Server Program. It Means That It Has A Client-Side And A Server-Side. It Is Part Of The Client-Server Environment, Where Many Computers Share Information. ", "don web", "don cloud computing"];
 var contentinit = ["Mobile Has Already Become Prevalent Over The Desktop. In Current Market`S Conditions, A Mobile Application Is A Must For Businesses And Startups.",
- "Desktop Application’s Are What Make A Computer So Useful, They’re The Things You Use Everyday.  ", 
- "Web Applications Can Be Designed For A Wide Variety Of Uses And Can Be Used By Anyone; From An Organization To An Individual For Numerous Reasons. ", "Marketing Has Always Been About How To Reach An Audience. What’s Changed, As Technology Changes, Is Where You Find That Audience."];
+    "Desktop Application’s Are What Make A Computer So Useful, They’re The Things You Use Everyday.  ",
+    "Web Applications Can Be Designed For A Wide Variety Of Uses And Can Be Used By Anyone; From An Organization To An Individual For Numerous Reasons. ", "Marketing Has Always Been About How To Reach An Audience. What’s Changed, As Technology Changes, Is Where You Find That Audience."];
 
-var bgcolors=["#3caea3","#F6D55C","F56E67","#F56E67"];
-var backcolors=["#F56E67","#3caea3","#20639B","#99BF72"];
-var headingcontent=[["Mobile App  Design & Development","Mobile App  Design & Development","three0","four0"],["Desktop Application","Desktop Application","three1","four1"],
-["Web Apps Design & Development","Web Apps Design & Development","three2","four2"],["Digital Marketing","Digital Marketing","three3","four3"],]
+var bgcolors = ["#3caea3", "#F6D55C", "F56E67", "#F56E67"];
+var backcolors = ["#F56E67", "#3caea3", "#20639B", "#99BF72"];
+var headingcontent = [["Mobile App  Design & Development", "Mobile App  Design & Development", "three0", "four0"], ["Desktop Application", "Desktop Application", "three1", "four1"],
+["Web Apps Design & Development", "Web Apps Design & Development", "three2", "four2"], ["Digital Marketing", "Digital Marketing", "three3", "four3"],]
 const changeside = (e, i) => {
 
     console.log(e);
@@ -436,17 +436,17 @@ const changeside = (e, i) => {
         changeposition[i] = 0;
         document.getElementById(i.toString()).innerHTML = contentinit[i];
         e.target.parentElement.parentElement.parentElement.previousElementSibling.className = "flip_front_part1";
-      
+
         e.target.parentElement.parentElement.parentElement.className = "flip_front_part2";
         e.target.parentElement.parentElement.previousElementSibling.className = "paragraph";
         e.target.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.className = "flip-card";
-        document.getElementById("bg_color"+i.toString()).style.backgroundColor = bgcolors[1];
-        document.getElementById("back_color"+i.toString()).style.backgroundColor = backcolors[1];
-        document.getElementById("back_color"+i.toString()).style.justifyContent = "space-around";
-        document.getElementById("heading"+i.toString()).innerText = headingcontent[i][1]; 
-        document.getElementById("btn"+i.toString()).style.backgroundColor = backcolors[1];
+        document.getElementById("bg_color" + i.toString()).style.backgroundColor = bgcolors[1];
+        document.getElementById("back_color" + i.toString()).style.backgroundColor = backcolors[1];
+        document.getElementById("back_color" + i.toString()).style.justifyContent = "space-around";
+        document.getElementById("heading" + i.toString()).innerText = headingcontent[i][1];
+        document.getElementById("btn" + i.toString()).style.backgroundColor = backcolors[1];
 
-       
+
     } else {
         console.log(changeposition[i]);
         if (changeposition[i] == 0) {
@@ -456,166 +456,170 @@ const changeside = (e, i) => {
             console.log(e.target.parentElement.parentElement.previousElementSibling.className);
 
             changeposition[i] = 1;
+
+            document.getElementById("image" + i.toString()).style.backgroundImage = images[i];
            
- document.getElementById("image"+i.toString()).style.backgroundImage = images[i];
-                document.getElementById(i.toString()).innerHTML = content[i];
-                document.getElementById("image"+i.toString()).style.backgroundColor = bgcolors[2];
-                document.getElementById("backback_color"+i.toString()).style.backgroundColor = backcolors[2];
-                document.getElementById("backback_color"+i.toString()).style.justifyContent = "space-around";
-                document.getElementById("backheading"+i.toString()).innerText= headingcontent[i][2]; 
-                document.getElementById("btnbtn"+i.toString()).style.backgroundColor = backcolors[2];
+            document.getElementById("image" + i.toString()).style.backgroundColor = bgcolors[2];
+            document.getElementById("backback_color" + i.toString()).style.backgroundColor = backcolors[2];
+            document.getElementById("backback_color" + i.toString()).style.justifyContent = "space-around";
+            document.getElementById("backheading" + i.toString()).innerText = headingcontent[i][2];
+            document.getElementById("btnbtn" + i.toString()).style.backgroundColor = backcolors[2];
         } else {
-           
+
             e.target.parentElement.parentElement.parentElement.previousElementSibling.className = "flip_front_part1_first";
             e.target.parentElement.parentElement.parentElement.className = "flip_front_part2_first";
             e.target.parentElement.parentElement.previousElementSibling.className = "paragraph_first";
             e.target.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.className = "flip-card_first";
             changeposition[i] = undefined;
-            document.getElementById("bg_color"+i.toString()).style.backgroundColor = bgcolors[0];
-            document.getElementById("back_color"+i.toString()).style.backgroundColor = backcolors[0];
-            document.getElementById("back_color"+i.toString()).style.justifyContent = "center";
-            document.getElementById("heading"+i.toString()).innerText = headingcontent[i][0]; 
-            document.getElementById("btn"+i.toString()).style.backgroundColor = backcolors[0];
+            document.getElementById("bg_color" + i.toString()).style.backgroundColor = bgcolors[0];
+            document.getElementById("back_color" + i.toString()).style.backgroundColor = backcolors[0];
+            document.getElementById("back_color" + i.toString()).style.justifyContent = "center";
+            document.getElementById("heading" + i.toString()).innerText = headingcontent[i][0];
+            document.getElementById("btn" + i.toString()).style.backgroundColor = backcolors[0];
         }
     }
 
 }
-const changebackside = (e,i) => {
-    document.getElementById("bg_color"+i.toString()).style.backgroundColor = bgcolors[3];
-    document.getElementById("back_color"+i.toString()).style.backgroundColor = backcolors[3];
-    document.getElementById("heading"+i.toString()).innerText = headingcontent[i][3];
-    document.getElementById("btn"+i.toString()).style.backgroundColor = backcolors[3]; 
-    document.getElementById("back_color"+i.toString()).style.justifyContent = "space-around";
+const changebackside = (e, i) => {
+    document.getElementById(i.toString()).innerHTML = content[i];
+    document.getElementById("bg_color" + i.toString()).style.backgroundColor = bgcolors[3];
+    document.getElementById("back_color" + i.toString()).style.backgroundColor = backcolors[3];
+    document.getElementById("heading" + i.toString()).innerText = headingcontent[i][3];
+    document.getElementById("btn" + i.toString()).style.backgroundColor = backcolors[3];
+    document.getElementById("back_color" + i.toString()).style.justifyContent = "space-around";
     e.target.offsetParent.offsetParent.style.transform = "rotateX(0deg)";
 
 }
 
 const wait = (delay = 0) =>
-  new Promise(resolve => setTimeout(resolve, delay));
+    new Promise(resolve => setTimeout(resolve, delay));
 
-const setVisible = (elementOrSelector, visible) => 
-  (typeof elementOrSelector === 'string'
-    ? document.querySelector(elementOrSelector)
-    : elementOrSelector
-  ).style.display = visible ? 'block' : 'none';
+const setVisible = (elementOrSelector, visible) =>
+    (typeof elementOrSelector === 'string'
+        ? document.querySelector(elementOrSelector)
+        : elementOrSelector
+    ).style.display = visible ? 'block' : 'none';
 
 setVisible('.mainwrapper', false);
 setVisible('.wrapper', true);
 
-document.addEventListener('DOMContentLoaded', () =>{
-  
+document.addEventListener('DOMContentLoaded', () => {
+
     wait(1000).then(() => {
-      setVisible('.mainwrapper', true);
-      setVisible('.wrapper', false);
-      animation();
-  }
-  
-  
-  )});
-
-
-
-
-
-
-  function LottieScrollTrigger(vars) {
-    let playhead = {frame: 0},
-      target = gsap.utils.toArray(vars.target)[0],
-      speeds = {slow: "+=2000", medium: "+=1000", fast: "+=500"},
-      st = {trigger: target, pin: true, start: "top top", end: speeds[vars.speed] || "+=1000", scrub: 1},
-      animation = lottie.loadAnimation({
-        container: target,
-        renderer: vars.renderer || "svg",
-        loop: false,
-        autoplay: false,
-        path: vars.path
-      });
-    for (let p in vars) { // let users override the ScrollTrigger defaults
-      st[p] = vars[p];
+        setVisible('.mainwrapper', true);
+        setVisible('.wrapper', false);
+        animation();
     }
-    animation.addEventListener("DOMLoaded", function() {
-      gsap.to(playhead, {
-        frame: animation.totalFrames - 1,
-        ease: "none",
-        onUpdate: () => animation.goToAndStop(playhead.frame, true),
-        scrollTrigger: st
-      });
+
+
+    )
+});
+
+
+
+
+
+
+function LottieScrollTrigger(vars) {
+    let playhead = { frame: 0 },
+        target = gsap.utils.toArray(vars.target)[0],
+        speeds = { slow: "+=2000", medium: "+=1000", fast: "+=500" },
+        st = { trigger: target, pin: true, start: "top top", end: speeds[vars.speed] || "+=1000", scrub: 1 },
+        animation = lottie.loadAnimation({
+            container: target,
+            renderer: vars.renderer || "svg",
+            loop: false,
+            autoplay: false,
+            path: vars.path
+        });
+    for (let p in vars) { // let users override the ScrollTrigger defaults
+        st[p] = vars[p];
+    }
+    animation.addEventListener("DOMLoaded", function () {
+        gsap.to(playhead, {
+            frame: animation.totalFrames - 1,
+            ease: "none",
+            onUpdate: () => animation.goToAndStop(playhead.frame, true),
+            scrollTrigger: st
+        });
     });
-  }
-let istrue=false;
-  function animation() {
-    
+}
+let istrue = false;
+function animation() {
+
     const animationContainer = document.querySelector('#threecontainer')
-  
+
     LottieScrollTrigger({
-      target: animationContainer,
-      path: 'data.json',
-      speed: 'medium',
-      scrub: 1,
-      onUpdate: (self) => {
-    //       istrue=!istrue;
-    //       console.log("enna self ithu");
-    //    console.log(self);
-      }
+        target: animationContainer,
+        path: 'data.json',
+        speed: 'medium',
+        scrub: 1,
+        onUpdate: (self) => {
+            //       istrue=!istrue;
+            //       console.log("enna self ithu");
+            //    console.log(self);
+        }
     })
-    
-  }
-  
+
+}
 
 
 
 
 
 
-document.getElementById("submit").addEventListener("click",(e)=>{
+
+document.getElementById("submit").addEventListener("click", (e) => {
     e.preventDefault();
-    const index=0;
+    const index = 0;
     let oForm = document.forms[index];
-    if(!oForm.checkValidity()){
+    if (!oForm.checkValidity()) {
         oForm.reportValidity();
         console.log("not validate");
-    return false;
+        return false;
     }
-  
-  
-document.getElementById("submit").style.display="none";
-const formData = new FormData();
-formData.append(
-    'name',
-    oForm.elements[1].value
-)
-formData.append(
-    'email',
-    oForm.elements[0].value
-)
-formData.append(
-    'Mobile Number',
-    oForm.elements[2].value
-)
-formData.append(
-    'description',
-    oForm.elements[3].value
-)
 
-fetch("https://getform.io/f/7460dac3-4afa-4179-be32-782f22d8c8e1", {
+
+    document.getElementById("submit").style.display = "none";
+    const formData = new FormData();
+    formData.append(
+        'name',
+        oForm.elements[1].value
+    )
+    formData.append(
+        'email',
+        oForm.elements[0].value
+    )
+    formData.append(
+        'Mobile Number',
+        oForm.elements[2].value
+    )
+    formData.append(
+        'description',
+        oForm.elements[3].value
+    )
+
+    fetch("https://getform.io/f/7460dac3-4afa-4179-be32-782f22d8c8e1", {
         method: "POST",
         body: formData,
+    })
+        .then(response => {
+            if (response.status == 200) {
+                oForm.elements[0].value = "";
+                oForm.elements[1].value = "";
+                oForm.elements[2].value = "";
+                oForm.elements[3].value = "";
+                document.getElementById("submit").style.display = "block";
+                swal({
+                    title: "Thanks for cosulting ours",
+                    text: "Nantri",
+                    icon: "success",
+                    button: "Ok",
+                });
+            }
+        })
+        .catch(error => console.log(error))
+    return true;
 })
-.then(response => {
-    if(response.status==200){
-        oForm.elements[0].value="";
-        oForm.elements[1].value="";
-        oForm.elements[2].value="";
-        oForm.elements[3].value="";
-        document.getElementById("submit").style.display="block";
-        swal({
-            title: "Thanks for cosulting ours",
-            text: "Nantri",
-            icon: "success",
-            button: "Ok",
-          });
-    }
-})
-.catch(error => console.log(error))
-return true;
-})
+
+
