@@ -416,7 +416,12 @@ const scrolltocontainer = (data) => {
 }
 
 var changeposition = [undefined, undefined, undefined, undefined];
-var content = ["<div id='advantage3' style='display: flex;justify-content: flex-start;width: 85%;'>  <ul>    <li class='lispan'>    <p class='paragraph'>one two three hello</p></li>  <li class='lispan'>           <p class='paragraph'>Two three four five</p>       </li> <li class='lispan'>  <p class='paragraph'>three</p>   </li> </ul>  </div>", "<div id='advantage3' style='display: flex;justify-content: flex-start;width: 85%;'>  <ul>    <li class='lispan'>    <p class='paragraph'>one two three hello</p></li>  <li class='lispan'>           <p class='paragraph'>Two</p>       </li> <li class='lispan'>  <p class='paragraph'>three</p>   </li> </ul>  </div>", "<div id='advantage3' style='display: flex;justify-content: flex-start;width: 85%;'>  <ul>    <li class='lispan'>    <p class='paragraph'>one two three hello</p></li>  <li class='lispan'>           <p class='paragraph'>Two</p>       </li> <li class='lispan'>  <p class='paragraph'>three</p>   </li> </ul>  </div>", "<div id='advantage3' style='display: flex;justify-content: flex-start;width: 85%;'>  <ul>    <li class='lispan'>    <p class='paragraph'>one two three hello</p></li>  <li class='lispan'>           <p class='paragraph'>Two</p>       </li> <li class='lispan'>  <p class='paragraph'>three</p>   </li> </ul>  </div>"];
+var content = [
+    "<div id='advantage3' style='display: flex;justify-content: flex-start;width: 85%;'>  <ul>    <li >    <p class='paragraph'>Flutter-Allows you to create a native mobile application with only one codebase</p></li>  <li >           <p class='paragraph'>React Native-Allows you to build natively-rendered mobile apps for iOS and Android</p>       </li> <li >  <p class='paragraph'>three</p>   </li> </ul>  </div>", 
+"<div id='advantage3' style='display: flex;justify-content: flex-start;width: 85%;'>  <ul>    <li >    <p class='paragraph'>HTML-The standard text formatting language used for creating and displaying pages on the Web.</p></li>  <li >           <p class='paragraph'>CSS-A style sheet language used for describing the presentation of a document written in a markup language such as HTML.</p>       </li> <li >  <p class='paragraph'>Java Script-A text-based programming language used both on the client-side and server-side that allows you to make web pages interactive</p>   </li> </ul>  </div>", 
+"<div id='advantage3' style='display: flex;justify-content: flex-start;width: 85%;'>  <ul>    <li >    <p class='paragraph'>HTML-The standard text formatting language used for creating and displaying pages on the Web.</p></li>  <li >  <p class='paragraph'>CSS-A style sheet language used for describing the presentation of a document written in a markup language such as HTML.</p>   </li> <li >  <p class='paragraph'>Java Script-A text-based programming language used both on the client-side and server-side that allows you to make web pages interactive</p>   </li> <li >  <p class='paragraph'>React-Used for handling the view layer and can be used for development of both web and mobile applications.</p>   </li></ul>  </div>", 
+"<div id='advantage3' style='display: flex;justify-content: flex-start;width: 85%;'>  <ul>    <li >    <p class='paragraph'>one two three hello</p></li>  <li >           <p class='paragraph'>Two</p>       </li> <li >  <p class='paragraph'>three</p>   </li> </ul>  </div>"
+];
 var contentinit = ["don mobile", "don lucifer", "don web", "don cloud computing"];
 var images = ["url(./assets/sliderp1.png)", "url(./assets/desktopslider.png)", "url(./assets/webappslider.png)", "url(./assets/process1.png)"];
 var contentinit = ["don mobile", "A Web Application Is A Client-Server Program. It Means That It Has A Client-Side And A Server-Side. It Is Part Of The Client-Server Environment, Where Many Computers Share Information. ", "don web", "don cloud computing"];
@@ -428,6 +433,10 @@ var bgcolors = ["#3caea3", "#F6D55C", "F56E67", "#F56E67"];
 var backcolors = ["#F56E67", "#3caea3", "#20639B", "#99BF72"];
 var headingcontent = [["Mobile App  Design & Development", "Mobile App  Design & Development", "three0", "four0"], ["Desktop Application", "Desktop Application", "three1", "four1"],
 ["Web Apps Design & Development", "Web Apps Design & Development", "three2", "four2"], ["Digital Marketing", "Digital Marketing", "three3", "four3"],]
+var bgcolors=["#3caea3","#F6D55C","F56E67","#F56E67"];
+var backcolors=["#F56E67","#3caea3","#20639B","#99BF72"];
+var headingcontent=[["Mobile App  Design & Development","Mobile App  Design & Development","Advantage","Technology Used"],["Desktop Application","Desktop Application","Advantage","Technology Used"],
+["Web Apps Design & Development","Web Apps Design & Development","Advantage","Technology Used"],["Digital Marketing","Digital Marketing","Advantage","Technology Used"],]
 const changeside = (e, i) => {
 
     console.log(e);
