@@ -320,7 +320,7 @@ function delWriter(text, i, cb) {
     if (i >= 0) {
         typeWriterElement.innerHTML = text.substring(0, i--);
         // generate a random Number to emulate backspace hitting.
-        var rndBack = 30;
+        var rndBack = 100;
         setTimeout(function () {
             delWriter(text, i, cb);
         }, rndBack);
@@ -334,7 +334,7 @@ function typeWriter(text, i, cb) {
     if (i < text.length + 1) {
         typeWriterElement.innerHTML = text.substring(0, i++);
         // generate a random Number to emulate Typing on the Keyboard.
-        var rndTyping = 50;
+        var rndTyping = 100;
         setTimeout(function () {
             typeWriter(text, i++, cb)
         }, rndTyping);
@@ -424,14 +424,6 @@ var contentinit = ["don mobile", "A Web Application Is A Client-Server Program. 
 var bgcolors=["red","orange","yellow","black"];
 var backcolors=["#327357","#327357","#327357","#327357"];
 var headingcontent=[["one0","two0","three0","four0"],["one1","two1","three1","four1"],["one2","two2","three2","four2"],["one3","two3","three3","four3"],]
-var contentinit = ["Mobile Has Already Become Prevalent Over The Desktop. In Current Market`S Conditions, A Mobile Application Is A Must For Businesses And Startups.",
- "Desktop Application’s Are What Make A Computer So Useful, They’re The Things You Use Everyday.  ", 
- "Web Applications Can Be Designed For A Wide Variety Of Uses And Can Be Used By Anyone; From An Organization To An Individual For Numerous Reasons. ", "Marketing Has Always Been About How To Reach An Audience. What’s Changed, As Technology Changes, Is Where You Find That Audience."];
-
-var bgcolors=["#3caea3","#F6D55C","F56E67","#F56E67"];
-var backcolors=["#F56E67","#3caea3","#20639B","#99BF72"];
-var headingcontent=[["Mobile App  Design & Development","Mobile App  Design & Development","three0","four0"],["Desktop Application","Desktop Application","three1","four1"],
-["Web Apps Design & Development","Web Apps Design & Development","three2","four2"],["Digital Marketing","Digital Marketing","three3","four3"],]
 const changeside = (e, i) => {
 
     console.log(e);
@@ -448,8 +440,6 @@ const changeside = (e, i) => {
         document.getElementById("back_color"+i.toString()).style.backgroundColor = backcolors[1];
         document.getElementById("back_color"+i.toString()).style.justifyContent = "space-around";
         document.getElementById("heading"+i.toString()).innerText = headingcontent[i][1]; 
-        document.getElementById("btn"+i.toString()).style.backgroundColor = backcolors[1];
-
        
     } else {
         console.log(changeposition[i]);
@@ -467,7 +457,6 @@ const changeside = (e, i) => {
                 document.getElementById("backback_color"+i.toString()).style.backgroundColor = backcolors[2];
                 document.getElementById("backback_color"+i.toString()).style.justifyContent = "space-around";
                 document.getElementById("backheading"+i.toString()).innerText= headingcontent[i][2]; 
-                document.getElementById("btnbtn"+i.toString()).style.backgroundColor = backcolors[2];
         } else {
            
             e.target.parentElement.parentElement.parentElement.previousElementSibling.className = "flip_front_part1_first";
@@ -479,7 +468,6 @@ const changeside = (e, i) => {
             document.getElementById("back_color"+i.toString()).style.backgroundColor = backcolors[0];
             document.getElementById("back_color"+i.toString()).style.justifyContent = "center";
             document.getElementById("heading"+i.toString()).innerText = headingcontent[i][0]; 
-            document.getElementById("btn"+i.toString()).style.backgroundColor = backcolors[0];
         }
     }
 
@@ -487,8 +475,7 @@ const changeside = (e, i) => {
 const changebackside = (e,i) => {
     document.getElementById("bg_color"+i.toString()).style.backgroundColor = bgcolors[3];
     document.getElementById("back_color"+i.toString()).style.backgroundColor = backcolors[3];
-    document.getElementById("heading"+i.toString()).innerText = headingcontent[i][3];
-    document.getElementById("btn"+i.toString()).style.backgroundColor = backcolors[3]; 
+    document.getElementById("heading"+i.toString()).innerText = headingcontent[i][3]; 
     document.getElementById("back_color"+i.toString()).style.justifyContent = "space-around";
     e.target.offsetParent.offsetParent.style.transform = "rotateX(0deg)";
 
