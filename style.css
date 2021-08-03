@@ -625,7 +625,7 @@ input::placeholder {
         background-color: var(--secondary-color);
         width: 100%;
   height: auto;
-  padding: 2rem 4rem;
+  padding: 2rem 4rem 0.5rem 4rem;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -667,10 +667,11 @@ input::placeholder {
         font-weight: var(--heading-weight);
     }
   
-    footer section h1{
+    footer section h1,footer ul h1{
+      font-size: 1rem;
 color: white;
 line-height: 1rem;
-padding: 0 0 1rem 0;
+padding: 0 0 0.5rem 0;
     }
 
   footer section ul li a img{
@@ -1815,8 +1816,58 @@ align-items: center;
   font-size: 1.7rem;
   
 }
+.contactdetail{
+  margin-top: 1rem;
+}
+
+.contactdetail ul {
+  display: flex;
+  flex-direction: column;
+	list-style: none;
+  
+  
+}
+
+/* .contactdetail ul li{
+
+} */
+
+.contactdetail ul li a{
+  text-decoration: none;
+        letter-spacing: 0.1em;
+        line-height: 1.5rem;
+        color: var(--white);
+        font-size:0.8rem;
+        font-weight: var(--heading-weight);
+        position: relative;
+}
+
+.contactdetail ul li a:after{
+	content: '';
+	width: 100%;
+	position: absolute;
+	height: 1.5px;
+	border-radius: 5px;
+	background: #fff;
+	bottom: -5px;
+	left: 0;
+	transform-origin: left;
+	transition: transform .5s ease;
+	transform: scaleX(0);
+}
 
 
+.contactdetail ul li a:hover:after{
+	transform: scaleX(1);
+}
+.copyright{
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black-color);
+}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   body{
@@ -1935,11 +1986,11 @@ align-items: center;
   width: 100%;
 }
 footer{
-  padding: 0.5rem 0.5rem;
+  padding: 0.5rem 0.5rem 0 0.5rem;
   flex-direction: column;
 }
 footer div,footer section,footer ul{
-  margin: 1rem 0;
+  margin: 1rem 0 0.5rem 0;
 }
 footer section h1{
   color: white;
