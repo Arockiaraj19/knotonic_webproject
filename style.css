@@ -174,25 +174,15 @@ text-align: left;
 color:var(--bodyfont-color);
 margin-bottom: 2rem;
 }
-.lispan {
-  
-  position: relative; 
+.divider {
+  width: 20rem;
+  height: 0.1rem;
+  border-radius: 3px;
+  margin: 1rem 0;
+  background-color: white;
 }   
 
-.lispan:after {
-   position: absolute;
-   content: '';
-   height: 2px;
- /* adjust this to move up and down. you may have to adjust the line height of the paragraph if you move it down a lot. */
-   bottom: -5px; 
-   margin: 0 auto;
- left: 0;
-   right: 0;
- width: 30%;
- background: white;
- 
 
-}
 
 
 
@@ -1796,7 +1786,7 @@ height: 100vh;
 }
 #roundarea{
   position: absolute;
-  z-index: 100;
+  z-index: -100;
   height: 15rem;
   width: 15rem ;
 background-color: var(--primary-color);
@@ -1860,11 +1850,42 @@ align-items: center;
 }
 .copyright{
   width: 100%;
-  height: 2rem;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   background-color: var(--black-color);
+  padding-bottom: 1rem;
+}
+
+.stagefour div{
+  display: flex;
+
+
+}
+
+.stagefour div h6{
+font-size: 1rem;
+font-weight: 600;
+color: white;
+line-height: 1rem;
+flex-basis: 15%;
+
+}
+.stagefour div div{
+  font-size: 1rem;
+  font-weight: 300;
+  color: white;
+  line-height: 1rem;
+  flex-basis: 5%;
+}
+.stagefour div h5{
+  font-size: 1rem;
+  font-weight: 300;
+  color: white;
+  line-height: 1rem;
+  flex-basis: 80%;
+ 
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -2133,6 +2154,25 @@ line-height: 2rem;
 	opacity: 0;
 	pointer-events: none;
 }
+
+.stagefour div{
+  width: 100%;
+  align-items: baseline;
+}
+.stagefour div h6{
+  font-size: 0.7rem;
+  line-height: 0.8rem; 
+  
+  }
+  .stagefour div div{
+    font-size: 0.7rem;
+    line-height: 0.8rem; 
+   
+  }
+  .stagefour div h5{
+    font-size: 0.7rem;
+    line-height: 0.8rem; 
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
