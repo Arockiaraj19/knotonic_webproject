@@ -448,6 +448,8 @@ const changeside = (e, i) => {
         document.getElementById("back_color"+i.toString()).style.backgroundColor = backcolors[1];
         document.getElementById("back_color"+i.toString()).style.justifyContent = "space-around";
         document.getElementById("heading"+i.toString()).innerText = headingcontent[i][1]; 
+        document.getElementById("btn"+i.toString()).style.backgroundColor = backcolors[1];
+
        
     } else {
         console.log(changeposition[i]);
@@ -465,6 +467,7 @@ const changeside = (e, i) => {
                 document.getElementById("backback_color"+i.toString()).style.backgroundColor = backcolors[2];
                 document.getElementById("backback_color"+i.toString()).style.justifyContent = "space-around";
                 document.getElementById("backheading"+i.toString()).innerText= headingcontent[i][2]; 
+                document.getElementById("btnbtn"+i.toString()).style.backgroundColor = backcolors[2];
         } else {
            
             e.target.parentElement.parentElement.parentElement.previousElementSibling.className = "flip_front_part1_first";
@@ -476,6 +479,7 @@ const changeside = (e, i) => {
             document.getElementById("back_color"+i.toString()).style.backgroundColor = backcolors[0];
             document.getElementById("back_color"+i.toString()).style.justifyContent = "center";
             document.getElementById("heading"+i.toString()).innerText = headingcontent[i][0]; 
+            document.getElementById("btn"+i.toString()).style.backgroundColor = backcolors[0];
         }
     }
 
@@ -483,7 +487,8 @@ const changeside = (e, i) => {
 const changebackside = (e,i) => {
     document.getElementById("bg_color"+i.toString()).style.backgroundColor = bgcolors[3];
     document.getElementById("back_color"+i.toString()).style.backgroundColor = backcolors[3];
-    document.getElementById("heading"+i.toString()).innerText = headingcontent[i][3]; 
+    document.getElementById("heading"+i.toString()).innerText = headingcontent[i][3];
+    document.getElementById("btn"+i.toString()).style.backgroundColor = backcolors[3]; 
     document.getElementById("back_color"+i.toString()).style.justifyContent = "space-around";
     e.target.offsetParent.offsetParent.style.transform = "rotateX(0deg)";
 
