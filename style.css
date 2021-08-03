@@ -191,7 +191,7 @@ width: 100%;
 font-weight: normal;
 font-size:1rem;
 letter-spacing: 0.1em;
-line-height: 1.7rem;
+line-height: 2rem;
 color:var(--bodyfont-color);
 
 }
@@ -391,12 +391,13 @@ margin-left:3rem;
 
  }
 .about .about_img{
-  height: 80vh;
+  height: 60vh;
   width: 50%;
   background-image: url("./assets/about.png");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center;
+  background-position:initial;
+
 }
   .about div{
     height: auto;
@@ -1779,12 +1780,12 @@ height: 100vh;
 #roundarea{
   position: absolute;
   z-index: 100;
-  height: 10rem;
-  width: 10rem ;
+  height: 15rem;
+  width: 15rem ;
 background-color: var(--primary-color);
 border-radius: 50%;
-top: 20vh;
-right: 50%;
+top: 15vh;
+right: 53%;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -1792,6 +1793,7 @@ align-items: center;
 #roundarea h2{
   text-align: center;
   font-size: 1.7rem;
+  
 }
 
 
@@ -1854,10 +1856,37 @@ margin-bottom: 1rem;
 font-size: 1rem;
 line-height:1.5rem;
 }
+.para{ 
+  width: 100%;
+  font-weight: normal;
+  font-size:0.8rem;
+  letter-spacing: 0.1em;
+  line-height: 2rem;
+  color:var(--bodyfont-color);
+  
+  }
 
 .logo{
-  height:2rem;
-  width:6rem;
+  height:4rem;
+  width:8rem;
+}
+#roundarea{
+  position: absolute;
+  z-index: 100;
+  height: 10rem;
+  width: 10rem ;
+background-color: var(--primary-color);
+
+top: 15vh;
+right: 53%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#roundarea h2{
+  text-align: center;
+  font-size: 1.2rem;
+  
 }
 
     #technology, #development_card,#aboutus,#contact{
@@ -2015,6 +2044,10 @@ line-height: 2rem;
     width: 100%;
 
     margin-bottom: 6rem;
+    background-repeat: no-repeat;
+  background-size: contain;
+  background-position:initial;
+  
    
   }
   #roundarea{
