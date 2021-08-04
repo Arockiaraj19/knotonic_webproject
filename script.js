@@ -164,7 +164,7 @@ function SliderScrollTrigger() {
     Slide10
         .from('.flip-card_first', {
             stagger: 1,
-            opacity: 0, y: "-100%",
+            opacity: 0, x: "-32%",
         })
 
     let Slide2 = gsap.timeline({ // Slide2---------------------
@@ -382,7 +382,7 @@ setTimeout(function () {
 
 const open = document.querySelector('.container');
 const close = document.querySelector('.close');
-var tl = gsap.timeline({ defaults: { duration: 1, ease: 'expo.inOut' } });
+var tl = gsap.timeline({ defaults: { duration: 0.5, ease: 'expo.inOut' } });
 open.addEventListener('click', () => {
     if (tl.reversed()) {
         tl.play();
