@@ -626,7 +626,7 @@ document.getElementById("submit").addEventListener("click", (e) => {
                 oForm.elements[3].value = "";
                 document.getElementById("submit").style.display = "block";
                 swal({
-                    title: "Thanks for cosulting ours",
+                    title: "Thanks for be with us",
                     text: "Nantri",
                     icon: "success",
                     button: "Ok",
