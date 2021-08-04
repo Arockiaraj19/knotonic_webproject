@@ -417,10 +417,10 @@ const scrolltocontainer = (data) => {
 
 var changeposition = [undefined, undefined, undefined, undefined];
 var content = [
-    "<div class='stagefour' style='display: flex;justify-content: flex-start;width: 100%;flex-direction:column;height:70%'>  <div><h6>Design</h6><div>-</div><h5>Photoshop,illustrator,adobe xd,after effects</h5></div>   <div><h6>Frontend</h6><div>-</div><h5>Flutter, React Native</h5></div>   <div><h6>Design</h6><div>-</div><h5>Photoshop,illustrator,adobe xd,after effects</h5></div>   <div><h6>Frontend</h6><div>-</div><h5>Flutter, React Native</h5></div></div>", 
-    "<div class='stagefour' style='display: flex;justify-content: flex-start;width: 100%;flex-direction:column'>  <div><h6>Design</h6><div>-</div><h5>Photoshop,illustrator,adobe xd,after effects</h5></div>   <div><h6>Frontend</h6><div>-</div><h5>Flutter, React Native</h5></div>   <div><h6>Design</h6><div>-</div><h5>Photoshop,illustrator,adobe xd,after effects</h5></div>   <div><h6>Frontend</h6><div>-</div><h5>Flutter, React Native</h5></div></div>", 
-    "<div class='stagefour' style='display: flex;justify-content: flex-start;width: 100%;flex-direction:column'>  <div><h6>Design</h6><div>-</div><h5>Photoshop,illustrator,adobe xd,after effects</h5></div>   <div><h6>Frontend</h6><div>-</div><h5>Flutter, React Native</h5></div>   <div><h6>Design</h6><div>-</div><h5>Photoshop,illustrator,adobe xd,after effects</h5></div>   <div><h6>Frontend</h6><div>-</div><h5>Flutter, React Native</h5></div></div>", 
-    "<div class='stagefour' style='display: flex;justify-content: flex-start;width: 100%;flex-direction:column'>  <div><h6>Design</h6><div>-</div><h5>Photoshop,illustrator,adobe xd,after effects</h5></div>   <div><h6>Frontend</h6><div>-</div><h5>Flutter, React Native</h5></div>   <div><h6>Design</h6><div>-</div><h5>Photoshop,illustrator,adobe xd,after effects</h5></div>   <div><h6>Frontend</h6><div>-</div><h5>Flutter, React Native</h5></div></div>", 
+    "<div id='stagefour0' class='stagefour' style='display: flex;justify-content: flex-start;width: 100%;flex-direction:column'>  <div><h6>Design</h6><div>-</div><h5>Photoshop,illustrator,adobe xd,after effects</h5></div>   <div><h6>Frontend</h6><div>-</div><h5>Flutter, React Native</h5></div>   <div><h6>Design</h6><div>-</div><h5>Photoshop,illustrator,adobe xd,after effects</h5></div>   <div><h6>Frontend</h6><div>-</div><h5>Flutter, React Native</h5></div></div>",
+    "<div id='stagefour1' class='stagefour' style='display: flex;justify-content: flex-start;width: 100%;flex-direction:column'>  <div><h6>Design</h6><div>-</div><h5>Photoshop,illustrator,adobe xd,after effects</h5></div>   <div><h6>Frontend</h6><div>-</div><h5>Flutter, React Native</h5></div>   <div><h6>Design</h6><div>-</div><h5>Photoshop,illustrator,adobe xd,after effects</h5></div>   <div><h6>Frontend</h6><div>-</div><h5>Flutter, React Native</h5></div></div>",
+    "<div id='stagefour2' class='stagefour' style='display: flex;justify-content: flex-start;width: 100%;flex-direction:column'>  <div><h6>Design</h6><div>-</div><h5>Photoshop,illustrator,adobe xd,after effects</h5></div>   <div><h6>Frontend</h6><div>-</div><h5>Flutter, React Native</h5></div>   <div><h6>Design</h6><div>-</div><h5>Photoshop,illustrator,adobe xd,after effects</h5></div>   <div><h6>Frontend</h6><div>-</div><h5>Flutter, React Native</h5></div></div>",
+    "<div id='stagefour3' class='stagefour' style='display: flex;justify-content: flex-start;width: 100%;flex-direction:column'>  <div><h6>Design</h6><div>-</div><h5>Photoshop,illustrator,adobe xd,after effects</h5></div>   <div><h6>Frontend</h6><div>-</div><h5>Flutter, React Native</h5></div>   <div><h6>Design</h6><div>-</div><h5>Photoshop,illustrator,adobe xd,after effects</h5></div>   <div><h6>Frontend</h6><div>-</div><h5>Flutter, React Native</h5></div></div>",
 ];
 var contentinit = ["don mobile", "don lucifer", "don web", "don cloud computing"];
 var images = ["url(./assets/sliderp1.png)", "url(./assets/desktopslider.png)", "url(./assets/webappslider.png)", "url(./assets/process1.png)"];
@@ -433,16 +433,17 @@ var bgcolors = ["#3caea3", "#F6D55C", "F56E67", "#F56E67"];
 var backcolors = ["#F56E67", "#3caea3", "#20639B", "#99BF72"];
 var headingcontent = [["Mobile App  Design & Development", "Mobile App  Design & Development", "three0", "four0"], ["Desktop Application", "Desktop Application", "three1", "four1"],
 ["Web Apps Design & Development", "Web Apps Design & Development", "three2", "four2"], ["Digital Marketing", "Digital Marketing", "three3", "four3"],]
-var bgcolors=["#3caea3","#F6D55C","F56E67","#F56E67"];
-var backcolors=["#F56E67","#3caea3","#20639B","#99BF72"];
-var headingcontent=[["Mobile App  Design & Development","Mobile App  Design & Development","Advantage","Technology Used"],["Desktop Application","Desktop Application","Advantage","Technology Used"],
-["Web Apps Design & Development","Web Apps Design & Development","Advantage","Technology Used"],["Digital Marketing","Digital Marketing","Advantage","Technology Used"],]
+var bgcolors = ["#3caea3", "#F6D55C", "F56E67", "#F56E67"];
+var backcolors = ["#F56E67", "#3caea3", "#20639B", "#99BF72"];
+var headingcontent = [["Mobile App  Design & Development", "Mobile App  Design & Development", "Advantage", "Technology Used"], ["Desktop Application", "Desktop Application", "Advantage", "Technology Used"],
+["Web Apps Design & Development", "Web Apps Design & Development", "Advantage", "Technology Used"], ["Digital Marketing", "Digital Marketing", "Advantage", "Technology Used"],]
 const changeside = (e, i) => {
 
     console.log(e);
 
     if (e.target.parentElement.parentElement.previousElementSibling.className == "paragraph_first") {
         changeposition[i] = 0;
+        document.getElementById(i.toString()).style.display="block";
         document.getElementById(i.toString()).innerHTML = contentinit[i];
         e.target.parentElement.parentElement.parentElement.previousElementSibling.className = "flip_front_part1";
 
@@ -459,6 +460,7 @@ const changeside = (e, i) => {
     } else {
         console.log(changeposition[i]);
         if (changeposition[i] == 0) {
+           
             console.log(e.target.parentElement.parentElement.previousElementSibling.className);
 
             e.target.offsetParent.offsetParent.style.transform = "rotateX(180deg)";
@@ -467,7 +469,7 @@ const changeside = (e, i) => {
             changeposition[i] = 1;
 
             document.getElementById("image" + i.toString()).style.backgroundImage = images[i];
-           
+
             document.getElementById("image" + i.toString()).style.backgroundColor = bgcolors[2];
             document.getElementById("backback_color" + i.toString()).style.backgroundColor = backcolors[2];
             document.getElementById("backback_color" + i.toString()).style.justifyContent = "space-around";
@@ -477,7 +479,9 @@ const changeside = (e, i) => {
 
             e.target.parentElement.parentElement.parentElement.previousElementSibling.className = "flip_front_part1_first";
             e.target.parentElement.parentElement.parentElement.className = "flip_front_part2_first";
-            e.target.parentElement.parentElement.previousElementSibling.className = "paragraph_first";
+            document.getElementById(i.toString()).className = "paragraph_first";
+          
+            document.getElementById("stagefour"+i.toString()).remove();
             e.target.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.className = "flip-card_first";
             changeposition[i] = undefined;
             document.getElementById("bg_color" + i.toString()).style.backgroundColor = bgcolors[0];
@@ -490,7 +494,9 @@ const changeside = (e, i) => {
 
 }
 const changebackside = (e, i) => {
-    document.getElementById(i.toString()).innerHTML = content[i];
+    var myimg = document.getElementById(i.toString());
+myimg.insertAdjacentHTML("afterend",content[i] );
+ myimg.style.display="none";
     document.getElementById("bg_color" + i.toString()).style.backgroundColor = bgcolors[3];
     document.getElementById("back_color" + i.toString()).style.backgroundColor = backcolors[3];
     document.getElementById("heading" + i.toString()).innerText = headingcontent[i][3];

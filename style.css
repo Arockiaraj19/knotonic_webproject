@@ -1652,6 +1652,7 @@ line-height: 1.7rem;
 text-align: left;
 color:var(--bodyfont-color);
 margin-bottom: 0.5rem;
+
 }
 .paragraph_first{
   display: none;
@@ -1856,10 +1857,15 @@ align-items: center;
   background-color: var(--black-color);
   padding-bottom: 1rem;
 }
+.stagefour{
+  width: 100%;
+   margin-top: 0.5rem;
+ }
 
 .stagefour div{
+  width: 100%;
   display: flex;
-
+align-items: flex-start;
 
 }
 
@@ -1868,7 +1874,7 @@ font-size: 1rem;
 font-weight: 600;
 color: white;
 line-height: 1rem;
-flex-basis: 15%;
+width: 15%;
 
 }
 .stagefour div div{
@@ -1876,15 +1882,26 @@ flex-basis: 15%;
   font-weight: 300;
   color: white;
   line-height: 1rem;
-  flex-basis: 5%;
+width: 5%;
 }
 .stagefour div h5{
+  text-align: left;
   font-size: 1rem;
   font-weight: 300;
   color: white;
   line-height: 1rem;
-  flex-basis: 80%;
+  width: 80%;
+
  
+}
+.backlist ul li{
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  line-height: 1.5rem;
+  color: var(--white);
+  text-align: left;
+  font-size:1rem;
+  font-weight: 300;
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -2153,31 +2170,36 @@ line-height: 2rem;
 	opacity: 0;
 	pointer-events: none;
 }
-.stagefour{
-  overflow: hidden;
-  margin-top: 0.5rem;
-}
 .stagefour div{
-
-  width: 100%;
-  align-items: baseline;
+  height: fit-content;
 }
 .stagefour div h6{
   font-size: 0.7rem;
   line-height: 1rem; 
+  width: 25%;
   
   }
   .stagefour div div{
     font-size: 0.7rem;
     line-height: 1rem; 
-   
+   width: 5%;
   }
   .stagefour div h5{
    
     font-size: 0.7rem;
     line-height: 1rem; 
-    margin: 0;
-    overflow: hidden;
+width: 70%;
+margin: 0;
+word-wrap: break-word;
+  }
+  .backlist ul li{
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    line-height: 1rem;
+    color: var(--white);
+    text-align: left;
+    font-size:0.7rem;
+    font-weight: 300;
   }
 }
 
