@@ -164,7 +164,7 @@ function SliderScrollTrigger() {
     Slide10
         .from('.flip-card_first', {
             stagger: 1,
-            opacity: 0, y: "-100%",
+            opacity: 0, x: "-32%",
         })
 
     let Slide2 = gsap.timeline({ // Slide2---------------------
@@ -382,7 +382,7 @@ setTimeout(function () {
 
 const open = document.querySelector('.container');
 const close = document.querySelector('.close');
-var tl = gsap.timeline({ defaults: { duration: 1, ease: 'expo.inOut' } });
+var tl = gsap.timeline({ defaults: { duration: 0.5, ease: 'expo.inOut' } });
 open.addEventListener('click', () => {
     if (tl.reversed()) {
         tl.play();
@@ -420,7 +420,7 @@ var content = [
     "<div id='stagefour0' class='stagefour' style='display: flex;justify-content: flex-start;width: 100%;flex-direction:column'>  <div><h6>Design</h6><div>-</div><h5>Photoshop,illustrator,adobe xd,after effects</h5></div>   <div><h6>Frontend</h6><div>-</div><h5>Flutter, React Native</h5></div>   <div><h6>Design</h6><div>-</div><h5>Photoshop,illustrator,adobe xd,after effects</h5></div>   <div><h6>Frontend</h6><div>-</div><h5>Flutter, React Native</h5></div></div>",
     "<div id='stagefour1' class='stagefour' style='display: flex;justify-content: flex-start;width: 100%;flex-direction:column'>  <div><h6>Design</h6><div>-</div><h5>Photoshop,illustrator,adobe xd,after effects</h5></div>   <div><h6>Frontend</h6><div>-</div><h5>Flutter, React Native</h5></div>   <div><h6>Design</h6><div>-</div><h5>Photoshop,illustrator,adobe xd,after effects</h5></div>   <div><h6>Frontend</h6><div>-</div><h5>Flutter, React Native</h5></div></div>",
     "<div id='stagefour2' class='stagefour' style='display: flex;justify-content: flex-start;width: 100%;flex-direction:column'>  <div><h6>Design</h6><div>-</div><h5>Photoshop,illustrator,adobe xd,after effects</h5></div>   <div><h6>Frontend</h6><div>-</div><h5>Flutter, React Native</h5></div>   <div><h6>Design</h6><div>-</div><h5>Photoshop,illustrator,adobe xd,after effects</h5></div>   <div><h6>Frontend</h6><div>-</div><h5>Flutter, React Native</h5></div></div>",
-    "<div id='stagefour3' class='stagefour' style='display: flex;justify-content: flex-start;width: 100%;flex-direction:column'>  <div><h6>Design</h6><div>-</div><h5>Photoshop,illustrator,adobe xd,after effects</h5></div>   <div><h6>Frontend</h6><div>-</div><h5>Flutter, React Native</h5></div>   <div><h6>Design</h6><div>-</div><h5>Photoshop,illustrator,adobe xd,after effects</h5></div>   <div><h6>Frontend</h6><div>-</div><h5>Flutter, React Native</h5></div></div>",
+    "<div id='stagefour3' class='backlist' style='display: flex;justify-content: flex-start;width: 90%;'><ul><li>Search Engine Optimization (SEO)</li>  <li>Social Media Marketing</li> <li>Content Marketing</li>  <li>Email Marketing</li>  </ul>     </div>",
 ];
 var contentinit = ["don mobile", "don lucifer", "don web", "don cloud computing"];
 var images = ["url(./assets/sliderp1.png)", "url(./assets/desktopslider.png)", "url(./assets/webappslider.png)", "url(./assets/process1.png)"];
@@ -443,7 +443,7 @@ const changeside = (e, i) => {
 
     if (e.target.parentElement.parentElement.previousElementSibling.className == "paragraph_first") {
         changeposition[i] = 0;
-        document.getElementById(i.toString()).style.display="block";
+        document.getElementById(i.toString()).style.display = "block";
         document.getElementById(i.toString()).innerHTML = contentinit[i];
         e.target.parentElement.parentElement.parentElement.previousElementSibling.className = "flip_front_part1";
 
@@ -460,7 +460,7 @@ const changeside = (e, i) => {
     } else {
         console.log(changeposition[i]);
         if (changeposition[i] == 0) {
-           
+
             console.log(e.target.parentElement.parentElement.previousElementSibling.className);
 
             e.target.offsetParent.offsetParent.style.transform = "rotateX(180deg)";
@@ -480,8 +480,8 @@ const changeside = (e, i) => {
             e.target.parentElement.parentElement.parentElement.previousElementSibling.className = "flip_front_part1_first";
             e.target.parentElement.parentElement.parentElement.className = "flip_front_part2_first";
             document.getElementById(i.toString()).className = "paragraph_first";
-          
-            document.getElementById("stagefour"+i.toString()).remove();
+
+            document.getElementById("stagefour" + i.toString()).remove();
             e.target.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.className = "flip-card_first";
             changeposition[i] = undefined;
             document.getElementById("bg_color" + i.toString()).style.backgroundColor = bgcolors[0];
@@ -495,8 +495,8 @@ const changeside = (e, i) => {
 }
 const changebackside = (e, i) => {
     var myimg = document.getElementById(i.toString());
-myimg.insertAdjacentHTML("afterend",content[i] );
- myimg.style.display="none";
+    myimg.insertAdjacentHTML("afterend", content[i]);
+    myimg.style.display = "none";
     document.getElementById("bg_color" + i.toString()).style.backgroundColor = bgcolors[3];
     document.getElementById("back_color" + i.toString()).style.backgroundColor = backcolors[3];
     document.getElementById("heading" + i.toString()).innerText = headingcontent[i][3];
