@@ -506,10 +506,7 @@ const changebackside = (e, i) => {
 
 }
 
-const wait = (delay = 0) =>Promise.all(Array.from(document.images).filter(img => !img.complete).map(img => new Promise(resolve => { img.onload = img.onerror = resolve; }))).then(() => {
-    console.log("image loaded");
-   return new Promise(resolve => setTimeout(resolve, delay));
-});
+const wait = (delay = 0) => new Promise(resolve => setTimeout(resolve, delay));
 
    
 
@@ -642,3 +639,6 @@ document.getElementById("submit").addEventListener("click", (e) => {
 })
 
 
+const el = document.querySelector('img');
+const observer = lozad(el); // passing a `NodeList` (e.g. `document.querySelectorAll()`) is also valid
+observer.observe();
