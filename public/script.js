@@ -9,15 +9,7 @@
 
 
 
-//home page slide part area
-window.onload = () => {
-    'use strict';
-  
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker
-               .register('sw.js');
-    }
-  }
+
 
 
 var slidehomeIndex = 0;
@@ -527,7 +519,7 @@ setVisible('.mainwrapper', false);
 setVisible('.wrapper', true);
 
 document.addEventListener('DOMContentLoaded', () => {
-
+  
     wait(1000).then(() => {
         setVisible('.mainwrapper', true);
         setVisible('.wrapper', false);
@@ -646,3 +638,10 @@ document.getElementById("submit").addEventListener("click", (e) => {
 })
 
 
+window.onload = () => {
+    'use strict';
+  
+    navigator.serviceWorker.register("sw.js", { scope: "/public/" }).then(() => {
+        console.log("service worker Install succeeded ");
+    });
+  }
