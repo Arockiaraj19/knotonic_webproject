@@ -22,7 +22,7 @@
         }
     ],
     "lang": "en-US",
-    "start_url": "/public/",
+    "start_url": "/",
     "display": "standalone",
     "background_color": "white",
     "theme_color": "white",
