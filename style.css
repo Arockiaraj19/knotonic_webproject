@@ -140,7 +140,7 @@ h6{
   padding: 2rem 0;
 }
 
-p{  
+/* p{  
     width: 70%;
 font-weight: normal;
 font-size:1.5rem;
@@ -149,7 +149,7 @@ line-height: 2.5rem;
 text-align: left;
 color:var(--bodyfont-color);
 margin-bottom: 2rem;
-}
+} */
 .divider {
   width: 20rem;
   height: 0.1rem;
@@ -176,7 +176,7 @@ width: 100%;
 font-weight: normal;
 font-size:1.5rem;
 letter-spacing: 0.3rem;
-line-height: 2.5rem;
+line-height: 2rem;
 color:var(--bodyfont-color);
 
 }
@@ -1476,40 +1476,44 @@ align-items: center;
 }
 .stagefour{
   width: 100%;
-   margin-top: 0.5rem;
+  
  }
 
-.stagefour div{
+.mainwrapper{
   width: 100%;
   display: flex;
-align-items: flex-start;
+align-items: center;
+justify-content:stretch;
 
 }
 
-.stagefour div h6{
-font-size: 1rem;
+.firstpart{
+  text-align: left;
+font-size: 1.2rem;
 font-weight: 600;
 color: white;
-line-height: 1rem;
-width: 15%;
+line-height: 2rem;
+width: 17%;
 
 }
-.stagefour div div{
-  font-size: 1rem;
-  font-weight: 300;
-  color: white;
-  line-height: 1rem;
-width: 5%;
-}
-.stagefour div h5{
+.secondpart{
   text-align: left;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 300;
   color: white;
-  line-height: 1rem;
-  width: 80%;
+  line-height: 2rem;
+  
+width: 3%;
 
- 
+}
+.thirdpart{
+
+  text-align: left;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: white;
+  line-height: 2rem;
+  width: 80%;
 }
 .backlist ul li{
   text-decoration: none;
@@ -1517,7 +1521,7 @@ width: 5%;
   line-height: 1.5rem;
   color: var(--white);
   text-align: left;
-  font-size:1rem;
+  font-size:1.2rem;
   font-weight: 300;
 }
 /* Extra small devices (phones, 600px and down) */
@@ -1565,7 +1569,7 @@ padding: 1.5rem 0 1rem 0rem;
 }
 
 h3{
-  font-weight:300;
+  font-weight:500;
   font-size: 1.05rem;
   letter-spacing: 0.1em;
   color:var(--bodyfont-color);
@@ -1588,18 +1592,18 @@ margin-bottom: 1rem;
 font-size: 1rem;
 line-height:1.5rem;
 } */
-/* .para{ 
+.para{ 
   width: 100%;
   font-weight: normal;
   font-size:1rem;
   letter-spacing: 0.1em;
-  line-height: 1.5rem;
+  line-height: 1.3rem;
   color:var(--bodyfont-color);
   
-  } */
+  }
 
 .paragraph{
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   line-height: 1.2rem;
 }
 .logo{
@@ -1697,14 +1701,14 @@ font-size: 1rem;
     font-size: 1rem;
     line-height: 0.7rem;
   }
-  .flip_front_part2_first p{
+  /* .flip_front_part2_first p{
     font-size: 0.7rem;
     line-height: 1rem;
   }
   .flip_front_part2 p{
     font-size: 0.7rem;
     line-height: 1rem;
-  }
+  } */
   .flip_front_part2,.flip_front_part2_first{
     padding: 0 0.5rem;
       }
@@ -1800,35 +1804,41 @@ line-height: 2.5rem;
 	opacity: 0;
 	pointer-events: none;
 }
-.stagefour div{
-  height: fit-content;
+.mainwrapper{
+  width: 100%;
+  flex-wrap: wrap;
+  word-wrap: break-word;
 }
-.stagefour div h6{
-  font-size: 0.7rem;
-  line-height: 1rem; 
-  width: 25%;
-  
-  }
-  .stagefour div div{
-    font-size: 0.7rem;
-    line-height: 1rem; 
-   width: 5%;
-  }
-  .stagefour div h5{
-   
-    font-size: 0.7rem;
-    line-height: 1rem; 
-width: 70%;
-margin: 0;
-word-wrap: break-word;
-  }
+.firstpart{
+width: 100%;
+font-size: 0.9rem;
+line-height: 1.2rem;
+
+color:var(--black-color);
+}
+.secondpart{
+  display: none;
+  width: auto;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+
+}
+.thirdpart{
+
+  width: 100%;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  word-wrap: break-word;
+
+}
+
   .backlist ul li{
     text-decoration: none;
     letter-spacing: 0.1em;
-    line-height: 1rem;
+    line-height: 1.3rem;
     color: var(--white);
     text-align: left;
-    font-size:0.7rem;
+    font-size:1rem;
     font-weight: 300;
   }
 }

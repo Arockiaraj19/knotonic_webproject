@@ -404,9 +404,9 @@ const scrolltocontainer = (data) => {
 
 var changeposition = [undefined, undefined, undefined, undefined];
 var content = [
-    "<div id='stagefour0' class='stagefour' style='display: flex;justify-content: flex-start;width: 100%;flex-direction:column'>  <div><h6>Design</h6><div>-</div><h5>Photoshop,illustrator,adobe xd,after effects</h5></div>   <div><h6>Frontend</h6><div>-</div><h5>Flutter, React Native</h5></div>   <div><h6>Backend</h6><div>-</div><h5>Node js,Firebase</h5></div>   <div><h6>Database</h6><div>-</div><h5>Firebase,Mongodb,Postgresql,Mysql,Redis.</h5></div></div>",
-    "<div id='stagefour1' class='stagefour' style='display: flex;justify-content: flex-start;width: 100%;flex-direction:column'>  <div><h6>Design</h6><div>-</div><h5>Photoshop,illustrator,adobe xd,after effects</h5></div>   <div><h6>Frontend</h6><div>-</div><h5>Html,css,Boostrap,Javascript,Electron js,React js</h5></div>   <div><h6>Backend</h6><div>-</div><h5>Node js,Firebase</h5></div>   <div><h6>Database</h6><div>-</div><h5>Firebase,Mongodb,Postgresql,Mysql,Redis.</h5></div></div>",
-    "<div id='stagefour2' class='stagefour' style='display: flex;justify-content: flex-start;width: 100%;flex-direction:column'>  <div><h6>Design</h6><div>-</div><h5>Photoshop,illustrator,adobe xd,after effects</h5></div>   <div><h6>Frontend</h6><div>-</div><h5>Html,css,Boostrap,Javascript,React js</h5></div>   <div><h6>Backend</h6><div>-</div><h5>Node js,Firebase</h5></div>   <div><h6>Database</h6><div>-</div><h5>Firebase,Mongodb,Postgresql,Mysql,Redis.</h5></div></div>",
+    "<div id='stagefour0' class='stagefour' style='display: flex;justify-content: flex-start;width: 100%;flex-direction:column'>  <div class='mainwrapper'><div class='firstpart'>Design</div><div class='secondpart'>-</div><div class='thirdpart'>Photoshop,illustrator,adobe xd,after effects</div></div>   <div class='mainwrapper'><div class='firstpart'>Frontend</div><div class='secondpart'>-</div><div class='thirdpart'>Flutter, React Native</div></div>   <div class='mainwrapper'><div class='firstpart'>Backend</div><div class='secondpart'>-</div><div class='thirdpart'>Node js,Firebase</div></div>   <div class='mainwrapper'><div class='firstpart'>Database</div><div class='secondpart'>-</div><div class='thirdpart'>Firebase,Mongodb,Postgresql,Mysql,Redis.</div></div></div>",
+    "<div id='stagefour1' class='stagefour' style='display: flex;justify-content: flex-start;width: 100%;flex-direction:column'>  <div class='mainwrapper'><div class='firstpart'>Design</div><div class='secondpart'>-</div><div class='thirdpart'>Photoshop,illustrator,adobe xd,after effects</div></div>   <div class='mainwrapper'><div class='firstpart'>Frontend</div><div class='secondpart'>-</div><div class='thirdpart'>Html,css,Boostrap,Javascript,Electron js,React js</div></div>   <div class='mainwrapper'><div class='firstpart'>Backend</div><div class='secondpart'>-</div><div class='thirdpart'>Node js,Firebase</div></div>   <div class='mainwrapper'><div class='firstpart'>Database</div><div class='secondpart'>-</div><div class='thirdpart'>Firebase,Mongodb,Postgresql,Mysql,Redis.</div></div></div>",
+    "<div id='stagefour2' class='stagefour' style='display: flex;justify-content: flex-start;width: 100%;flex-direction:column'>  <div class='mainwrapper'><div class='firstpart'>Design</div><div class='secondpart'>-</div><div class='thirdpart'>Photoshop,illustrator,adobe xd,after effects</div></div>   <div class='mainwrapper'><div class='firstpart'>Frontend</div><div class='secondpart'>-</div><div class='thirdpart'>Html,css,Boostrap,Javascript,React js</div></div>   <div class='mainwrapper'><div class='firstpart'>Backend</div><div class='secondpart'>-</div><div class='thirdpart'>Node js,Firebase</div></div>   <div class='mainwrapper'><div class='firstpart'>Database</div><div class='secondpart'>-</div><div class='thirdpart'>Firebase,Mongodb,Postgresql,Mysql,Redis.</div></div></div>",
     "<div id='stagefour3' class='backlist' style='display: flex;justify-content: flex-start;width: 90%;'><ul><li>Search Engine Optimization (SEO)</li>  <li>Social Media Marketing</li> <li>Content Marketing</li>  <li>Email Marketing</li>  </ul>     </div>",
 ];
 var contentinit = ["don mobile", "don lucifer", "don web", "don cloud computing"];
@@ -495,7 +495,7 @@ const changebackside = (e, i) => {
 
 const wait = (delay = 0) => new Promise(resolve => setTimeout(resolve, delay));
 
-   
+
 
 const setVisible = (elementOrSelector, visible) =>
     (typeof elementOrSelector === 'string'
@@ -507,7 +507,7 @@ setVisible('.mainwrapper', false);
 setVisible('.wrapper', true);
 
 document.addEventListener('DOMContentLoaded', () => {
-  
+
     wait(1000).then(() => {
         setVisible('.mainwrapper', true);
         setVisible('.wrapper', false);
@@ -531,7 +531,7 @@ function LottieScrollTrigger(vars) {
         animation = lottie.loadAnimation({
             container: target,
             renderer: vars.renderer || "svg",
-            loop:true,
+            loop: true,
             autoplay: true,
             path: vars.path
         });
@@ -628,13 +628,12 @@ document.getElementById("submit").addEventListener("click", (e) => {
 
 // window.onload = () => {
 //     'use strict';
-  
+
 //     navigator.serviceWorker.register("sw.js").then(() => {
 //         console.log("change manifest file");
 //         console.log("service worker Install succeeded ");
 //     });
 //   }
 
- 
 
- 
+
