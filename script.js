@@ -626,14 +626,14 @@ document.getElementById("submit").addEventListener("click", (e) => {
 })
 
 
-window.onload = () => {
-    'use strict';
+// window.onload = () => {
+//     'use strict';
   
-    navigator.serviceWorker.register("sw.js").then(() => {
-        console.log("change manifest file");
-        console.log("service worker Install succeeded ");
-    });
-  }
+//     navigator.serviceWorker.register("sw.js").then(() => {
+//         console.log("change manifest file");
+//         console.log("service worker Install succeeded ");
+//     });
+//   }
 
  
 
