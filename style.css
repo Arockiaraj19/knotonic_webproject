@@ -762,17 +762,18 @@ width: 100%;
   color: #fff;
   width: 100%;
   font-size: 1.3vw;
-  padding: 0 8vw;
+  padding: 0 5vw;
   line-height: 1rem;
   font-weight: 300;
   margin: 0;
   opacity: 1;
 }
-.content__right .content__main p:last-child {
+.content__right .content__main p{
   width: 100%;
   text-transform: uppercase;
   letter-spacing: 0.15em;
   font-size: 1em;
+  line-height: 1.7em;
 }
 
 .content__right .content__main p::before {
