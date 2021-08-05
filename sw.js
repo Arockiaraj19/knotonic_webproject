@@ -1,6 +1,7 @@
 var cacheName = 'knotonic';
 var filesToCache = [
   '/',
+  'assets',
   'data.json',
   'index.html',
   'style.css',

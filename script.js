@@ -260,7 +260,7 @@ function SliderScrollTrigger() {
 /*-------------Navbar (max-width: 400px)------------- */
 function Navbar() {
 
-    console.log("mobile devices");
+    console.log("mobile devices check anthoer");
     // gsap.from('#wrapper #Navbar', {
     //     opacity: 0, x: "40%", duration: 2, ease: "sine.in",
     // })
@@ -626,14 +626,14 @@ document.getElementById("submit").addEventListener("click", (e) => {
 })
 
 
-window.onload = () => {
-    'use strict';
+// window.onload = () => {
+//     'use strict';
   
-    navigator.serviceWorker.register("sw.js").then(() => {
-        console.log("ithu service ithu final correct a varuthaa");
-        console.log("service worker Install succeeded ");
-    });
-  }
+//     navigator.serviceWorker.register("sw.js").then(() => {
+//         console.log("ithu service ithu final correct a varuthaa");
+//         console.log("service worker Install succeeded ");
+//     });
+//   }
 
  
 
