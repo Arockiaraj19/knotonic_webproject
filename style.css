@@ -192,7 +192,7 @@ color:var(--bodyfont-color);
 
  }
 .about .about_img{
-  height: 60vh;
+  height: 100vh;
   width: 50%;
   background-image: url("./assets/about.png");
   background-repeat: no-repeat;

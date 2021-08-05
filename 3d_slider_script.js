@@ -169,10 +169,10 @@ $(() => {
 
 function handleVisibilityChange() {
   if (document.hidden) {
-    document.title = "Hey Come Back";
+    document.title = "Hey Come Back | knotonic | Software product development company";
 
   } else {
-    document.title = "knotonic";
+    document.title = "knotonic | Software product development company";
 
     location.reload();
   }
