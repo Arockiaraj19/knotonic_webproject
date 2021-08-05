@@ -165,3 +165,16 @@ const init = () => {
 $(() => {
   init();
 });
+
+
+
+function handleVisibilityChange() {
+  if(document.hidden) {
+    document.title="Hey Come Back";
+  } else {
+    init();
+    document.title="knotonic";
+  }
+}
+
+document.addEventListener("visibilitychange", handleVisibilityChange, false);
