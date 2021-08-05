@@ -10,7 +10,14 @@
 
 
 //home page slide part area
-
+window.onload = () => {
+    'use strict';
+  
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker
+               .register('sw.js');
+    }
+  }
 
 
 var slidehomeIndex = 0;
@@ -639,6 +646,3 @@ document.getElementById("submit").addEventListener("click", (e) => {
 })
 
 
-const el = document.querySelector('img');
-const observer = lozad(el); // passing a `NodeList` (e.g. `document.querySelectorAll()`) is also valid
-observer.observe();
