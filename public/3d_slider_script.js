@@ -8,7 +8,7 @@ let canvas = false;
 const SPIN_FORWARD_CLASS = "js-spin-fwd";
 const SPIN_BACKWARD_CLASS = "js-spin-bwd";
 const DISABLE_TRANSITIONS_CLASS = "js-transitions-disabled";
-const SPIN_DUR = 4000;
+const SPIN_DUR = 2000;
 
 const appendControls = () => {
   for (let i = 0; i < limit; i++) {
@@ -148,7 +148,7 @@ const automaticslider = () => {
   if (sliderindex >= limit) { sliderindex = 0 }
   sliderindex++;
 
-  setTimeout(automaticslider, 4000);
+  setTimeout(automaticslider, 2000);
 }
 
 const assignEls = () => {
@@ -170,10 +170,10 @@ $(() => {
 function handleVisibilityChange() {
   if(document.hidden) {
     console.log("ithu hide aakuthu");
-   document.title="hidden";
+   document.title="Hey come back";
   } else {
-    console.log("ithu show aakuthu");
-    document.title="visible";
+    init();
+    document.title="knotonic";
   }
 }
 
