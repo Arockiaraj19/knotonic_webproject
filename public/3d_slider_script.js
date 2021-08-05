@@ -8,7 +8,7 @@ let canvas = false;
 const SPIN_FORWARD_CLASS = "js-spin-fwd";
 const SPIN_BACKWARD_CLASS = "js-spin-bwd";
 const DISABLE_TRANSITIONS_CLASS = "js-transitions-disabled";
-const SPIN_DUR = 2000;
+const SPIN_DUR = 1000;
 
 const appendControls = () => {
   for (let i = 0; i < limit; i++) {
@@ -125,7 +125,7 @@ const spinCallback = (inc) => {
 };
 
 const attachListeners = () => {
-
+ 
 
   $controls.on("click", (e) => {
     e.preventDefault();
@@ -136,19 +136,19 @@ const attachListeners = () => {
     automaticslider();
   });
 };
+ 
+var sliderindex=0;
 
-var sliderindex = 0;
 
-
-const automaticslider = () => {
-  if (disabled) return;
-
-  const toIndex = parseInt(sliderindex, 10);
-  spin(toIndex - activeIndex);
-  if (sliderindex >= limit) { sliderindex = 0 }
-  sliderindex++;
-
-  setTimeout(automaticslider, 2000);
+const automaticslider=()=>{
+    if (disabled) return;
+    
+    const toIndex = parseInt(sliderindex, 10);
+    spin(toIndex - activeIndex);
+    if (sliderindex >= limit) {sliderindex = 0}    
+    sliderindex++;
+   
+    setTimeout(automaticslider, 2000);
 }
 
 const assignEls = () => {
@@ -158,23 +158,10 @@ const assignEls = () => {
 const init = () => {
   assignEls();
   prepareDom();
-  attachListeners();
+ attachListeners();
   automaticslider();
 };
 
 $(() => {
-
   init();
 });
-
-function handleVisibilityChange() {
-  if (document.hidden) {
-    console.log("ithu hide aakuthu");
-    document.title = "Hey come back";
-  } else {
-    init();
-    document.title = "knotonic";
-  }
-}
-
-document.addEventListener("visibilitychange", handleVisibilityChange, false);
