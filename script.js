@@ -410,7 +410,7 @@ var content = [
     "<div id='stagefour3' class='backlist' style='display: flex;justify-content: flex-start;width: 90%;'><ul><li>Search Engine Optimization (SEO)</li>  <li>Social Media Marketing</li> <li>Content Marketing</li>  <li>Email Marketing</li>  </ul>     </div>",
 ];
 var contentinit = ["don mobile", "don lucifer", "don web", "don cloud computing"];
-var images = ["url(./assets/sliderp1.png)", "url(./assets/desktopslider.png)", "url(./assets/webappslider.png)", "url(./assets/process1.png)"];
+var images = ["url(./assets/sliderp1.png)", "url(./assets/desktopslider.png)", "url(./assets/webappslider.png)", "url(./assets/digitalcard.png)"];
 var contentinit = ["don mobile", "A Web Application Is A Client-Server Program. It Means That It Has A Client-Side And A Server-Side. It Is Part Of The Client-Server Environment, Where Many Computers Share Information. ", "don web", "don cloud computing"];
 var contentinit = ["Mobile Has Already Become Prevalent Over The Desktop. In Current Market`S Conditions, A Mobile Application Is A Must For Businesses And Startups.",
     "Desktop Application’s Are What Make A Computer So Useful, They’re The Things You Use Everyday.  ",
