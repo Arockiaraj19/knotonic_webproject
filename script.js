@@ -630,7 +630,7 @@ window.onload = () => {
     'use strict';
   
     navigator.serviceWorker.register("sw.js").then(() => {
-        console.log("ithu work aakuthaa");
+        console.log("ithu service");
         console.log("service worker Install succeeded ");
     });
   }

@@ -8,7 +8,7 @@ let canvas = false;
 const SPIN_FORWARD_CLASS = "js-spin-fwd";
 const SPIN_BACKWARD_CLASS = "js-spin-bwd";
 const DISABLE_TRANSITIONS_CLASS = "js-transitions-disabled";
-const SPIN_DUR = 1000;
+const SPIN_DUR = 2000;
 
 const appendControls = () => {
   for (let i = 0; i < limit; i++) {
@@ -174,7 +174,6 @@ function handleVisibilityChange() {
   } else {
     
     document.title="knotonic";
-    init();
   }
 }
 
