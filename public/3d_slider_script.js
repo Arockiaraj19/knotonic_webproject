@@ -168,12 +168,12 @@ $(() => {
 });
 
 function handleVisibilityChange() {
-  if(document.hidden) {
+  if (document.hidden) {
     console.log("ithu hide aakuthu");
-   document.title="Hey come back";
+    document.title = "Hey come back";
   } else {
     init();
-    document.title="knotonic";
+    document.title = "knotonic";
   }
 }
 
