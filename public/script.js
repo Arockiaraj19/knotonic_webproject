@@ -1,15 +1,3 @@
-// window.addEventListener("scroll",()=>{
-//   console.log("scroll aakum pothu trigger aakuthaa");
-// var header=document.querySelector(".header_part");
-// console.log(header.classList);
-// header.classList.toggle("sticky",window.screenY > 0);
-// });
-
-
-
-
-
-
 
 
 var slidehomeIndex = 0;
@@ -642,6 +630,11 @@ window.onload = () => {
     'use strict';
   
     navigator.serviceWorker.register("sw.js").then(() => {
+        console.log("ithu work aakuthaa");
         console.log("service worker Install succeeded ");
     });
   }
+
+ 
+
+ 
