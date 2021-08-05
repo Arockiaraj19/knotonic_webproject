@@ -168,13 +168,3 @@ $(() => {
 
 
 
-function handleVisibilityChange() {
-  if(document.hidden) {
-    document.title="Hey Come Back";
-  } else {
-    
-    document.title="knotonic";
-  }
-}
-
-document.addEventListener("visibilitychange", handleVisibilityChange, false);
