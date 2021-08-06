@@ -422,7 +422,7 @@ input::placeholder {
   font-size: 1rem;
 color: white;
 line-height: 1rem;
-
+font-weight: 600;
 letter-spacing: 0.15rem;
 padding: 0 0 0.5rem 0;
     }
@@ -738,6 +738,7 @@ width: 100%;
   top: 90%;
   margin-top: -3vw;
   text-align: center;
+  font-weight: 600;
   font-size: 3vw;
   height: 10vw;
   opacity: 1;
@@ -1130,11 +1131,7 @@ nav .close:hover div::after{
 	background: var(--primary-color);
 }
 
-@media (max-width: 992px){
-  .h1heading{
-    font-size: 25px;
-  }
-}
+
 
 
 
@@ -1851,6 +1848,20 @@ color:var(--bodyfont-color);
   }
   .backlist{
     padding-left: 0.5rem;
+  }
+  .content__left  .h1heading{
+    position: absolute;
+    top: 65%;
+   
+    text-align: center;
+    font-weight: 600;
+    font-size: 1rem;
+    height: auto;
+    opacity: 1;
+    color: #fff;
+    width: 100%;
+    letter-spacing: 0.15em;
+    line-height: 1.2rem;
   }
 }
 

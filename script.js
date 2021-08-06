@@ -615,7 +615,7 @@ document.getElementById("submit").addEventListener("click", (e) => {
                 document.getElementById("submit").style.display = "block";
                 swal({
                     title: "Thanks for be with us",
-                    text: " ",
+                    text: "we will reach out to you shortly",
                     icon: "success",
                     button: "Ok",
                 });
