@@ -197,6 +197,7 @@ color:var(--bodyfont-color);
      height: auto;
      display: flex;
      align-items: center;
+     padding-left: 1rem;
 
  }
 .about .about_img{
@@ -1061,12 +1062,13 @@ nav ul li{
 
 nav ul li a{
 	color: #fafafa;
-	font-size: 2em;
+	font-size: 2rem;
 	text-decoration: none;
 	font-weight: 500;
 	position: relative;
 	opacity: 0;
 	pointer-events: none;
+ 
 }
 
 nav ul li a:after{
@@ -1565,13 +1567,14 @@ width: 3%;
 h2{
 
 font-size: 1.9rem; 
-line-height: 2rem; 
+line-height: 2.5rem; 
 padding: 1.5rem 0 1rem 0rem;
+letter-spacing: 0.3rem;
 }
 
 h3{
-  font-weight:500;
-  font-size: 1.05rem;
+  font-weight:400;
+  font-size:1.1rem;
   letter-spacing: 0.1em;
   color:var(--bodyfont-color);
   line-height:1.5rem;
@@ -1580,12 +1583,13 @@ h3{
 h4{
   font-size: 1.2rem; 
 line-height: 2rem; 
-padding: 1rem 0 1rem 0rem;
+padding: 1rem 0 1rem 1rem;
 }
 h6{
   font-size: 1rem; 
   line-height: 2rem; 
   padding:0 1rem;
+  
 }
 /* p{  
   width: 100%;
@@ -1598,10 +1602,11 @@ line-height:1.5rem;
   font-weight: normal;
   font-size:1rem;
   letter-spacing: 0.1em;
-  line-height: 1.3rem;
+  line-height: 2rem;
   color:var(--bodyfont-color);
   
   }
+  
 
 .paragraph{
   font-size: 0.9rem;
@@ -1815,7 +1820,7 @@ width: 100%;
 font-size: 0.9rem;
 line-height: 1.2rem;
 
-color:var(--black-color);
+color:var(--bodyfont-color);
 }
 .secondpart{
   display: none;
@@ -1841,6 +1846,10 @@ color:var(--black-color);
     text-align: left;
     font-size:1rem;
     font-weight: 300;
+    
+  }
+  .backlist{
+    padding-left: 0.5rem;
   }
 }
 
