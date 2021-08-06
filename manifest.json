@@ -24,7 +24,7 @@
     "lang": "en-US",
     "start_url": "/",
     "display": "standalone",
-    "background_color": "white",
-    "theme_color": "white",
+    "background_color": "black",
+    "theme_color": "black",
     "prefer_related_applications":true
 }

@@ -131,8 +131,16 @@ h5{
     color:var(--bodyfont-color);
     margin-bottom: 1rem;
 }
+h6{
+  font-weight:normal;
+  font-size: 1.5rem;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color:var(--bodyfont-color);
+  padding: 2rem 0;
+}
 
-p{  
+/* p{  
     width: 70%;
 font-weight: normal;
 font-size:1.5rem;
@@ -141,7 +149,7 @@ line-height: 2.5rem;
 text-align: left;
 color:var(--bodyfont-color);
 margin-bottom: 2rem;
-}
+} */
 .divider {
   width: 20rem;
   height: 0.1rem;
@@ -168,7 +176,7 @@ width: 100%;
 font-weight: normal;
 font-size:1.5rem;
 letter-spacing: 0.3rem;
-line-height: 2.5rem;
+line-height: 2rem;
 color:var(--bodyfont-color);
 
 }
@@ -754,17 +762,18 @@ width: 100%;
   color: #fff;
   width: 100%;
   font-size: 1.3vw;
-  padding: 0 8vw;
+  padding: 0 5vw;
   line-height: 1rem;
   font-weight: 300;
   margin: 0;
   opacity: 1;
 }
-.content__right .content__main p:last-child {
+.content__right .content__main p{
   width: 100%;
   text-transform: uppercase;
   letter-spacing: 0.15em;
   font-size: 1em;
+  line-height: 1.7em;
 }
 
 .content__right .content__main p::before {
@@ -1257,13 +1266,11 @@ overflow: hidden;
 .paragraph{  
 width: 100%;
 font-weight: normal;
-font-size:1rem;
+font-size:1.3rem;
 letter-spacing: 0.1em;
 line-height: 1.7rem;
 text-align: left;
 color:var(--bodyfont-color);
-margin-bottom: 0.5rem;
-
 }
 .paragraph_first{
   display: none;
@@ -1470,40 +1477,44 @@ align-items: center;
 }
 .stagefour{
   width: 100%;
-   margin-top: 0.5rem;
+  
  }
 
-.stagefour div{
+.mainwrapper{
   width: 100%;
   display: flex;
-align-items: flex-start;
+align-items: center;
+justify-content:stretch;
 
 }
 
-.stagefour div h6{
-font-size: 1rem;
+.firstpart{
+  text-align: left;
+font-size: 1.2rem;
 font-weight: 600;
 color: white;
-line-height: 1rem;
-width: 15%;
+line-height: 2rem;
+width: 17%;
 
 }
-.stagefour div div{
-  font-size: 1rem;
-  font-weight: 300;
-  color: white;
-  line-height: 1rem;
-width: 5%;
-}
-.stagefour div h5{
+.secondpart{
   text-align: left;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 300;
   color: white;
-  line-height: 1rem;
-  width: 80%;
+  line-height: 2rem;
+  
+width: 3%;
 
- 
+}
+.thirdpart{
+
+  text-align: left;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: white;
+  line-height: 2rem;
+  width: 80%;
 }
 .backlist ul li{
   text-decoration: none;
@@ -1511,7 +1522,7 @@ width: 5%;
   line-height: 1.5rem;
   color: var(--white);
   text-align: left;
-  font-size:1rem;
+  font-size:1.2rem;
   font-weight: 300;
 }
 /* Extra small devices (phones, 600px and down) */
@@ -1553,40 +1564,49 @@ width: 5%;
 
 h2{
 
-font-size: 1.5rem; 
+font-size: 1.9rem; 
 line-height: 2rem; 
-padding: 1.5rem 0 1rem 1rem;
+padding: 1.5rem 0 1rem 0rem;
 }
 
 h3{
   font-weight:500;
-  font-size: 0.9rem;
+  font-size: 1.05rem;
   letter-spacing: 0.1em;
   color:var(--bodyfont-color);
-  line-height:1.3rem;
+  line-height:1.5rem;
   text-align: center;
 }
 h4{
-  font-size: 1rem; 
+  font-size: 1.2rem; 
 line-height: 2rem; 
-padding: 1rem 0 1rem 1rem;
+padding: 1rem 0 1rem 0rem;
 }
-p{  
+h6{
+  font-size: 1rem; 
+  line-height: 2rem; 
+  padding:0 1rem;
+}
+/* p{  
   width: 100%;
 margin-bottom: 1rem;
 font-size: 1rem;
 line-height:1.5rem;
-}
+} */
 .para{ 
   width: 100%;
   font-weight: normal;
-  font-size:0.8rem;
+  font-size:1rem;
   letter-spacing: 0.1em;
-  line-height: 2rem;
+  line-height: 1.3rem;
   color:var(--bodyfont-color);
   
   }
 
+.paragraph{
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+}
 .logo{
   height:4rem;
   width:12rem;
@@ -1660,14 +1680,13 @@ footer section h1,footer ul h1,footer section div h1{
 }
 .flip-card {
 
-  height:12rem;
+  height:16rem;
   
 }
 .flip-card_first {
  
   height:7rem;
 }
-
 
 
 .service_card_icon_wrapper i{
@@ -1683,14 +1702,14 @@ font-size: 1rem;
     font-size: 1rem;
     line-height: 0.7rem;
   }
-  .flip_front_part2_first p{
+  /* .flip_front_part2_first p{
     font-size: 0.7rem;
     line-height: 1rem;
   }
   .flip_front_part2 p{
     font-size: 0.7rem;
     line-height: 1rem;
-  }
+  } */
   .flip_front_part2,.flip_front_part2_first{
     padding: 0 0.5rem;
       }
@@ -1755,8 +1774,8 @@ font-size: 1rem;
   /* typewritter part */
   span{
   font-weight: 500;
-  font-size: 1.5rem; 
-line-height: 2rem; 
+  font-size: 1.7rem; 
+line-height: 2.5rem; 
 
 
   }
@@ -1779,42 +1798,48 @@ line-height: 2rem;
   }
   nav ul li a{
 	color: #fafafa;
-	font-size: 1.3em;
+	font-size: 1.6em;
 	text-decoration: none;
 	font-weight: 500;
 	position: relative;
 	opacity: 0;
 	pointer-events: none;
 }
-.stagefour div{
-  height: fit-content;
+.mainwrapper{
+  width: 100%;
+  flex-wrap: wrap;
+  word-wrap: break-word;
 }
-.stagefour div h6{
-  font-size: 0.7rem;
-  line-height: 1rem; 
-  width: 25%;
-  
-  }
-  .stagefour div div{
-    font-size: 0.7rem;
-    line-height: 1rem; 
-   width: 5%;
-  }
-  .stagefour div h5{
-   
-    font-size: 0.7rem;
-    line-height: 1rem; 
-width: 70%;
-margin: 0;
-word-wrap: break-word;
-  }
+.firstpart{
+width: 100%;
+font-size: 0.9rem;
+line-height: 1.2rem;
+
+color:var(--black-color);
+}
+.secondpart{
+  display: none;
+  width: auto;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+
+}
+.thirdpart{
+
+  width: 100%;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  word-wrap: break-word;
+
+}
+
   .backlist ul li{
     text-decoration: none;
     letter-spacing: 0.1em;
-    line-height: 1rem;
+    line-height: 1.3rem;
     color: var(--white);
     text-align: left;
-    font-size:0.7rem;
+    font-size:1rem;
     font-weight: 300;
   }
 }
