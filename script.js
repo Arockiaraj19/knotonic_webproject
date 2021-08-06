@@ -297,7 +297,7 @@ window.onload = () => {
 var typeWriterElement = document.getElementById('typewriter');
 
 // The TextArray: 
-var textArray = ["Make Your Ideas  Into A Brand.", "Build Mobile Apps Simple & Interactive.", "Make Your Ideas Into A Website"];
+var textArray = ["Make Your Ideas  Into A Brand", "Build Mobile Apps Simple & Interactive", "Make Your Ideas Into A Website"];
 
 
 
