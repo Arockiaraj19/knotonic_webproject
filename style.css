@@ -1525,6 +1525,8 @@ width: 3%;
   font-size:1.2rem;
   font-weight: 300;
 }
+
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   body{
@@ -1589,12 +1591,6 @@ h6{
   padding:0 1rem;
   
 }
-/* p{  
-  width: 100%;
-margin-bottom: 1rem;
-font-size: 1rem;
-line-height:1.5rem;
-} */
 .para{ 
   width: 100%;
   font-weight: normal;
@@ -1705,14 +1701,6 @@ font-size: 1rem;
     font-size: 1rem;
     line-height: 0.7rem;
   }
-  /* .flip_front_part2_first p{
-    font-size: 0.7rem;
-    line-height: 1rem;
-  }
-  .flip_front_part2 p{
-    font-size: 0.7rem;
-    line-height: 1rem;
-  } */
   .flip_front_part2,.flip_front_part2_first{
     padding: 0 0.5rem;
       }
@@ -1865,26 +1853,450 @@ color:var(--bodyfont-color);
   }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-/* @media only screen and (min-width: 600px) {
-
-} */
-
-/* Medium devices (landscape tablets, 768px and up) */
-/* @media only screen and (min-width: 768px) {
 
 
-} */
 
-/* Large devices (laptops/desktops, 992px and up)
-@media only screen and (min-width: 992px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-device-width : 600px) and (max-device-width : 768px) {
+  body{
+    overflow-x: hidden;
+  }
+  .home{
+
+    padding: 0 0.8rem;
+  }
+  .nav_img{
+    display: none;
+    
+    }
+    #threecontainer{
+      height: 50vh;
+    }
+  .main{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.homeimage{
+  width: 100vw;
+  height: 85vh;
+
+}
+.typewrapper{
+  margin: 6rem 0 0 0;
+}
+.service{
+    padding: 0 0.8rem;
+}
+.linespan div{
+ display: none;
+}
+
+h2{
+
+font-size: 2.1rem; 
+line-height: 2.7rem; 
+padding: 1.5rem 0 1rem 0rem;
+letter-spacing: 0.3rem;
+}
+
+h3{
+  font-weight:400;
+  font-size:1.3rem;
+  letter-spacing: 0.1em;
+  color:var(--bodyfont-color);
+  line-height:1.7rem;
+  text-align: center;
+}
+h4{
+  font-size: 1.4rem; 
+line-height: 2.2rem; 
+padding: 1rem 0 1rem 1rem;
+}
+h6{
+  font-size: 1.2rem; 
+  line-height: 2.2rem; 
+  padding:0 1rem;
+  
+}
+.para{ 
+  width: 100%;
+  font-weight: normal;
+  font-size:1rem;
+  letter-spacing: 0.1em;
+  line-height: 2rem;
+  color:var(--bodyfont-color);
+  
+  }
+  
+
+.paragraph{
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+}
+.logo{
+  height:4rem;
+  width:12rem;
+}
+#roundarea{
+  position: absolute;
+  z-index: 100;
+  height: 10rem;
+  width: 10rem ;
+background-color: var(--primary-color);
+
+top: 15vh;
+right: 53%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#roundarea h2{
+  text-align: center;
+  font-size: 1.2rem;
+  
+}
+
+    #technology, #development_card,#aboutus,#contact{
+      padding: 0 0.8rem;
+    }
+
+    .technology_tools div{
+      margin: 0rem 0;
+      width: 100%;
+    }
+    .technology_tools div img{
+      width: 40vw;
+    
+    }
+    .about{
+    flex-direction: column;
+    padding-bottom: 2rem;
+  }
+  .about div{
+    height: auto;
+    width: 100%;
+  }
+
+
+.contact-part main{
+  width: 100%;
+}
+footer{
+  padding: 0.5rem 0.5rem 0 0.5rem;
+  flex-direction: column;
+}
+footer div,footer section,footer ul{
+  margin: 1rem 0 0.5rem 0;
+}
+footer section h1,footer ul h1,footer section div h1{
+  color: white;
+  line-height: 0.7rem;
+  padding: 0 0 0.5rem 0;
+      }
+  
+.carousel{
+  height: 70vh;
+}
+.content__right .content__main p:last-child {
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 1.5em;
+  line-height: 1rem;
+}
+.flip-card {
+
+  height:18rem;
+  
+}
+.flip-card_first {
+ 
+  height:9rem;
+}
+
+
+.service_card_icon_wrapper i{
+font-size: 1rem;
+ padding:0.5rem 0.7rem ;
+}
+
+  .flip_front_part2_first h4{
+    font-size: 1rem;
+    line-height: 0.7rem;
+  }
+  .flip_front_part2 h4{
+    font-size: 1rem;
+    line-height: 0.7rem;
+  }
+  .flip_front_part2,.flip_front_part2_first{
+    padding: 0 0.5rem;
+      }
+    
+    
+    
+   
+      .content__left h1 {
+        top: 68%;
+      }
+      
+  /* typewritter part */
+  span{
+  font-weight: 500;
+  font-size: 2rem; 
+line-height: 2.7rem; 
+
+
+  }
+  .about .about_img{
+    height: 50vh;
+    width: 100%;
+   
+
+    margin-bottom: 6rem;
+    background-repeat: no-repeat;
+  background-size: contain;
+  background-position:center;
+  
+   
+  }
+  #roundarea{
+  top: 40vh;
+  right: 35%;
+  text-align: center;
+  }
+  nav ul li a{
+	color: #fafafa;
+	font-size: 1.6em;
+	text-decoration: none;
+	font-weight: 500;
+	position: relative;
+	opacity: 0;
+	pointer-events: none;
+}
+nav ul li{
+	margin: 35px 0;
+}
+.mainwrapper{
+  width: 100%;
+  flex-wrap: wrap;
+  word-wrap: break-word;
+}
+
+.firstpart{
+width: 100%;
+font-size: 0.9rem;
+line-height: 1.2rem;
+
+color:var(--bodyfont-color);
+}
+.secondpart{
+  display: none;
+  width: auto;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+
+}
+.thirdpart{
+
+  width: 100%;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  word-wrap: break-word;
 
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-/* @media only screen and (min-width: 1200px) {
+  .backlist ul li{
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    line-height: 1.3rem;
+    color: var(--white);
+    text-align: left;
+    font-size:1rem;
+    font-weight: 300;
+    
+  }
+  .backlist{
+    padding-left: 0.5rem;
+  }
+  .content__left  .h1heading{
+    position: absolute;
+    top: 65%;
+   
+    text-align: center;
+    font-weight: 600;
+    font-size: 1rem;
+    height: auto;
+    opacity: 1;
+    color: #fff;
+    width: 100%;
+    letter-spacing: 0.15em;
+    line-height: 1.2rem;
+  }
+}
 
-} */ 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  body{
+    overflow-x: hidden;
+  }
+  .home{
+
+    padding: 0 1rem;
+  }
+
+  .homeimage{
+    width: 45vw;
+    height: 88vh;
+   
+}
+
+.service{
+  padding: 0 1rem;
+}
+
+
+
+    #technology, #development_card,#aboutus,#contact{
+      padding: 0 1rem;
+    }
+
+    /* .technology_tools div{
+      margin: 0rem 0;
+      width: 100%;
+    } */
+    .technology_tools div img{
+      width: 25vw;
+    
+    }
+
+
+.contact-part main{
+  width: 100%;
+}
+.para{ 
+  width: 100%;
+  font-weight: normal;
+  font-size:1rem;
+  letter-spacing: 0.1em;
+  line-height: 2rem;
+  color:var(--bodyfont-color);
+  
+  }
+  
+  #footerlogo{
+    display: none;
+  }
+
+  footer{
+    padding: 0.5rem 0.5rem 0 0.5rem;
+  
+  }
+
+
+    
+    
+
+  /* typewritter part */
+  span{
+  font-weight: 500;
+  font-size: 2rem; 
+line-height: 2.7rem; 
+
+
+  }
+
+
+  nav ul li{
+    margin: 40px 0;
+  }
+  nav ul li a{
+	color: #fafafa;
+	font-size: 1.6em;
+	text-decoration: none;
+	font-weight: 500;
+	position: relative;
+	opacity: 0;
+	pointer-events: none;
+}
+.mainwrapper{
+  width: 100%;
+  flex-wrap: wrap;
+  word-wrap: break-word;
+}
+
+.firstpart{
+  width: 100%;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  
+  color:var(--bodyfont-color);
+  }
+  .secondpart{
+    display: none;
+    width: auto;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  
+  }
+  .thirdpart{
+  
+    width: 100%;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    word-wrap: break-word;
+  
+  }
+  
+    .backlist ul li{
+      text-decoration: none;
+      letter-spacing: 0.1em;
+      line-height: 1.5rem;
+      color: var(--white);
+      text-align: left;
+      font-size:1.2rem;
+      font-weight: 300;
+      
+    }
+
+
+}
