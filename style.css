@@ -1603,8 +1603,8 @@ justify-content: center;
 }
 h1{
   font-weight:normal;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 1.25rem;
+  line-height: 2rem;
   letter-spacing: 0.1em;
   text-align: left;
   color:var(--bodyfont-color);
@@ -1652,7 +1652,7 @@ h5{
 }
 h6{
   font-weight:500;
-  font-size: 1rem;
+  font-size: 1.2rem;
   letter-spacing: 0.1em;
   color:var(--bodyfont-color);
   line-height:1.5rem;
@@ -1673,7 +1673,7 @@ h6{
   
 
 .paragraph{
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   line-height: 1.2rem;
 }
 .logo{
@@ -1834,7 +1834,7 @@ font-size: 1rem;
       
   /* typewritter part */
   span{
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.8rem; 
 line-height: 2.8rem;
 letter-spacing: 0.1em; 
@@ -1878,8 +1878,9 @@ letter-spacing: 0.1em;
     line-height: 1.3rem;
     color: var(--bodyfont-color);
     text-align: left;
-    font-size:0.75rem;
+    font-size:0.9rem;
     font-weight: 300;
+    margin-left: 1rem;
     
   }
   .backlist{
@@ -1955,8 +1956,8 @@ letter-spacing: 0.1em;
 }
 h1{
   font-weight:normal;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 1.25rem;
+  line-height: 2rem;
   letter-spacing: 0.1em;
   text-align: left;
   color:var(--bodyfont-color);
@@ -2007,7 +2008,7 @@ h5{
 h6{
   
   font-weight:500;
-  font-size: 1rem;
+  font-size: 1.2rem;
   letter-spacing: 0.1em;
   color:var(--bodyfont-color);
   line-height:1.5rem;
@@ -2028,7 +2029,7 @@ h6{
   
 
 .paragraph{
-  font-size:0.7rem;
+  font-size:0.9rem;
   line-height: 1.2rem;
 }
 .logo{
@@ -2139,7 +2140,7 @@ font-size: 1rem;
       
   /* typewritter part */
   span{
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.8rem;  
 line-height: 2.8rem; 
 letter-spacing: 0.1em; 
@@ -2188,8 +2189,9 @@ nav ul li{
     line-height: 1.3rem;
     color: var(--bodyfont-color);
     text-align: left;
-    font-size:0.75rem;
+    font-size:0.9rem;
     font-weight: 300;
+    margin-left: 1rem;
     
   }
   .backlist{
@@ -2302,7 +2304,7 @@ nav ul li{
 
   /* typewritter part */
   span{
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.8rem; 
 line-height: 2.8rem;
 letter-spacing: 0.1em;  
@@ -2338,8 +2340,9 @@ letter-spacing: 0.1em;
       line-height: 1.5rem;
       color: var(--bodyfont-color);
       text-align: left;
-      font-size:0.75rem;
+      font-size:0.9rem;
       font-weight: 300;
+      margin-left: 1rem;
       
     }
 

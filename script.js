@@ -726,16 +726,16 @@ changecolormode[1].addEventListener('click',(e)=>{
 
 changecolormode[2].addEventListener('click',(e)=>{
    
-    document.documentElement.style.setProperty("--primary-color","#7C9473");
-    document.documentElement.style.setProperty("--secondary-color", "#3B3B3B");
+    document.documentElement.style.setProperty("--primary-color","#F56E67");
+    document.documentElement.style.setProperty("--secondary-color", "#3b3b3b");
     document.documentElement.style.setProperty("--bodyfont-color", "#fff");
 
 
     //    // card colors
-       document.documentElement.style.setProperty("--card-color-first","blue");
-       document.documentElement.style.setProperty("--card-color-second","green");
-       document.documentElement.style.setProperty("--card-color-third","black");
-       document.documentElement.style.setProperty("--card-color-four","red");
+       document.documentElement.style.setProperty("--card-color-first","#3caea3");
+       document.documentElement.style.setProperty("--card-color-second","#F6D55C");
+       document.documentElement.style.setProperty("--card-color-third","#20639B");
+       document.documentElement.style.setProperty("--card-color-four","#99BF72");
        
 })
 
