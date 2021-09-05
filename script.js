@@ -477,10 +477,10 @@ document.getElementById(i.toString()).style.display="none";
             e.target.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.className = "flip-card_first";
             changeposition[i] = undefined;
             document.getElementById("bg_color" + i.toString()).style.backgroundColor = bgcolors[0];
-            document.getElementById("back_color" + i.toString()).style.backgroundColor = backcolors[0];
+            document.getElementById("back_color" + i.toString()).style.backgroundColor = document.documentElement.style.getPropertyValue("--primary-color");
             document.getElementById("back_color" + i.toString()).style.justifyContent = "center";
             document.getElementById("heading" + i.toString()).innerText = headingcontent[i][0];
-            document.getElementById("btn" + i.toString()).style.backgroundColor = backcolors[0];
+            document.getElementById("btn" + i.toString()).style.backgroundColor = document.documentElement.style.getPropertyValue("--primary-color");
         }
     }
 

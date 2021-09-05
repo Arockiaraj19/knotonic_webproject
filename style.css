@@ -1,11 +1,9 @@
 
 :root{
-
-
 /* new design colors */
 --primary-color:#F56E67;
 --secondary-color:#3b3b3b;
---another-secondary-color:#3b3b3b;
+
 --bodyfont-color:#fff;
 --service-icon-wrapper-color:#f8534b;
 --heading-weight:500;
@@ -151,7 +149,7 @@ margin-bottom: 2rem;
 
 #aboutus{
   position: relative;
-  background: var(--another-secondary-color);
+  background: var(--secondary-color);
     width: 100%;
     padding: 0 4rem;
     height: auto;
@@ -496,19 +494,19 @@ padding: 0 0 0.5rem 0;
   height: 2px;
 }
 #development{
-  background: var(--another-secondary-color);
+  background: var(--secondary-color);
     width: 100%;
     /* padding: 0 4rem; */
     height: auto;
 }
 #development_card{
-  background: var(--another-secondary-color);
+  background: var(--secondary-color);
   width: 100%;
   padding: 0 4rem;
   height: auto;
 }
 #technology{
-  background: var(--another-secondary-color);
+  background: var(--secondary-color);
   width: 100%;
   padding: 0 4rem;
   height: auto;
@@ -543,7 +541,7 @@ padding: 0 0 0.5rem 0;
 
 .service{
   position: relative;
-  background: var(--another-secondary-color);
+  background: var(--secondary-color);
     width: 100%;
     padding: 0 4rem;
     height: auto;
