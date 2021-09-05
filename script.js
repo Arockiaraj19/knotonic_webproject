@@ -664,7 +664,7 @@ changecolormode[1].addEventListener('click',(e)=>{
 
 changecolormode[2].addEventListener('click',(e)=>{
     e.preventDefault();
-    document.documentElement.style.setProperty("--primary-color","#3b3b3b");
+    document.documentElement.style.setProperty("--primary-color","#7C9473");
     document.documentElement.style.setProperty("--secondary-color", "#F56E67");
     document.documentElement.style.setProperty("--bodyfont-color", "#fff");
 })

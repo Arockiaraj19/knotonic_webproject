@@ -3,10 +3,10 @@
 
 
 /* new design colors */
---primary-color:#F56E67;
---secondary-color:#3b3b3b;
---another-secondary-color:#3b3b3b;
---bodyfont-color:#fff;
+--primary-color:#FCDAB7;
+--secondary-color:#ffffff;
+--another-secondary-color:#ffffff;
+--bodyfont-color:#343434;
 --service-icon-wrapper-color:#f8534b;
 --heading-weight:500;
 }
@@ -412,6 +412,7 @@ line-height: 1rem;
 font-weight: 600;
 letter-spacing: 0.15rem;
 padding: 0 0 0.5rem 0;
+font-weight:500;
     }
 
   footer section ul li a img{
@@ -1494,11 +1495,8 @@ justify-content: center;
   width: 1.5rem;
   border-radius: 50%;
   margin: 0 1rem;
-
-  background-color: red;
-  position: relative;
-
-
+  
+  
 }
 .change_color_mode:nth-child(1){
   background-color: blue;
@@ -1782,8 +1780,8 @@ font-size: 1rem;
   /* typewritter part */
   span{
   font-weight: 500;
-  font-size: 1.7rem; 
-line-height: 2.5rem; 
+  font-size: 1.5rem; 
+line-height: 2rem; 
 
 
   }
