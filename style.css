@@ -3,10 +3,14 @@
 /* new design colors */
 --primary-color:#F56E67;
 --secondary-color:#3b3b3b;
-
 --bodyfont-color:#fff;
 --service-icon-wrapper-color:#f8534b;
 --heading-weight:500;
+--card-color-first:#3caea3;
+--card-color-second:#F6D55C;
+--card-color-third:#20639B;
+--card-color-four:#99BF72;
+
 }
 html {
   scroll-behavior: smooth;
@@ -57,10 +61,7 @@ transition: 0.6s;
     height: 88vh;
    
 }
-/* .thanihomeimage{
-  width: 80rem;
-  height: 40rem;
-} */
+
 
 .logo{
   height:5rem;
@@ -428,7 +429,7 @@ font-weight:500;
     bottom: 20px;
     right: 20px;
     z-index: 10000;
-    background: var(--bodyfont-color-c);
+    background: #fff;
     width: 50px;
     height: 50px;
    
@@ -728,7 +729,7 @@ width: 100%;
   font-size: 3vw;
   height: 10vw;
   opacity: 1;
-  color: var(--bodyfont-color);
+  color: #fff;
   width: 100%;
   letter-spacing: 0.15em;
   line-height: 0.6;
@@ -748,7 +749,7 @@ width: 100%;
 .content__right .content__main {
   position: absolute;
   text-align: left;
-  color: var(--bodyfont-color);
+  color: #fff;
   width: 100%;
   font-size: 1.3vw;
   padding: 0 5vw;
@@ -840,8 +841,6 @@ background-size: contain;
   background-image: none;
 }
 
-
-/* //service pop up area */
 
 
 

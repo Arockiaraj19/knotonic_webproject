@@ -414,27 +414,28 @@ var content = [
  "meet you"
    
 ];
-var contentinit = ["don mobile", "don lucifer", "don web", "don cloud computing"];
+
 var images = ["url(./assets/sliderp1.png)", "url(./assets/desktopslider.png)", "url(./assets/webappslider.png)", "url(./assets/digitalcard.png)"];
-var contentinit = ["don mobile", "A Web Application Is A Client-Server Program. It Means That It Has A Client-Side And A Server-Side. It Is Part Of The Client-Server Environment, Where Many Computers Share Information. ", "don web", "don cloud computing"];
+
 var contentinit = ["Mobile Has Already Become Prevalent Over The Desktop. In Current Market`S Conditions, A Mobile Application Is A Must For Businesses And Startups.",
     "Desktop Application’s Are What Make A Computer So Useful, They’re The Things You Use Everyday.  ",
     "Web Applications Can Be Designed For A Wide Variety Of Uses And Can Be Used By Anyone; From An Organization To An Individual For Numerous Reasons. ", "Marketing Has Always Been About How To Reach An Audience. What’s Changed, As Technology Changes, Is Where You Find That Audience."];
 
-var bgcolors = ["#3caea3", "#F6D55C", "F56E67", "#F56E67"];
-var backcolors = ["#F56E67", "#3caea3", "#20639B", "#99BF72"];
-var headingcontent = [["Mobile App  Design & Development", "Mobile App  Design & Development", "three0", "four0"], ["Desktop Application", "Desktop Application", "three1", "four1"],
-["Web Apps Design & Development", "Web Apps Design & Development", "three2", "four2"], ["Digital Marketing", "Digital Marketing", "three3", "four3"],]
-var bgcolors = ["#3caea3", "#F6D55C", "F56E67", "#F56E67"];
-var backcolors = ["#F56E67", "#3caea3", "#20639B", "#99BF72"];
+
+
 var headingcontent = [["Mobile App  Design & Development", "Mobile App  Design & Development", "Advantage", "Technology Used"], ["Desktop Application", "Desktop Application", "Advantage", "Technology Used"],
 ["Web Apps Design & Development", "Web Apps Design & Development", "Advantage", "Technology Used"], ["Digital Marketing", "Digital Marketing", "Advantage", "Technology Used"],]
+
+
+
 const changeside = (e, i) => {
 
     console.log(e);
 
     if (e.target.parentElement.parentElement.previousElementSibling.className == "paragraph_first") {
         changeposition[i] = 0;
+        console.log("fist")
+
         document.getElementById(i.toString()).style.display = "block";
         document.getElementById(i.toString()).innerHTML = contentinit[i];
         e.target.parentElement.parentElement.parentElement.previousElementSibling.className = "flip_front_part1";
@@ -442,11 +443,11 @@ const changeside = (e, i) => {
         e.target.parentElement.parentElement.parentElement.className = "flip_front_part2";
         e.target.parentElement.parentElement.previousElementSibling.className = "paragraph";
         e.target.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.className = "flip-card";
-        document.getElementById("bg_color" + i.toString()).style.backgroundColor = bgcolors[1];
-        document.getElementById("back_color" + i.toString()).style.backgroundColor = backcolors[1];
+        document.getElementById("bg_color" + i.toString()).style.backgroundColor =  getComputedStyle(document.body).getPropertyValue("--card-color-second");
+        document.getElementById("back_color" + i.toString()).style.backgroundColor = getComputedStyle(document.body).getPropertyValue("--card-color-first");
         document.getElementById("back_color" + i.toString()).style.justifyContent = "space-around";
         document.getElementById("heading" + i.toString()).innerText = headingcontent[i][1];
-        document.getElementById("btn" + i.toString()).style.backgroundColor = backcolors[1];
+        document.getElementById("btn" + i.toString()).style.backgroundColor = getComputedStyle(document.body).getPropertyValue("--card-color-first");
 
 
     } else {
@@ -462,11 +463,11 @@ const changeside = (e, i) => {
 
             document.getElementById("image" + i.toString()).style.backgroundImage = images[i];
 
-            document.getElementById("image" + i.toString()).style.backgroundColor = bgcolors[2];
-            document.getElementById("backback_color" + i.toString()).style.backgroundColor = backcolors[2];
+            document.getElementById("image" + i.toString()).style.backgroundColor =  getComputedStyle(document.body).getPropertyValue("--card-color-second");
+            document.getElementById("backback_color" + i.toString()).style.backgroundColor =  getComputedStyle(document.body).getPropertyValue("--card-color-third");
             document.getElementById("backback_color" + i.toString()).style.justifyContent = "space-around";
             document.getElementById("backheading" + i.toString()).innerText = headingcontent[i][2];
-            document.getElementById("btnbtn" + i.toString()).style.backgroundColor = backcolors[2];
+            document.getElementById("btnbtn" + i.toString()).style.backgroundColor =  getComputedStyle(document.body).getPropertyValue("--card-color-third");
         } else {
 
             e.target.parentElement.parentElement.parentElement.previousElementSibling.className = "flip_front_part1_first";
@@ -476,7 +477,7 @@ document.getElementById(i.toString()).style.display="none";
            
             e.target.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.className = "flip-card_first";
             changeposition[i] = undefined;
-            document.getElementById("bg_color" + i.toString()).style.backgroundColor = bgcolors[0];
+            document.getElementById("bg_color" + i.toString()).style.backgroundColor = getComputedStyle(document.body).getPropertyValue("--card-color-first");
             document.getElementById("back_color" + i.toString()).style.backgroundColor = document.documentElement.style.getPropertyValue("--primary-color");
             document.getElementById("back_color" + i.toString()).style.justifyContent = "center";
             document.getElementById("heading" + i.toString()).innerText = headingcontent[i][0];
@@ -491,10 +492,10 @@ const changebackside = (e, i) => {
   
     myimg.innerText=content[i];
   
-    document.getElementById("bg_color" + i.toString()).style.backgroundColor = bgcolors[3];
-    document.getElementById("back_color" + i.toString()).style.backgroundColor = backcolors[3];
+    document.getElementById("bg_color" + i.toString()).style.backgroundColor =  getComputedStyle(document.body).getPropertyValue("--primary-color");
+    document.getElementById("back_color" + i.toString()).style.backgroundColor =  getComputedStyle(document.body).getPropertyValue("--card-color-four");
     document.getElementById("heading" + i.toString()).innerText = headingcontent[i][3];
-    document.getElementById("btn" + i.toString()).style.backgroundColor = backcolors[3];
+    document.getElementById("btn" + i.toString()).style.backgroundColor =  getComputedStyle(document.body).getPropertyValue("--card-color-four");
     document.getElementById("back_color" + i.toString()).style.justifyContent = "flex-start";
     e.target.offsetParent.offsetParent.style.transform = "rotateX(0deg)";
 
@@ -650,21 +651,42 @@ document.getElementById("submit").addEventListener("click", (e) => {
 
 let changecolormode=document.querySelectorAll(".change_color_mode")
 changecolormode[0].addEventListener('click',(e)=>{
-    e.preventDefault();
+  
     document.documentElement.style.setProperty("--primary-color","#3b3b3b");
     document.documentElement.style.setProperty("--secondary-color", "#F56E67");
     document.documentElement.style.setProperty("--bodyfont-color", "#fff");
+
+
+  
+   
 })
 changecolormode[1].addEventListener('click',(e)=>{
-    e.preventDefault();
+  
     document.documentElement.style.setProperty("--primary-color","#F56E67");
     document.documentElement.style.setProperty("--secondary-color", "#3b3b3b");
     document.documentElement.style.setProperty("--bodyfont-color", "#fff");
+
+
+    //    // card colors
+    //    document.documentElement.style.setProperty("--card-color-first","#3caea3");
+    //    document.documentElement.style.setProperty("--card-color-second","#F6D55C");
+    //    document.documentElement.style.setProperty("--card-color-third","#20639B");
+    //    document.documentElement.style.setProperty("--card-color-four","#99BF72");
+     
 })
 
 changecolormode[2].addEventListener('click',(e)=>{
-    e.preventDefault();
+   
     document.documentElement.style.setProperty("--primary-color","#7C9473");
     document.documentElement.style.setProperty("--secondary-color", "#F56E67");
     document.documentElement.style.setProperty("--bodyfont-color", "#fff");
+
+
+    //    // card colors
+    //    document.documentElement.style.setProperty("--card-color-first","blue");
+    //    document.documentElement.style.setProperty("--card-color-second","green");
+    //    document.documentElement.style.setProperty("--card-color-third","black");
+    //    document.documentElement.style.setProperty("--card-color-four","red");
+       
 })
+
