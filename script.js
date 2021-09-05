@@ -418,7 +418,7 @@ var images = ["url(./assets/sliderp1.png)", "url(./assets/desktopslider.png)", "
 
 var contentinit = ["Mobile Has Already Become Prevalent Over The Desktop. In Current Market`S Conditions, A Mobile Application Is A Must For Businesses And Startups.",
     "Desktop Application’s Are What Make A Computer So Useful, They’re The Things You Use Everyday.  ",
-    "Web Applications Can Be Designed For A Wide Variety Of Uses And Can Be Used By Anyone; From An Organization To An Individual For Numerous Reasons. ", "Marketing Has Always Been About How To Reach An Audience. What’s Changed, As Technology Changes, Is Where You Find That Audience."];
+    "Web Applications Can Be Designed For A Wide Variety Of Uses And Can Be Used By \<br> Anyone; From An Organization To An Individual For Numerous Reasons. ", "Marketing Has Always Been About How To Reach An Audience. What’s Changed, As\<br> Technology Changes, Is Where You Find That Audience."];
 
 
 
@@ -651,38 +651,39 @@ document.getElementById("submit").addEventListener("click", (e) => {
 let changecolormode=document.querySelectorAll(".change_color_mode")
 changecolormode[0].addEventListener('click',(e)=>{
   
-    document.documentElement.style.setProperty("--primary-color","#3b3b3b");
-    document.documentElement.style.setProperty("--secondary-color", "#F56E67");
-    document.documentElement.style.setProperty("--bodyfont-color", "#fff");
+    document.documentElement.style.setProperty("--primary-color","#F8C591");
+    document.documentElement.style.setProperty("--secondary-color", "#B9D2D2");
+    document.documentElement.style.setProperty("--bodyfont-color", "#343434");
 
 
-    document.documentElement.style.setProperty("--card-color-first","#3caea3");
-    document.documentElement.style.setProperty("--card-color-second","#F6D55C");
-    document.documentElement.style.setProperty("--card-color-third","#20639B");
-    document.documentElement.style.setProperty("--card-color-four","#99BF72");
+    document.documentElement.style.setProperty("--card-color-first","#89B0AE");
+    document.documentElement.style.setProperty("--card-color-second","#FFB6B6");
+    document.documentElement.style.setProperty("--card-color-third","#B8B5FF");
+    document.documentElement.style.setProperty("--card-color-four","#B8B5FF");
 
   
    
 })
+
 changecolormode[1].addEventListener('click',(e)=>{
-  
-    document.documentElement.style.setProperty("--primary-color","#F56E67");
-    document.documentElement.style.setProperty("--secondary-color", "#3b3b3b");
-    document.documentElement.style.setProperty("--bodyfont-color", "#fff");
+    e.preventDefault();
+    document.documentElement.style.setProperty("--primary-color","#7C9473");
+    document.documentElement.style.setProperty("--secondary-color", "#343434");
+    document.documentElement.style.setProperty("--bodyfont-color", "#FFFFFF");
 
 
     //    // card colors
-       document.documentElement.style.setProperty("--card-color-first","#3caea3");
-       document.documentElement.style.setProperty("--card-color-second","#F6D55C");
-       document.documentElement.style.setProperty("--card-color-third","#20639B");
-       document.documentElement.style.setProperty("--card-color-four","#99BF72");
+       document.documentElement.style.setProperty("--card-color-first","#F2A365");
+       document.documentElement.style.setProperty("--card-color-second","#5089C6");
+       document.documentElement.style.setProperty("--card-color-third","#F67E7D");
+       document.documentElement.style.setProperty("--card-color-four","#F67E7D");
      
 })
 
 changecolormode[2].addEventListener('click',(e)=>{
    
     document.documentElement.style.setProperty("--primary-color","#7C9473");
-    document.documentElement.style.setProperty("--secondary-color", "#F56E67");
+    document.documentElement.style.setProperty("--secondary-color", "#3B3B3B");
     document.documentElement.style.setProperty("--bodyfont-color", "#fff");
 
 

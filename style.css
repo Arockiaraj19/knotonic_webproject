@@ -28,6 +28,13 @@ width: 100vw;
 height: auto;
 overflow-x: hidden;
 }
+.backsideheading{
+  font-weight:500;
+  font-size: 2rem;
+  letter-spacing: 0.1em;
+  color:var(--bodyfont-color);
+  line-height:3rem;
+}
 .mainwrapper{
   width: 100%;
   height: auto;
@@ -81,6 +88,14 @@ transition: 0.6s;
 .myhomeslide,.myhomeslide1{
   display: none;
 }
+h1{
+  font-weight:normal;
+  font-size: 1.5rem;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color:var(--bodyfont-color);
+  padding:0rem 0 3rem ;
+}
 
 h2{
     width: 100%;
@@ -91,39 +106,45 @@ letter-spacing: 0.1em;
 line-height: 3.5rem;
 text-align: left;
 color:var(--bodyfont-color);
-padding: 3rem 0;
+padding:5rem 0 5rem 0rem;
+
+
 }
 h4{
-    font-weight:normal;
-    font-size: 1.5rem;
-    letter-spacing: 0.1em;
-    text-align: left;
-    color:var(--bodyfont-color);
-    padding: 2rem 0;
+  font-weight:500;
+  font-size: 2rem;
+  letter-spacing: 0.1em;
+  color:var(--bodyfont-color);
+  line-height:3rem;
 }
 h3{
-    font-weight:500;
-    font-size: 2rem;
-    letter-spacing: 0.1em;
-    color:var(--bodyfont-color);
-    line-height:3rem;
+  font-weight:lighter;
+  font-size: 4rem;
+  
+  text-align: center;
+  color:var(--bodyfont-color);
+  padding:0rem 0 3rem ;
 
 }
 
 h5{
-    font-weight:600;
-    font-size: 1.5rem;
-    letter-spacing: 0.1em;
-    color:var(--bodyfont-color);
-    margin-bottom: 1rem;
+  font-weight:500;
+  font-size: 2rem;
+  letter-spacing: 0.1em;
+  color:var(--bodyfont-color);
+  line-height:3rem;
+  text-align: center;
 }
 h6{
-  font-weight:normal;
-  font-size: 1.5rem;
+  font-weight:500;
+  font-size: 2rem;
   letter-spacing: 0.1em;
-  text-align: left;
   color:var(--bodyfont-color);
-  padding: 2rem 0;
+  line-height:3rem;
+  
+
+  
+  
 }
 
 /* p{  
@@ -1163,13 +1184,13 @@ nav .close:hover div::after{
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   z-index: 100;
-  border: #f8534b;
+ 
 
 }
 
 .flip-card-front {
 
-  color: black;
+ 
 overflow: hidden;
 }
 
@@ -1542,6 +1563,14 @@ justify-content: center;
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  h1{
+    font-weight:normal;
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    text-align: left;
+    color:var(--bodyfont-color);
+    padding:1rem 0rem 3rem ;
+  }
   body{
     overflow-x: hidden;
   }
@@ -1581,13 +1610,13 @@ h2{
 
 font-size: 1.9rem; 
 line-height: 2.5rem; 
-padding: 1.5rem 0 1rem 0rem;
+padding: 5rem 0 1rem 0rem;
 letter-spacing: 0.3rem;
 }
 
 h3{
   font-weight:400;
-  font-size:1.1rem;
+  font-size:1rem;
   letter-spacing: 0.1em;
   color:var(--bodyfont-color);
   line-height:1.5rem;
@@ -1599,9 +1628,14 @@ line-height: 2rem;
 padding: 1rem 0 1rem 1rem;
 }
 h6{
-  font-size: 1rem; 
-  line-height: 2rem; 
-  padding:0 1rem;
+  font-weight:500;
+  font-size: 2rem;
+  letter-spacing: 0.1em;
+  color:var(--bodyfont-color);
+  line-height:3rem; font-size: 1rem; 
+  line-height: 1.7rem; 
+  padding:1rem 0rem 3rem 0rem ;
+  
   
 }
 .para{ 
@@ -1896,17 +1930,18 @@ line-height: 2rem;
  display: none;
 }
 
+
 h2{
 
 font-size: 2.1rem; 
 line-height: 2.7rem; 
-padding: 1.5rem 0 1rem 0rem;
+padding: 5rem 0 1rem 0rem;
 letter-spacing: 0.3rem;
 }
 
 h3{
   font-weight:400;
-  font-size:1.3rem;
+  font-size:1rem;
   letter-spacing: 0.1em;
   color:var(--bodyfont-color);
   line-height:1.7rem;
@@ -1918,9 +1953,11 @@ line-height: 2.2rem;
 padding: 1rem 0 1rem 1rem;
 }
 h6{
-  font-size: 1.2rem; 
-  line-height: 2.2rem; 
-  padding:0 1rem;
+  font-weight:500;
+  font-size: 2rem;
+  letter-spacing: 0.1em;
+  color:var(--bodyfont-color);
+  line-height:3rem;
   
 }
 .para{ 
@@ -2101,6 +2138,7 @@ nav ul li{
   .backlist{
     padding-left: 0.5rem;
   }
+  
   .content__left  .h1heading{
     position: absolute;
     top: 65%;
@@ -2144,6 +2182,7 @@ nav ul li{
 
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  
   body{
     overflow-x: hidden;
   }
