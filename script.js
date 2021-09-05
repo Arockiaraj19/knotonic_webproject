@@ -472,8 +472,8 @@ const changeside = (e, i) => {
             e.target.parentElement.parentElement.parentElement.previousElementSibling.className = "flip_front_part1_first";
             e.target.parentElement.parentElement.parentElement.className = "flip_front_part2_first";
             document.getElementById(i.toString()).className = "paragraph_first";
-
-            document.getElementById("stagefour" + i.toString()).remove();
+document.getElementById(i.toString()).style.display="none";
+           
             e.target.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.className = "flip-card_first";
             changeposition[i] = undefined;
             document.getElementById("bg_color" + i.toString()).style.backgroundColor = bgcolors[0];
@@ -486,6 +486,7 @@ const changeside = (e, i) => {
 
 }
 const changebackside = (e, i) => {
+    console.log("ithu back side correct a varuthaa");
     var myimg = document.getElementById(i.toString());
   
     myimg.innerText=content[i];
