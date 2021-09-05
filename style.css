@@ -1,19 +1,6 @@
 
 :root{
-    --homecolor:rgba(251, 234, 237, 0.93);
-    --white:white;
-    --bodyfont-weight:normal;
-    --heading-weight:500;
-   --green-color: #327357;
- 
-  --homepage-blueround:rgba(41, 173, 207, 0.84);
-  --homepage-yellowround:#fdd20e;
-  --white-c: #fff;
-  --black-color: #3b3b3b;
-  --body-background-c: #FD7AC0;
-  --dot-color:rgba(243, 126, 8, 0.71);
-  --dot-border: 3px solid rgba(243, 126, 8, 0.71);
-  --contact-page-color:#f9ecec;
+
 
 /* new design colors */
 --primary-color:#F56E67;
@@ -21,7 +8,7 @@
 --another-secondary-color:#3b3b3b;
 --bodyfont-color:#fff;
 --service-icon-wrapper-color:#f8534b;
-
+--heading-weight:500;
 }
 html {
   scroll-behavior: smooth;
@@ -413,7 +400,7 @@ input::placeholder {
         text-decoration: none;
         letter-spacing: 0.1em;
         line-height: 1.5rem;
-        color: var(--white);
+        color: var(--bodyfont-color);
         font-size:0.8rem;
         font-weight: var(--heading-weight);
     }
@@ -442,7 +429,7 @@ padding: 0 0 0.5rem 0;
     bottom: 20px;
     right: 20px;
     z-index: 10000;
-    background: var(--white-c);
+    background: var(--bodyfont-color-c);
     width: 50px;
     height: 50px;
    
@@ -459,7 +446,7 @@ padding: 0 0 0.5rem 0;
  
 }
 .return-to-top i {
-    color: var(--black-color);
+    color: var(--secondary-color);
     margin: 0;
     position: relative;
     left: 16px;
@@ -1020,14 +1007,14 @@ border-radius: 50%;
 .bars:nth-child(1){
 	width: 30px;
 	height: 4px;
-	background:var(--white-c);
+	background:var(--bodyfont-color);
   border-radius: 1rem;
   margin: 2.5px 0;
 }
 .bars:nth-child(2){
 	width: 15px;
 	height: 4px;
-	background:var(--white-c);
+	background:var(--bodyfont-color);
   border-radius: 1rem;
   text-align: left;
   margin: 2.5px 0;
@@ -1035,7 +1022,7 @@ border-radius: 50%;
 .bars:nth-child(3){
 	width: 10px;
 	height: 4px;
-	background:var(--white-c);
+	background:var(--bodyfont-color);
   border-radius: 1rem;
   text-align: left;
   margin: 2.5px 0;
@@ -1309,7 +1296,7 @@ pointer-events: all;
   align-items: center;
 width: 100vw;
 height: 100vh;
-  background-color:var(--black-color);
+  background-color:var(--secondary-color);
 }
 .card {
   display: flex;
@@ -1317,7 +1304,7 @@ height: 100vh;
  
   width: 100vw;
   height: 100vh;
- background-color:var(--black-color);
+ background-color:var(--secondary-color);
  
   align-items: center;
   justify-content: center;
@@ -1381,7 +1368,7 @@ height: 100vh;
 #threecontainer {
   height: 100vh;
   width: 100vw;
-  background:var(--black-color);
+  background:var(--secondary-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1442,7 +1429,7 @@ align-items: center;
   text-decoration: none;
         letter-spacing: 0.1em;
         line-height: 1.5rem;
-        color: var(--white);
+        color: var(--bodyfont-color);
         font-size:0.8rem;
         font-weight: var(--heading-weight);
         position: relative;
@@ -1472,13 +1459,9 @@ align-items: center;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-color: var(--black-color);
+  background-color: var(--secondary-color);
   padding-bottom: 1rem;
 }
-.stagefour{
-  width: 100%;
-  
- }
 
 .mainwrapper{
   width: 100%;
@@ -1488,44 +1471,41 @@ justify-content:stretch;
 
 }
 
-.firstpart{
-  text-align: left;
-font-size: 1.2rem;
-font-weight: 600;
-color: white;
-line-height: 2rem;
-width: 17%;
 
-}
-.secondpart{
-  text-align: left;
-  font-size: 1.2rem;
-  font-weight: 300;
-  color: white;
-  line-height: 2rem;
-  
-width: 3%;
-
-}
-.thirdpart{
-
-  text-align: left;
-  font-size: 1.2rem;
-  font-weight: 300;
-  color: white;
-  line-height: 2rem;
-  width: 80%;
-}
 .backlist ul li{
   text-decoration: none;
   letter-spacing: 0.1em;
   line-height: 1.5rem;
-  color: var(--white);
+  color: var(--bodyfont-color);
   text-align: left;
   font-size:1.2rem;
   font-weight: 300;
 }
 
+
+.color_mode{
+  width: 100%;
+  height: auto;
+  display: flex;
+justify-content: center;
+}
+.change_color_mode{
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  margin: 0 1rem;
+  border:4px solid black;
+  background-color: red;
+}
+.change_color_mode:nth-child(1){
+  background-color: blue;
+}
+.change_color_mode:nth-child(2){
+  background-color: green;
+}
+.change_color_mode:nth-child(3){
+  background-color: yellow;
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -1801,34 +1781,11 @@ line-height: 2.5rem;
   flex-wrap: wrap;
   word-wrap: break-word;
 }
-.firstpart{
-width: 100%;
-font-size: 0.9rem;
-line-height: 1.2rem;
-
-color:var(--bodyfont-color);
-}
-.secondpart{
-  display: none;
-  width: auto;
-  font-size: 0.9rem;
-  line-height: 1.2rem;
-
-}
-.thirdpart{
-
-  width: 100%;
-  font-size: 0.9rem;
-  line-height: 1.2rem;
-  word-wrap: break-word;
-
-}
-
   .backlist ul li{
     text-decoration: none;
     letter-spacing: 0.1em;
     line-height: 1.3rem;
-    color: var(--white);
+    color: var(--bodyfont-color);
     text-align: left;
     font-size:1rem;
     font-weight: 300;
@@ -2097,34 +2054,12 @@ nav ul li{
   word-wrap: break-word;
 }
 
-.firstpart{
-width: 100%;
-font-size: 0.9rem;
-line-height: 1.2rem;
-
-color:var(--bodyfont-color);
-}
-.secondpart{
-  display: none;
-  width: auto;
-  font-size: 0.9rem;
-  line-height: 1.2rem;
-
-}
-.thirdpart{
-
-  width: 100%;
-  font-size: 0.9rem;
-  line-height: 1.2rem;
-  word-wrap: break-word;
-
-}
 
   .backlist ul li{
     text-decoration: none;
     letter-spacing: 0.1em;
     line-height: 1.3rem;
-    color: var(--white);
+    color: var(--bodyfont-color);
     text-align: left;
     font-size:1rem;
     font-weight: 300;
@@ -2264,34 +2199,14 @@ line-height: 2.7rem;
   word-wrap: break-word;
 }
 
-.firstpart{
-  width: 100%;
-  font-size: 1.2rem;
-  line-height: 1.6rem;
-  
-  color:var(--bodyfont-color);
-  }
-  .secondpart{
-    display: none;
-    width: auto;
-    font-size: 1.2rem;
-    line-height: 1.6rem;
-  
-  }
-  .thirdpart{
-  
-    width: 100%;
-    font-size: 1.2rem;
-    line-height: 1.6rem;
-    word-wrap: break-word;
-  
-  }
+
+
   
     .backlist ul li{
       text-decoration: none;
       letter-spacing: 0.1em;
       line-height: 1.5rem;
-      color: var(--white);
+      color: var(--bodyfont-color);
       text-align: left;
       font-size:1.2rem;
       font-weight: 300;

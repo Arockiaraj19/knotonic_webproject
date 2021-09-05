@@ -408,10 +408,11 @@ const scrolltocontainer = (data) => {
 
 var changeposition = [undefined, undefined, undefined, undefined];
 var content = [
-    "<div id='stagefour0' class='stagefour' style='display: flex;justify-content: flex-start;width: 100%;flex-direction:column'>  <div class='mainwrapper'><div class='firstpart'>Design</div><div class='secondpart'>-</div><div class='thirdpart'>Adobe Ps,Ai,Xd,Ae,Dn</div></div>   <div class='mainwrapper'><div class='firstpart'>Frontend</div><div class='secondpart'>-</div><div class='thirdpart'>Flutter, React Native</div></div>   <div class='mainwrapper'><div class='firstpart'>Backend</div><div class='secondpart'>-</div><div class='thirdpart'>Node js,Firebase</div></div>   <div class='mainwrapper'><div class='firstpart'>Database</div><div class='secondpart'>-</div><div class='thirdpart'>Firebase,MongoDB,PostgreSQL,MySQL,Redis.</div></div></div>",
-    "<div id='stagefour1' class='stagefour' style='display: flex;justify-content: flex-start;width: 100%;flex-direction:column'>  <div class='mainwrapper'><div class='firstpart'>Design</div><div class='secondpart'>-</div><div class='thirdpart'>Adobe Ps,Ai,Xd,Ae,Dn</div></div>   <div class='mainwrapper'><div class='firstpart'>Frontend</div><div class='secondpart'>-</div><div class='thirdpart'>HTML,CSS,JS,Bootstrap,React JS,Electron JS</div></div>   <div class='mainwrapper'><div class='firstpart'>Backend</div><div class='secondpart'>-</div><div class='thirdpart'>Node js,Firebase</div></div>   <div class='mainwrapper'><div class='firstpart'>Database</div><div class='secondpart'>-</div><div class='thirdpart'>Firebase,MongoDB,PostgreSQL,MySQL,Redis.</div></div></div>",
-    "<div id='stagefour2' class='stagefour' style='display: flex;justify-content: flex-start;width: 100%;flex-direction:column'>  <div class='mainwrapper'><div class='firstpart'>Design</div><div class='secondpart'>-</div><div class='thirdpart'>Adobe Ps,Ai,Xd,Ae,Dn</div></div>   <div class='mainwrapper'><div class='firstpart'>Frontend</div><div class='secondpart'>-</div><div class='thirdpart'>HTML,CSS,JS,Bootstrap,React Js,</div></div>   <div class='mainwrapper'><div class='firstpart'>Backend</div><div class='secondpart'>-</div><div class='thirdpart'>Node js,Firebase</div></div>   <div class='mainwrapper'><div class='firstpart'>Database</div><div class='secondpart'>-</div><div class='thirdpart'>Firebase,MongoDB,PostgreSQL,MySQL,Redis.</div></div></div>",
-    "<div id='stagefour3' class='backlist' style='display: flex;justify-content: flex-start;width: 90%;'><ul><li>Search Engine Optimization (SEO)</li>  <li>Social Media Marketing</li> <li>Content Marketing</li>  <li>Email Marketing</li>  </ul>     </div>",
+ "hello ",
+ "lucifer",
+ "nice",
+ "meet you"
+   
 ];
 var contentinit = ["don mobile", "don lucifer", "don web", "don cloud computing"];
 var images = ["url(./assets/sliderp1.png)", "url(./assets/desktopslider.png)", "url(./assets/webappslider.png)", "url(./assets/digitalcard.png)"];
@@ -486,13 +487,14 @@ const changeside = (e, i) => {
 }
 const changebackside = (e, i) => {
     var myimg = document.getElementById(i.toString());
-    myimg.insertAdjacentHTML("afterend", content[i]);
-    myimg.style.display = "none";
+  
+    myimg.innerText=content[i];
+  
     document.getElementById("bg_color" + i.toString()).style.backgroundColor = bgcolors[3];
     document.getElementById("back_color" + i.toString()).style.backgroundColor = backcolors[3];
     document.getElementById("heading" + i.toString()).innerText = headingcontent[i][3];
     document.getElementById("btn" + i.toString()).style.backgroundColor = backcolors[3];
-    document.getElementById("back_color" + i.toString()).style.justifyContent = "space-around";
+    document.getElementById("back_color" + i.toString()).style.justifyContent = "flex-start";
     e.target.offsetParent.offsetParent.style.transform = "rotateX(0deg)";
 
 }
@@ -641,3 +643,27 @@ document.getElementById("submit").addEventListener("click", (e) => {
 
 
 
+
+
+// change color mode
+
+let changecolormode=document.querySelectorAll(".change_color_mode")
+changecolormode[0].addEventListener('click',(e)=>{
+    e.preventDefault();
+    document.documentElement.style.setProperty("--primary-color","#3b3b3b");
+    document.documentElement.style.setProperty("--secondary-color", "#F56E67");
+    document.documentElement.style.setProperty("--bodyfont-color", "#fff");
+})
+changecolormode[1].addEventListener('click',(e)=>{
+    e.preventDefault();
+    document.documentElement.style.setProperty("--primary-color","#F56E67");
+    document.documentElement.style.setProperty("--secondary-color", "#3b3b3b");
+    document.documentElement.style.setProperty("--bodyfont-color", "#fff");
+})
+
+changecolormode[2].addEventListener('click',(e)=>{
+    e.preventDefault();
+    document.documentElement.style.setProperty("--primary-color","#3b3b3b");
+    document.documentElement.style.setProperty("--secondary-color", "#F56E67");
+    document.documentElement.style.setProperty("--bodyfont-color", "#fff");
+})
