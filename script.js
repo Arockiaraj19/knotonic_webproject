@@ -408,22 +408,66 @@ const scrolltocontainer = (data) => {
 
 var changeposition = [undefined, undefined, undefined, undefined];
 var content = [
- ` <div class='backlist' style='display: flex;justify-content: flex-start;width: 90%;'><ul><li> Higher Performance  </li><li> Better UX </li> <li>     Easier Access To Built-In Capabilities Of The Smartphone. </li> <li>     Better Security </li> <li>     Better Access To The Audience </li></ul></div>`,
- ` <div class='backlist' style='display: flex;justify-content: flex-start;width: 90%;'><ul><li> Higher Performance  </li><li> Better UX </li> <li>     Easier Access To Built-In Capabilities Of The Smartphone. </li> <li>     Better Security </li> <li>     Better Access To The Audience </li></ul></div>`,
- ` <div class='backlist' style='display: flex;justify-content: flex-start;width: 90%;'><ul><li> Higher Performance  </li><li> Better UX </li> <li>     Easier Access To Built-In Capabilities Of The Smartphone. </li> <li>     Better Security </li> <li>     Better Access To The Audience </li></ul></div>`,
- ` <div class='backlist' style='display: flex;justify-content: flex-start;width: 90%;'><ul><li> Higher Performance  </li><li> Better UX </li> <li>     Easier Access To Built-In Capabilities Of The Smartphone. </li> <li>     Better Security </li> <li>     Better Access To The Audience </li></ul></div>`
+ ` <div class='backlist' style='display: flex;justify-content: flex-start;width: 90%;'><ul><li>
+                                                    Deliver value fast
+                                                </li>
+                                                <li>
+                                                    Cost efficient
+                                                </li>
+                                                <li>
+                                                    Creative design work
+                                                </li>
+                                                <li>
+                                                    support
+                                                </li></ul></div>`,
+ ` <div class='backlist' style='display: flex;justify-content: flex-start;width: 90%;'><ul><li>
+                                                    Deliver value fast
+                                                </li>
+                                                <li>
+                                                    Cost efficient
+                                                </li>
+                                                <li>
+                                                    Creative design work
+                                                </li>
+                                                <li>
+                                                    support
+                                                </li></ul></div>`,
+ ` <div class='backlist' style='display: flex;justify-content: flex-start;width: 90%;'><ul><li>
+                                                    Deliver value fast
+                                                </li>
+                                                <li>
+                                                    Cost efficient
+                                                </li>
+                                                <li>
+                                                    Creative design work
+                                                </li>
+                                                <li>
+                                                    support
+                                                </li></ul></div>`,
+ ` <div class='backlist' style='display: flex;justify-content: flex-start;width: 90%;'><ul><li>
+                                                    Deliver value fast
+                                                </li>
+                                                <li>
+                                                    Cost efficient
+                                                </li>
+                                                <li>
+                                                    Creative design work
+                                                </li>
+                                                <li>
+                                                    support
+                                                </li></ul></div>`
 ];
 
 var images = ["url(./assets/sliderp1.png)", "url(./assets/desktopslider.png)", "url(./assets/webappslider.png)", "url(./assets/digitalcard.png)"];
 
 var contentinit = ["Mobile Has Already Become Prevalent Over The Desktop. In Current Market`S Conditions, A Mobile Application Is A Must For Businesses And Startups.",
     "Desktop Application’s Are What Make A Computer So Useful, They’re The Things You Use Everyday.  ",
-    "Web Applications Can Be Designed For A Wide Variety Of Uses And Can Be Used By \<br> Anyone; From An Organization To An Individual For Numerous Reasons. ", "Marketing Has Always Been About How To Reach An Audience. What’s Changed, As\<br> Technology Changes, Is Where You Find That Audience."];
+    "Web Applications Can Be Designed For A Wide Variety Of Uses And Can Be Used By  Anyone From An Organization To An Individual For Numerous Reasons. ", "Marketing Has Always Been About How To Reach An Audience. What’s Changed, As Technology Changes, Is Where You Find That Audience."];
 
 
 
-var headingcontent = [["Mobile App  Design & Development", "Mobile App  Design & Development", "Advantage", "Technology Used"], ["Desktop Application", "Desktop Application", "Advantage", "Technology Used"],
-["Web Apps Design & Development", "Web Apps Design & Development", "Advantage", "Technology Used"], ["Digital Marketing", "Digital Marketing", "Advantage", "Technology Used"],]
+var headingcontent = [["Mobile App  Design & Development", "Mobile App  Design & Development", "Advantage", "Why us?"], ["Desktop Application", "Desktop Application", "Advantage", "Why us?"],
+["Web Apps Design & Development", "Web Apps Design & Development", "Advantage", "Why us?"], ["Digital Marketing", "Digital Marketing", "Advantage", "Why us?"],]
 
 
 
@@ -682,16 +726,16 @@ changecolormode[1].addEventListener('click',(e)=>{
 
 changecolormode[2].addEventListener('click',(e)=>{
    
-    document.documentElement.style.setProperty("--primary-color","#7C9473");
-    document.documentElement.style.setProperty("--secondary-color", "#3B3B3B");
+    document.documentElement.style.setProperty("--primary-color","#F56E67");
+    document.documentElement.style.setProperty("--secondary-color", "#3b3b3b");
     document.documentElement.style.setProperty("--bodyfont-color", "#fff");
 
 
     //    // card colors
-       document.documentElement.style.setProperty("--card-color-first","blue");
-       document.documentElement.style.setProperty("--card-color-second","green");
-       document.documentElement.style.setProperty("--card-color-third","black");
-       document.documentElement.style.setProperty("--card-color-four","red");
+       document.documentElement.style.setProperty("--card-color-first","#3caea3");
+       document.documentElement.style.setProperty("--card-color-second","#F6D55C");
+       document.documentElement.style.setProperty("--card-color-third","#20639B");
+       document.documentElement.style.setProperty("--card-color-four","#99BF72");
        
 })
 

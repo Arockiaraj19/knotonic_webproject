@@ -91,10 +91,12 @@ transition: 0.6s;
 h1{
   font-weight:normal;
   font-size: 1.5rem;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.1rem;
+  line-height: 2.5rem;
   text-align: left;
   color:var(--bodyfont-color);
-  padding:0rem 0 3rem ;
+  padding:3rem 0 0rem 3rem ;
+  
 }
 
 h2{
@@ -118,12 +120,12 @@ h4{
   line-height:3rem;
 }
 h3{
-  font-weight:lighter;
+  font-weight:300;
   font-size: 4rem;
   
   text-align: center;
   color:var(--bodyfont-color);
-  padding:0rem 0 3rem ;
+  padding:0rem 0 5rem ;
 
 }
 
@@ -133,7 +135,7 @@ h5{
   letter-spacing: 0.1em;
   color:var(--bodyfont-color);
   line-height:3rem;
-  text-align: center;
+ 
 }
 h6{
   font-weight:500;
@@ -182,7 +184,7 @@ margin-bottom: 2rem;
 width: 100%;
 font-weight: normal;
 font-size:1.5rem;
-letter-spacing: 0.3rem;
+letter-spacing: 0.2rem;
 line-height: 2rem;
 color:var(--bodyfont-color);
 
@@ -1272,14 +1274,15 @@ overflow: hidden;
 .paragraph{  
 width: 100%;
 font-weight: normal;
-font-size:1.3rem;
+font-size:1.5rem;
 letter-spacing: 0.1em;
-line-height: 1.7rem;
+line-height: 2rem;
 text-align: left;
 color:var(--bodyfont-color);
 }
 .paragraph_first{
   display: none;
+  
 }
 .service_card_icon{
   display: flex;
@@ -1494,10 +1497,10 @@ justify-content:stretch;
 .backlist ul li{
   text-decoration: none;
   letter-spacing: 0.1em;
-  line-height: 1.5rem;
+  line-height: 2rem;
   color: var(--bodyfont-color);
   text-align: left;
-  font-size:1.2rem;
+  font-size:1.5rem;
   font-weight: 300;
 }
 
@@ -1510,21 +1513,21 @@ justify-content: center;
 }
 .change_color_mode{
   position: relative;
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 1rem;
+  width: 1rem;
   border-radius: 50%;
   margin: 0 1rem;
   
   
 }
 .change_color_mode:nth-child(1){
-  background-color: blue;
+  background-color: white;
 }
 .change_color_mode:nth-child(2){
-  background-color: green;
+  background-color: white;
 }
 .change_color_mode:nth-child(3){
-  background-color: yellow;
+  background-color: white;
 }
 
 
@@ -1534,8 +1537,8 @@ justify-content: center;
   visibility: hidden;
   width: auto;
   white-space: nowrap;
-  background-color: black;
-  color: var(--bodyfont-color);
+  background-color: #3B3B3B;
+  color: white;
   text-align: center;
   border-radius: 6px;
   padding: 2.5px 2px;
@@ -1563,14 +1566,7 @@ justify-content: center;
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  h1{
-    font-weight:normal;
-    font-size: 1rem;
-    letter-spacing: 0.1em;
-    text-align: left;
-    color:var(--bodyfont-color);
-    padding:1rem 0rem 3rem ;
-  }
+  
   body{
     overflow-x: hidden;
   }
@@ -1605,36 +1601,63 @@ justify-content: center;
 .linespan div{
  display: none;
 }
+h1{
+  font-weight:normal;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color:var(--bodyfont-color);
+  padding:1rem 0 0rem 1rem ;
+  
+}
 
 h2{
+  width: 100%;
+  font-family: Poppins;
+font-weight: 500;
+font-size: 2rem;
+letter-spacing: 0.1em;
+line-height: 3.5rem;
+text-align: left;
+color:var(--bodyfont-color);
+padding:3rem 0 3rem 0.5rem;
 
-font-size: 1.9rem; 
-line-height: 2.5rem; 
-padding: 5rem 0 1rem 0rem;
-letter-spacing: 0.3rem;
+
 }
 
 h3{
-  font-weight:400;
-  font-size:1rem;
-  letter-spacing: 0.1em;
-  color:var(--bodyfont-color);
-  line-height:1.5rem;
+  font-weight:300;
+  font-size:2rem;
+  line-height:3rem;
   text-align: center;
+  color:var(--bodyfont-color);
+  padding:0rem 0 1rem ;
+
 }
 h4{
-  font-size: 1.2rem; 
-line-height: 2rem; 
-padding: 1rem 0 1rem 1rem;
+  font-weight:500;
+  font-size: 1rem;
+  
+  color:var(--bodyfont-color);
+  line-height:1.5rem;
+}
+h5{
+  font-weight:500;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  color:var(--bodyfont-color);
+  line-height:2rem;
+  
 }
 h6{
   font-weight:500;
-  font-size: 2rem;
+  font-size: 1.2rem;
   letter-spacing: 0.1em;
   color:var(--bodyfont-color);
-  line-height:3rem; font-size: 1rem; 
-  line-height: 1.7rem; 
-  padding:1rem 0rem 3rem 0rem ;
+  line-height:1.5rem;
+  
+
   
   
 }
@@ -1812,8 +1835,9 @@ font-size: 1rem;
   /* typewritter part */
   span{
   font-weight: 500;
-  font-size: 1.5rem; 
-line-height: 2rem; 
+  font-size: 1.8rem; 
+line-height: 2.8rem;
+letter-spacing: 0.1em; 
 
 
   }
@@ -1854,8 +1878,9 @@ line-height: 2rem;
     line-height: 1.3rem;
     color: var(--bodyfont-color);
     text-align: left;
-    font-size:1rem;
+    font-size:0.9rem;
     font-weight: 300;
+    margin-left: 1rem;
     
   }
   .backlist{
@@ -1929,35 +1954,67 @@ line-height: 2rem;
 .linespan div{
  display: none;
 }
+h1{
+  font-weight:normal;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color:var(--bodyfont-color);
+  padding:1rem 0 0rem 1rem ;
+  
+}
 
 
 h2{
+  width: 100%;
+  font-family: Poppins;
+font-weight: 500;
+font-size: 2rem;
+letter-spacing: 0.1em;
+line-height: 3.5rem;
+text-align: left;
+color:var(--bodyfont-color);
+padding:3rem 0 3rem 0.5rem;
 
-font-size: 2.1rem; 
-line-height: 2.7rem; 
-padding: 5rem 0 1rem 0rem;
-letter-spacing: 0.3rem;
+
 }
 
 h3{
-  font-weight:400;
-  font-size:1rem;
-  letter-spacing: 0.1em;
-  color:var(--bodyfont-color);
-  line-height:1.7rem;
+  font-weight:300;
+  font-size: 2rem;
+  line-height: 3rem;
   text-align: center;
+  color:var(--bodyfont-color);
+  padding:0rem 0 1rem ;
+
 }
 h4{
-  font-size: 1.4rem; 
-line-height: 2.2rem; 
-padding: 1rem 0 1rem 1rem;
-}
-h6{
   font-weight:500;
-  font-size: 2rem;
+  font-size: 1rem;
   letter-spacing: 0.1em;
   color:var(--bodyfont-color);
-  line-height:3rem;
+  line-height: 1.5rem;
+  
+}
+h5{
+  font-weight:500;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  color:var(--bodyfont-color);
+  line-height:2rem;
+  
+}
+h6{
+  
+  font-weight:500;
+  font-size: 1.2rem;
+  letter-spacing: 0.1em;
+  color:var(--bodyfont-color);
+  line-height:1.5rem;
+  
+
+  
   
 }
 .para{ 
@@ -1972,7 +2029,7 @@ h6{
   
 
 .paragraph{
-  font-size: 0.9rem;
+  font-size:0.9rem;
   line-height: 1.2rem;
 }
 .logo{
@@ -2084,8 +2141,9 @@ font-size: 1rem;
   /* typewritter part */
   span{
   font-weight: 500;
-  font-size: 2rem; 
-line-height: 2.7rem; 
+  font-size: 1.8rem;  
+line-height: 2.8rem; 
+letter-spacing: 0.1em; 
 
 
   }
@@ -2131,8 +2189,9 @@ nav ul li{
     line-height: 1.3rem;
     color: var(--bodyfont-color);
     text-align: left;
-    font-size:1rem;
+    font-size:0.9rem;
     font-weight: 300;
+    margin-left: 1rem;
     
   }
   .backlist{
@@ -2246,8 +2305,9 @@ nav ul li{
   /* typewritter part */
   span{
   font-weight: 500;
-  font-size: 2rem; 
-line-height: 2.7rem; 
+  font-size: 1.8rem; 
+line-height: 2.8rem;
+letter-spacing: 0.1em;  
 
 
   }
@@ -2280,8 +2340,9 @@ line-height: 2.7rem;
       line-height: 1.5rem;
       color: var(--bodyfont-color);
       text-align: left;
-      font-size:1.2rem;
+      font-size:0.9rem;
       font-weight: 300;
+      margin-left: 1rem;
       
     }
 
