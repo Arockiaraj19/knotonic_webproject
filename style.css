@@ -1628,8 +1628,8 @@ padding:3rem 0 3rem 0.5rem;
 
 h3{
   font-weight:300;
-  font-size: 2.5rem;
-  line-height:3.5rem;
+  font-size:2rem;
+  line-height:3rem;
   text-align: center;
   color:var(--bodyfont-color);
   padding:0rem 0 1rem ;
@@ -1981,8 +1981,8 @@ padding:3rem 0 3rem 0.5rem;
 
 h3{
   font-weight:300;
-  font-size: 1.5rem;
-  line-height: 2.5rem;
+  font-size: 2rem;
+  line-height: 3rem;
   text-align: center;
   color:var(--bodyfont-color);
   padding:0rem 0 1rem ;
