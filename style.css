@@ -142,7 +142,7 @@ margin-bottom: 2rem;
   height: 0.1rem;
   border-radius: 3px;
   margin: 1rem 0;
-  background-color: white;
+  background-color: var(--bodyfont-color);
 }   
 
 
@@ -407,7 +407,7 @@ input::placeholder {
   
     footer section .footerheading,footer ul .footerheading,footer section div .footerheading{
   font-size: 1rem;
-color: white;
+color: var(--bodyfont-color);
 line-height: 1rem;
 font-weight: 600;
 letter-spacing: 0.15rem;
@@ -528,7 +528,7 @@ padding: 0 0 0.5rem 0;
 
 .cursor {
  
-	border-left: 4px solid white;
+	border-left: 4px solid var(--bodyfont-color);
 }
 
 
@@ -581,7 +581,7 @@ width: 100%;
   position: absolute;
   height: 160px;
   width: 40px;
-  background: #fff;
+  background: var(--bodyfont-color);
   right: 1.5rem;
   top: 0;
   bottom: 0;
@@ -729,7 +729,7 @@ width: 100%;
   font-size: 3vw;
   height: 10vw;
   opacity: 1;
-  color: #fff;
+  color: var(--bodyfont-color);
   width: 100%;
   letter-spacing: 0.15em;
   line-height: 0.6;
@@ -749,7 +749,7 @@ width: 100%;
 .content__right .content__main {
   position: absolute;
   text-align: left;
-  color: #fff;
+  color: var(--bodyfont-color);
   width: 100%;
   font-size: 1.3vw;
   padding: 0 5vw;
@@ -1050,7 +1050,7 @@ nav ul li{
 }
 
 nav ul li a{
-	color: #fafafa;
+	color: var(--bodyfont-color);
 	font-size: 2rem;
 	text-decoration: none;
 	font-weight: 500;
@@ -1066,7 +1066,7 @@ nav ul li a:after{
 	position: absolute;
 	height: 3px;
 	border-radius: 5px;
-	background: #fff;
+	background: var(--bodyfont-color);
 	bottom: -10px;
 	left: 0;
 	transform-origin: left;
@@ -1102,7 +1102,7 @@ nav .close div::after{
 	position: absolute;
 	width: 30px;
 	height: 4px;
-	background: #fff;
+	background: var(--bodyfont-color);
 	transition: background .5s ease;
 }
 nav .close div::before{
@@ -1177,7 +1177,7 @@ overflow: hidden;
 
 .flip-card-back {
   background-color: transparent;
-  color: white;
+  color: var(--bodyfont-color);
   transform: rotateX(180deg);
 
 }
@@ -1282,7 +1282,7 @@ pointer-events: all;
 }
 
 .service_card_icon_wrapper i{
-  color: white;
+  color: var(--bodyfont-color);
   font-size: 2rem;
  padding:1rem 1.5rem ;
 }
@@ -1384,7 +1384,7 @@ height: 100vh;
 
 
 .line{
-  background-color:white;
+  background-color:var(--bodyfont-color);
   width: 15rem;
   height: 2px;
  margin: 1rem 0 2rem 0;
@@ -1441,7 +1441,7 @@ align-items: center;
 	position: absolute;
 	height: 1.5px;
 	border-radius: 5px;
-	background: #fff;
+	background: var(--bodyfont-color);
 	bottom: -5px;
 	left: 0;
 	transform-origin: left;
@@ -1494,8 +1494,11 @@ justify-content: center;
   width: 1.5rem;
   border-radius: 50%;
   margin: 0 1rem;
-  border:4px solid black;
+
   background-color: red;
+  position: relative;
+
+
 }
 .change_color_mode:nth-child(1){
   background-color: blue;
@@ -1507,6 +1510,40 @@ justify-content: center;
   background-color: yellow;
 }
 
+
+
+
+ .tooltiptext {
+  visibility: hidden;
+  width: auto;
+  white-space: nowrap;
+  background-color: black;
+  color: var(--bodyfont-color);
+  text-align: center;
+  border-radius: 6px;
+  padding: 2.5px 2px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px;
+ font-size: 1rem;
+}
+
+ .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.change_color_mode:hover .tooltiptext {
+  visibility: visible;
+}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   body{
@@ -1642,7 +1679,7 @@ footer div,footer section,footer ul{
   margin: 1rem 0 0.5rem 0;
 }
 footer section h1,footer ul h1,footer section div h1{
-  color: white;
+  color: var(--bodyfont-color);
   line-height: 0.7rem;
   padding: 0 0 0.5rem 0;
       }
@@ -1768,7 +1805,7 @@ line-height: 2.5rem;
   text-align: center;
   }
   nav ul li a{
-	color: #fafafa;
+	color: var(--bodyfont-color);
 	font-size: 1.6em;
 	text-decoration: none;
 	font-weight: 500;
@@ -1803,7 +1840,7 @@ line-height: 2.5rem;
     font-size: 1rem;
     height: auto;
     opacity: 1;
-    color: #fff;
+    color: var(--bodyfont-color);
     width: 100%;
     letter-spacing: 0.15em;
     line-height: 1.2rem;
@@ -1961,7 +1998,7 @@ footer div,footer section,footer ul{
   margin: 1rem 0 0.5rem 0;
 }
 footer section h1,footer ul h1,footer section div h1{
-  color: white;
+  color: var(--bodyfont-color);
   line-height: 0.7rem;
   padding: 0 0 0.5rem 0;
       }
@@ -2037,7 +2074,7 @@ line-height: 2.7rem;
   text-align: center;
   }
   nav ul li a{
-	color: #fafafa;
+	color: var(--bodyfont-color);
 	font-size: 1.6em;
 	text-decoration: none;
 	font-weight: 500;
@@ -2077,7 +2114,7 @@ nav ul li{
     font-size: 1rem;
     height: auto;
     opacity: 1;
-    color: #fff;
+    color: var(--bodyfont-color);
     width: 100%;
     letter-spacing: 0.15em;
     line-height: 1.2rem;
@@ -2185,7 +2222,7 @@ line-height: 2.7rem;
     margin: 40px 0;
   }
   nav ul li a{
-	color: #fafafa;
+	color: var(--bodyfont-color);
 	font-size: 1.6em;
 	text-decoration: none;
 	font-weight: 500;
