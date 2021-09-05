@@ -120,7 +120,7 @@ h4{
   line-height:3rem;
 }
 h3{
-  font-weight:300;
+  font-weight:lighter;
   font-size: 4rem;
   
   text-align: center;
@@ -135,6 +135,7 @@ h5{
   letter-spacing: 0.1em;
   color:var(--bodyfont-color);
   line-height:3rem;
+  text-align: center;
  
 }
 h6{
@@ -211,6 +212,7 @@ color:var(--bodyfont-color);
  }
 .about .about_img{
   height: 100vh;
+
   width: 50%;
   background-image: url("./assets/about.png");
   background-repeat: no-repeat;
@@ -218,6 +220,7 @@ color:var(--bodyfont-color);
   background-position:initial;
 
 }
+
   .about div{
     height: auto;
     width: 50%;
@@ -1412,6 +1415,7 @@ height: 100vh;
 #roundarea{
   position: absolute;
   z-index: 1;
+  
   height: 15rem;
   width: 15rem ;
 background-color: var(--primary-color);
@@ -1668,13 +1672,13 @@ letter-spacing: 0.1em;
 line-height: 3.5rem;
 text-align: left;
 color:var(--bodyfont-color);
-padding:3rem 0 3rem 0.5rem;
+padding:2rem 0 2rem 0.5rem;
 
 
 }
 
 h3{
-  font-weight:300;
+  font-weight:lighter;
   font-size:2rem;
   line-height:3rem;
   text-align: center;
@@ -1695,6 +1699,7 @@ h5{
   letter-spacing: 0.1em;
   color:var(--bodyfont-color);
   line-height:2rem;
+  text-align: center;
   
 }
 h6{
@@ -1892,7 +1897,7 @@ letter-spacing: 0.1em;
     height: 50vh;
     width: 100%;
    
-
+    margin-left: 6rem;
     margin-bottom: 6rem;
     background-repeat: no-repeat;
   background-size: contain;
@@ -2022,13 +2027,13 @@ letter-spacing: 0.1em;
 line-height: 3.5rem;
 text-align: left;
 color:var(--bodyfont-color);
-padding:3rem 0 3rem 0.5rem;
+padding:2rem 0 2rem 0.5rem;
 
 
 }
 
 h3{
-  font-weight:300;
+  font-weight:lighter;
   font-size: 2rem;
   line-height: 3rem;
   text-align: center;
@@ -2050,6 +2055,7 @@ h5{
   letter-spacing: 0.1em;
   color:var(--bodyfont-color);
   line-height:2rem;
+  text-align: center;
   
 }
 h6{
@@ -2198,7 +2204,7 @@ letter-spacing: 0.1em;
     height: 50vh;
     width: 100%;
    
-
+    margin-left: 6rem;
     margin-bottom: 6rem;
     background-repeat: no-repeat;
   background-size: contain;
