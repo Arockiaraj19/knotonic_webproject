@@ -462,7 +462,7 @@ var images = ["url(./assets/sliderp1.png)", "url(./assets/desktopslider.png)", "
 
 var contentinit = ["Mobile Has Already Become Prevalent Over The Desktop. In Current Market`S Conditions, A Mobile Application Is A Must For Businesses And Startups.",
     "Desktop Application’s Are What Make A Computer So Useful, They’re The Things You Use Everyday.  ",
-    "Web Applications Can Be Designed For A Wide Variety Of Uses And Can Be Used By \<br> Anyone; From An Organization To An Individual For Numerous Reasons. ", "Marketing Has Always Been About How To Reach An Audience. What’s Changed, As\<br> Technology Changes, Is Where You Find That Audience."];
+    "Web Applications Can Be Designed For A Wide Variety Of Uses And Can Be Used By  Anyone From An Organization To An Individual For Numerous Reasons. ", "Marketing Has Always Been About How To Reach An Audience. What’s Changed, As Technology Changes, Is Where You Find That Audience."];
 
 
 
