@@ -408,10 +408,54 @@ const scrolltocontainer = (data) => {
 
 var changeposition = [undefined, undefined, undefined, undefined];
 var content = [
- ` <div class='backlist' style='display: flex;justify-content: flex-start;width: 90%;'><ul><li> Higher Performance  </li><li> Better UX </li> <li>     Easier Access To Built-In Capabilities Of The Smartphone. </li> <li>     Better Security </li> <li>     Better Access To The Audience </li></ul></div>`,
- ` <div class='backlist' style='display: flex;justify-content: flex-start;width: 90%;'><ul><li> Higher Performance  </li><li> Better UX </li> <li>     Easier Access To Built-In Capabilities Of The Smartphone. </li> <li>     Better Security </li> <li>     Better Access To The Audience </li></ul></div>`,
- ` <div class='backlist' style='display: flex;justify-content: flex-start;width: 90%;'><ul><li> Higher Performance  </li><li> Better UX </li> <li>     Easier Access To Built-In Capabilities Of The Smartphone. </li> <li>     Better Security </li> <li>     Better Access To The Audience </li></ul></div>`,
- ` <div class='backlist' style='display: flex;justify-content: flex-start;width: 90%;'><ul><li> Higher Performance  </li><li> Better UX </li> <li>     Easier Access To Built-In Capabilities Of The Smartphone. </li> <li>     Better Security </li> <li>     Better Access To The Audience </li></ul></div>`
+ ` <div class='backlist' style='display: flex;justify-content: flex-start;width: 90%;'><ul><li>
+                                                    Deliver value fast
+                                                </li>
+                                                <li>
+                                                    Cost efficient
+                                                </li>
+                                                <li>
+                                                    Creative design work
+                                                </li>
+                                                <li>
+                                                    support
+                                                </li></ul></div>`,
+ ` <div class='backlist' style='display: flex;justify-content: flex-start;width: 90%;'><ul><li>
+                                                    Deliver value fast
+                                                </li>
+                                                <li>
+                                                    Cost efficient
+                                                </li>
+                                                <li>
+                                                    Creative design work
+                                                </li>
+                                                <li>
+                                                    support
+                                                </li></ul></div>`,
+ ` <div class='backlist' style='display: flex;justify-content: flex-start;width: 90%;'><ul><li>
+                                                    Deliver value fast
+                                                </li>
+                                                <li>
+                                                    Cost efficient
+                                                </li>
+                                                <li>
+                                                    Creative design work
+                                                </li>
+                                                <li>
+                                                    support
+                                                </li></ul></div>`,
+ ` <div class='backlist' style='display: flex;justify-content: flex-start;width: 90%;'><ul><li>
+                                                    Deliver value fast
+                                                </li>
+                                                <li>
+                                                    Cost efficient
+                                                </li>
+                                                <li>
+                                                    Creative design work
+                                                </li>
+                                                <li>
+                                                    support
+                                                </li></ul></div>`
 ];
 
 var images = ["url(./assets/sliderp1.png)", "url(./assets/desktopslider.png)", "url(./assets/webappslider.png)", "url(./assets/digitalcard.png)"];
@@ -422,8 +466,8 @@ var contentinit = ["Mobile Has Already Become Prevalent Over The Desktop. In Cur
 
 
 
-var headingcontent = [["Mobile App  Design & Development", "Mobile App  Design & Development", "Advantage", "Technology Used"], ["Desktop Application", "Desktop Application", "Advantage", "Technology Used"],
-["Web Apps Design & Development", "Web Apps Design & Development", "Advantage", "Technology Used"], ["Digital Marketing", "Digital Marketing", "Advantage", "Technology Used"],]
+var headingcontent = [["Mobile App  Design & Development", "Mobile App  Design & Development", "Advantage", "Why us?"], ["Desktop Application", "Desktop Application", "Advantage", "Why us?"],
+["Web Apps Design & Development", "Web Apps Design & Development", "Advantage", "Why us?"], ["Digital Marketing", "Digital Marketing", "Advantage", "Why us?"],]
 
 
 
