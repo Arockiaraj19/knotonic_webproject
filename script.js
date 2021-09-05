@@ -408,11 +408,10 @@ const scrolltocontainer = (data) => {
 
 var changeposition = [undefined, undefined, undefined, undefined];
 var content = [
- "hello ",
- "lucifer",
- "nice",
- "meet you"
-   
+ ` <div class='backlist' style='display: flex;justify-content: flex-start;width: 90%;'><ul><li> Higher Performance  </li><li> Better UX </li> <li>     Easier Access To Built-In Capabilities Of The Smartphone. </li> <li>     Better Security </li> <li>     Better Access To The Audience </li></ul></div>`,
+ ` <div class='backlist' style='display: flex;justify-content: flex-start;width: 90%;'><ul><li> Higher Performance  </li><li> Better UX </li> <li>     Easier Access To Built-In Capabilities Of The Smartphone. </li> <li>     Better Security </li> <li>     Better Access To The Audience </li></ul></div>`,
+ ` <div class='backlist' style='display: flex;justify-content: flex-start;width: 90%;'><ul><li> Higher Performance  </li><li> Better UX </li> <li>     Easier Access To Built-In Capabilities Of The Smartphone. </li> <li>     Better Security </li> <li>     Better Access To The Audience </li></ul></div>`,
+ ` <div class='backlist' style='display: flex;justify-content: flex-start;width: 90%;'><ul><li> Higher Performance  </li><li> Better UX </li> <li>     Easier Access To Built-In Capabilities Of The Smartphone. </li> <li>     Better Security </li> <li>     Better Access To The Audience </li></ul></div>`
 ];
 
 var images = ["url(./assets/sliderp1.png)", "url(./assets/desktopslider.png)", "url(./assets/webappslider.png)", "url(./assets/digitalcard.png)"];
@@ -489,14 +488,14 @@ document.getElementById(i.toString()).style.display="none";
 const changebackside = (e, i) => {
     console.log("ithu back side correct a varuthaa");
     var myimg = document.getElementById(i.toString());
-  
-    myimg.innerText=content[i];
+ 
+     myimg.innerHTML=content[i];
   
     document.getElementById("bg_color" + i.toString()).style.backgroundColor =  getComputedStyle(document.body).getPropertyValue("--primary-color");
     document.getElementById("back_color" + i.toString()).style.backgroundColor =  getComputedStyle(document.body).getPropertyValue("--card-color-four");
     document.getElementById("heading" + i.toString()).innerText = headingcontent[i][3];
     document.getElementById("btn" + i.toString()).style.backgroundColor =  getComputedStyle(document.body).getPropertyValue("--card-color-four");
-    document.getElementById("back_color" + i.toString()).style.justifyContent = "flex-start";
+    document.getElementById("back_color" + i.toString()).style.justifyContent = "space-around";
     e.target.offsetParent.offsetParent.style.transform = "rotateX(0deg)";
 
 }
