@@ -1489,6 +1489,7 @@ justify-content:stretch;
 justify-content: center;
 }
 .change_color_mode{
+  position: relative;
   height: 1.5rem;
   width: 1.5rem;
   border-radius: 50%;
