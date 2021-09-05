@@ -657,6 +657,11 @@ changecolormode[0].addEventListener('click',(e)=>{
     document.documentElement.style.setProperty("--bodyfont-color", "#fff");
 
 
+    document.documentElement.style.setProperty("--card-color-first","#3caea3");
+    document.documentElement.style.setProperty("--card-color-second","#F6D55C");
+    document.documentElement.style.setProperty("--card-color-third","#20639B");
+    document.documentElement.style.setProperty("--card-color-four","#99BF72");
+
   
    
 })
@@ -668,10 +673,10 @@ changecolormode[1].addEventListener('click',(e)=>{
 
 
     //    // card colors
-    //    document.documentElement.style.setProperty("--card-color-first","#3caea3");
-    //    document.documentElement.style.setProperty("--card-color-second","#F6D55C");
-    //    document.documentElement.style.setProperty("--card-color-third","#20639B");
-    //    document.documentElement.style.setProperty("--card-color-four","#99BF72");
+       document.documentElement.style.setProperty("--card-color-first","#3caea3");
+       document.documentElement.style.setProperty("--card-color-second","#F6D55C");
+       document.documentElement.style.setProperty("--card-color-third","#20639B");
+       document.documentElement.style.setProperty("--card-color-four","#99BF72");
      
 })
 
@@ -683,10 +688,10 @@ changecolormode[2].addEventListener('click',(e)=>{
 
 
     //    // card colors
-    //    document.documentElement.style.setProperty("--card-color-first","blue");
-    //    document.documentElement.style.setProperty("--card-color-second","green");
-    //    document.documentElement.style.setProperty("--card-color-third","black");
-    //    document.documentElement.style.setProperty("--card-color-four","red");
+       document.documentElement.style.setProperty("--card-color-first","blue");
+       document.documentElement.style.setProperty("--card-color-second","green");
+       document.documentElement.style.setProperty("--card-color-third","black");
+       document.documentElement.style.setProperty("--card-color-four","red");
        
 })
 
