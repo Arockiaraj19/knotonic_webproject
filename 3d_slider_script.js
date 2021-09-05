@@ -179,3 +179,53 @@ function handleVisibilityChange() {
 }
 
 document.addEventListener("visibilitychange", handleVisibilityChange, false);
+
+
+
+
+// toggleswitch
+
+function filterme(value) {
+  value = parseInt(value, 10); // Convert to an integer
+  if (value === 1) {
+    $('#custom-toggle').removeClass('tgl-off', 'tgl-def').addClass('tgl-on');
+   console.log("light");
+   document.documentElement.style.setProperty("--primary-color","#F8C591");
+   document.documentElement.style.setProperty("--secondary-color", "#B9D2D2");
+   document.documentElement.style.setProperty("--bodyfont-color", "#343434");
+
+
+   document.documentElement.style.setProperty("--card-color-first","#89B0AE");
+   document.documentElement.style.setProperty("--card-color-second","#FFB6B6");
+   document.documentElement.style.setProperty("--card-color-third","#B8B5FF");
+   document.documentElement.style.setProperty("--card-color-four","#B8B5FF");
+
+  } else if (value === 2) {
+    $('#custom-toggle').removeClass('tgl-on, tgl-off').addClass('tgl-def');
+    console.log("normal");
+     
+    document.documentElement.style.setProperty("--primary-color","#F56E67");
+    document.documentElement.style.setProperty("--secondary-color", "#3b3b3b");
+    document.documentElement.style.setProperty("--bodyfont-color", "#fff");
+
+
+    //    // card colors
+       document.documentElement.style.setProperty("--card-color-first","#3caea3");
+       document.documentElement.style.setProperty("--card-color-second","#F6D55C");
+       document.documentElement.style.setProperty("--card-color-third","#20639B");
+       document.documentElement.style.setProperty("--card-color-four","#99BF72");
+  } else if (value === 3) {
+    $('#custom-toggle').removeClass('tgl-def', 'tgl-on').addClass('tgl-off');
+    document.documentElement.style.setProperty("--primary-color","#7C9473");
+    document.documentElement.style.setProperty("--secondary-color", "#343434");
+    document.documentElement.style.setProperty("--bodyfont-color", "#FFFFFF");
+
+
+    //    // card colors
+       document.documentElement.style.setProperty("--card-color-first","#F2A365");
+       document.documentElement.style.setProperty("--card-color-second","#5089C6");
+       document.documentElement.style.setProperty("--card-color-third","#F67E7D");
+       document.documentElement.style.setProperty("--card-color-four","#F67E7D");
+     
+  }
+}
